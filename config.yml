@@ -1,7 +1,8 @@
-CMS_HOST: studio.local.overhang.io
+LMS_HOST: community.abzt.de
+CMS_HOST: studio.community.abzt.de
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
-CONTACT_EMAIL: contact@local.overhang.io
-ENABLE_HTTPS: false
+CONTACT_EMAIL: support@abstract-technology.de
+ENABLE_HTTPS: true
 ID: jxBish2U54zbLTe82GMVvnyO
 JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
 
@@ -57,7 +58,6 @@ JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
 
   -----END RSA PRIVATE KEY-----'
 LANGUAGE_CODE: en
-LMS_HOST: local.overhang.io
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
