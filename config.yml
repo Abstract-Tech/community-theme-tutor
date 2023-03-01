@@ -4,6 +4,7 @@ PREVIEW_LMS_HOST: preview.community.abzt.de
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: support@abstract-technology.de
 ENABLE_HTTPS: true
+ENABLE_WEB_PROXY: true
 ID: jxBish2U54zbLTe82GMVvnyO
 JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
 
