@@ -1,5 +1,6 @@
 LMS_HOST: community.abzt.de
 CMS_HOST: studio.community.abzt.de
+PREVIEW_LMS_HOST: preview.community.abzt.de
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: support@abstract-technology.de
 ENABLE_HTTPS: true
