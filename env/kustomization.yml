@@ -1,0 +1,73 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- k8s/namespace.yml
+- k8s/deployments.yml
+- k8s/jobs.yml
+- k8s/services.yml
+- k8s/volumes.yml
+
+
+# namespace to deploy all Resources to
+namespace: openedx
+
+# annotations added to all Resources
+# https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/commonannotations/
+commonAnnotations:
+  app.kubernetes.io/version: 15.3.0
+
+# labels (and label selectors) added to all Resources
+# https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
+# https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/commonlabels/
+commonLabels:
+  app.kubernetes.io/instance: openedx-jxBish2U54zbLTe82GMVvnyO
+  app.kubernetes.io/part-of: openedx
+  app.kubernetes.io/managed-by: tutor
+  
+
+configMapGenerator:
+- name: caddy-config
+  files:
+  - apps/caddy/Caddyfile
+  options:
+    labels:
+        app.kubernetes.io/name: caddy
+- name: openedx-settings-lms
+  files:
+  - apps/openedx/settings/lms/__init__.py
+  - apps/openedx/settings/lms/development.py
+  - apps/openedx/settings/lms/production.py
+  - apps/openedx/settings/lms/test.py
+  options:
+    labels:
+        app.kubernetes.io/name: openedx
+- name: openedx-settings-cms
+  files:
+  - apps/openedx/settings/cms/__init__.py
+  - apps/openedx/settings/cms/development.py
+  - apps/openedx/settings/cms/production.py
+  - apps/openedx/settings/cms/test.py
+  options:
+    labels:
+        app.kubernetes.io/name: openedx
+- name: openedx-config
+  files:
+  - apps/openedx/config/cms.env.yml
+  - apps/openedx/config/lms.env.yml
+  options:
+    labels:
+        app.kubernetes.io/name: openedx
+- name: redis-config
+  files:
+  - apps/redis/redis.conf
+  options:
+    labels:
+        app.kubernetes.io/name: redis
+- name: mfe-caddy-config
+  files:
+    - plugins/mfe/apps/mfe/Caddyfile
+  options:
+    labels:
+        app.kubernetes.io/name: mfe
+

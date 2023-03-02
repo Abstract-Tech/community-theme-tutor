@@ -1,0 +1,86 @@
+:8002 {
+    log {
+        output stdout
+        format filter {
+            wrap json
+            fields {
+                common_log delete
+                request>headers delete
+                resp_headers delete
+                tls delete
+            }
+        }
+    }
+
+    
+    @mfe_profile {
+        path /profile /profile/*
+    }
+    handle @mfe_profile {
+        uri strip_prefix /profile
+        root * /openedx/dist/profile
+        try_files /{path} /index.html
+        file_server
+    }
+    
+    @mfe_authn {
+        path /authn /authn/*
+    }
+    handle @mfe_authn {
+        uri strip_prefix /authn
+        root * /openedx/dist/authn
+        try_files /{path} /index.html
+        file_server
+    }
+    
+    @mfe_account {
+        path /account /account/*
+    }
+    handle @mfe_account {
+        uri strip_prefix /account
+        root * /openedx/dist/account
+        try_files /{path} /index.html
+        file_server
+    }
+    
+    @mfe_course-authoring {
+        path /course-authoring /course-authoring/*
+    }
+    handle @mfe_course-authoring {
+        uri strip_prefix /course-authoring
+        root * /openedx/dist/course-authoring
+        try_files /{path} /index.html
+        file_server
+    }
+    
+    @mfe_discussions {
+        path /discussions /discussions/*
+    }
+    handle @mfe_discussions {
+        uri strip_prefix /discussions
+        root * /openedx/dist/discussions
+        try_files /{path} /index.html
+        file_server
+    }
+    
+    @mfe_gradebook {
+        path /gradebook /gradebook/*
+    }
+    handle @mfe_gradebook {
+        uri strip_prefix /gradebook
+        root * /openedx/dist/gradebook
+        try_files /{path} /index.html
+        file_server
+    }
+    
+    @mfe_learning {
+        path /learning /learning/*
+    }
+    handle @mfe_learning {
+        uri strip_prefix /learning
+        root * /openedx/dist/learning
+        try_files /{path} /index.html
+        file_server
+    }
+    
+}

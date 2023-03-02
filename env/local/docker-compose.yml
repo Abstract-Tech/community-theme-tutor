@@ -1,0 +1,203 @@
+version: "3.7"
+services:
+
+  ############# External services
+
+  
+  mongodb:
+    image: docker.io/mongo:4.2.17
+    # Use WiredTiger in all environments, just like at edx.org
+    command: mongod --nojournal --storageEngine wiredTiger
+    restart: unless-stopped
+    user: "999:999"
+    privileged: false
+    volumes:
+      - ../../data/mongodb:/data/db
+    depends_on:
+      - mongodb-permissions
+  mongodb-permissions:
+    image: docker.io/overhangio/openedx-permissions:15.3.0
+    command: ["999", "/data/db"]
+    restart: on-failure
+    volumes:
+      - ../../data/mongodb:/data/db
+  
+
+  
+  mysql:
+    image: docker.io/mysql:5.7.35
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci
+    restart: unless-stopped
+    user: "999:999"
+    privileged: false
+    volumes:
+      - ../../data/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "43Lfuln2"
+  mysql-permissions:
+    image: docker.io/overhangio/openedx-permissions:15.3.0
+    command: ["999", "/var/lib/mysql"]
+    restart: on-failure
+    volumes:
+      - ../../data/mysql:/var/lib/mysql
+  
+
+  
+  elasticsearch:
+    image: docker.io/elasticsearch:7.10.1
+    environment:
+      - cluster.name=openedx
+      - bootstrap.memory_lock=true
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    restart: unless-stopped
+    user: "1000:1000"
+    volumes:
+      - ../../data/elasticsearch:/usr/share/elasticsearch/data
+    depends_on:
+      - elasticsearch-permissions
+  elasticsearch-permissions:
+    image: docker.io/overhangio/openedx-permissions:15.3.0
+    command: ["1000", "/usr/share/elasticsearch/data"]
+    restart: on-failure
+    volumes:
+      - ../../data/elasticsearch:/usr/share/elasticsearch/data
+  
+
+  
+  redis:
+    image: docker.io/redis:6.2.6
+    working_dir: /openedx/redis/data
+    user: "1000:1000"
+    volumes:
+      - ../apps/redis/redis.conf:/openedx/redis/config/redis.conf:ro
+      - ../../data/redis:/openedx/redis/data
+    command: redis-server /openedx/redis/config/redis.conf
+    restart: unless-stopped
+    depends_on:
+      - redis-permissions
+  redis-permissions:
+    image: docker.io/overhangio/openedx-permissions:15.3.0
+    command: ["1000", "/openedx/redis/data"]
+    restart: on-failure
+    volumes:
+      - ../../data/redis:/openedx/redis/data
+  
+
+  
+  smtp:
+    image: docker.io/devture/exim-relay:4.95-r0-2
+    restart: unless-stopped
+    user: "100:101"
+    environment:
+      HOSTNAME: "local.overhang.io"
+  
+
+  ############# LMS and CMS
+
+  
+  lms:
+    image: docker.io/overhangio/openedx:15.3.0
+    environment:
+      SERVICE_VARIANT: lms
+      DJANGO_SETTINGS_MODULE: lms.envs.tutor.production
+      UWSGI_WORKERS: 2
+    restart: unless-stopped
+    volumes:
+      - ../apps/openedx/settings/lms:/openedx/edx-platform/lms/envs/tutor:ro
+      - ../apps/openedx/settings/cms:/openedx/edx-platform/cms/envs/tutor:ro
+      - ../apps/openedx/config:/openedx/config:ro
+      - ../../data/lms:/openedx/data
+      - ../../data/openedx-media:/openedx/media
+    depends_on:
+      - lms-permissions
+      - mysql
+      - elasticsearch
+      - mongodb
+      - redis
+      - smtp
+      
+  lms-permissions:
+    image: docker.io/overhangio/openedx-permissions:15.3.0
+    command: ["1000", "/openedx/data", "/openedx/media"]
+    restart: on-failure
+    volumes:
+      - ../../data/lms:/openedx/data
+      - ../../data/openedx-media:/openedx/media
+  
+
+  
+  cms:
+    image: docker.io/overhangio/openedx:15.3.0
+    environment:
+      SERVICE_VARIANT: cms
+      DJANGO_SETTINGS_MODULE: cms.envs.tutor.production
+      UWSGI_WORKERS: 2
+    restart: unless-stopped
+    volumes:
+      - ../apps/openedx/settings/lms:/openedx/edx-platform/lms/envs/tutor:ro
+      - ../apps/openedx/settings/cms:/openedx/edx-platform/cms/envs/tutor:ro
+      - ../apps/openedx/config:/openedx/config:ro
+      - ../../data/cms:/openedx/data
+      - ../../data/openedx-media:/openedx/media
+    depends_on:
+      - cms-permissions
+      - mysql
+      - elasticsearch
+      - mongodb
+      - redis
+      - smtp
+      - lms
+      
+  cms-permissions:
+    image: docker.io/overhangio/openedx-permissions:15.3.0
+    command: ["1000", "/openedx/data", "/openedx/media"]
+    restart: on-failure
+    volumes:
+      - ../../data/cms:/openedx/data
+      - ../../data/openedx-media:/openedx/media
+  
+
+  ############# LMS and CMS workers
+
+  
+  lms-worker:
+    image: docker.io/overhangio/openedx:15.3.0
+    environment:
+      SERVICE_VARIANT: lms
+      DJANGO_SETTINGS_MODULE: lms.envs.tutor.production
+    command: celery --app=lms.celery worker --loglevel=info --hostname=edx.lms.core.default.%%h --max-tasks-per-child=100 --exclude-queues=edx.cms.core.default
+    restart: unless-stopped
+    volumes:
+      - ../apps/openedx/settings/lms:/openedx/edx-platform/lms/envs/tutor:ro
+      - ../apps/openedx/settings/cms:/openedx/edx-platform/cms/envs/tutor:ro
+      - ../apps/openedx/config:/openedx/config:ro
+      - ../../data/lms:/openedx/data
+      - ../../data/openedx-media:/openedx/media
+    depends_on:
+      - lms
+  
+
+  
+  cms-worker:
+    image: docker.io/overhangio/openedx:15.3.0
+    environment:
+      SERVICE_VARIANT: cms
+      DJANGO_SETTINGS_MODULE: cms.envs.tutor.production
+    command: celery --app=cms.celery worker --loglevel=info --hostname=edx.cms.core.default.%%h --max-tasks-per-child 100 --exclude-queues=edx.lms.core.default
+    restart: unless-stopped
+    volumes:
+      - ../apps/openedx/settings/lms:/openedx/edx-platform/lms/envs/tutor:ro
+      - ../apps/openedx/settings/cms:/openedx/edx-platform/cms/envs/tutor:ro
+      - ../apps/openedx/config:/openedx/config:ro
+      - ../../data/cms:/openedx/data
+      - ../../data/openedx-media:/openedx/media
+    depends_on:
+      - cms
+  
+
+  

@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+
+    mysql-job:
+      image: docker.io/mysql:5.7.35
+      depends_on: ["mysql"]
+
+    lms-job:
+      image: docker.io/overhangio/openedx:15.3.0
+      environment:
+        SERVICE_VARIANT: lms
+        DJANGO_SETTINGS_MODULE: lms.envs.tutor.production
+      volumes:
+        - ../apps/openedx/settings/lms:/openedx/edx-platform/lms/envs/tutor:ro
+        - ../apps/openedx/settings/cms:/openedx/edx-platform/cms/envs/tutor:ro
+        - ../apps/openedx/config:/openedx/config:ro
+      depends_on: ["mysql", "mongodb"]
+
+    cms-job:
+      image: docker.io/overhangio/openedx:15.3.0
+      environment:
+        SERVICE_VARIANT: cms
+        DJANGO_SETTINGS_MODULE: cms.envs.tutor.production
+      volumes:
+        - ../apps/openedx/settings/lms:/openedx/edx-platform/lms/envs/tutor:ro
+        - ../apps/openedx/settings/cms:/openedx/edx-platform/cms/envs/tutor:ro
+        - ../apps/openedx/config:/openedx/config:ro
+      depends_on: ["mysql", "mongodb", "elasticsearch", "redis"]
+
+    

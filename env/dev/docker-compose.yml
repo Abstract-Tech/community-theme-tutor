@@ -1,0 +1,147 @@
+version: "3.7"
+
+x-openedx-service:
+  &openedx-service
+  image: openedx-dev:15.3.0
+  build:
+    context: ../build/openedx/
+    target: development
+    args:
+      # Note that we never build the openedx-dev image with root user ID, as it would simply fail.
+      APP_USER_ID: "1000"
+  stdin_open: true
+  tty: true
+  volumes:
+    # Settings & config
+    - ../apps/openedx/settings/lms:/openedx/edx-platform/lms/envs/tutor:ro
+    - ../apps/openedx/settings/cms:/openedx/edx-platform/cms/envs/tutor:ro
+    - ../apps/openedx/config:/openedx/config:ro
+    # theme files
+    - ../build/openedx/themes:/openedx/themes
+    # editable requirements
+    - ../build/openedx/requirements:/openedx/requirements
+
+services:
+  lms-permissions:
+    command: ["1000", "/openedx/data", "/openedx/media"]
+
+  cms-permissions:
+    command: ["1000", "/openedx/data", "/openedx/media"]
+
+  lms:
+    <<: *openedx-service
+    command: ./manage.py lms runserver 0.0.0.0:8000
+    environment:
+        DJANGO_SETTINGS_MODULE: lms.envs.tutor.development
+    ports:
+        - "8000:8000"
+    networks:
+      default:
+        aliases:
+          - "local.overhang.io"
+
+  cms:
+    <<: *openedx-service
+    command: ./manage.py cms runserver 0.0.0.0:8000
+    environment:
+        DJANGO_SETTINGS_MODULE: cms.envs.tutor.development
+    ports:
+        - "8001:8000"
+
+  lms-worker:
+    <<: *openedx-service
+
+  cms-worker:
+    <<: *openedx-service
+
+  # Additional service for watching theme changes
+  watchthemes:
+    <<: *openedx-service
+    command: openedx-assets watch-themes --env dev
+    restart: unless-stopped
+
+  # MFE apps
+
+  profile:
+      image: "docker.io/overhangio/openedx-profile-dev:15.0.5"
+      ports:
+          - "1995:1995"
+      stdin_open: true
+      tty: true
+      volumes:
+          - ../plugins/mfe/apps/mfe/webpack.dev-tutor.config.js:/openedx/app/webpack.dev-tutor.config.js:ro
+      restart: unless-stopped
+      depends_on:
+          - lms
+
+  authn:
+      image: "docker.io/overhangio/openedx-authn-dev:15.0.5"
+      ports:
+          - "1999:1999"
+      stdin_open: true
+      tty: true
+      volumes:
+          - ../plugins/mfe/apps/mfe/webpack.dev-tutor.config.js:/openedx/app/webpack.dev-tutor.config.js:ro
+      restart: unless-stopped
+      depends_on:
+          - lms
+
+  account:
+      image: "docker.io/overhangio/openedx-account-dev:15.0.5"
+      ports:
+          - "1997:1997"
+      stdin_open: true
+      tty: true
+      volumes:
+          - ../plugins/mfe/apps/mfe/webpack.dev-tutor.config.js:/openedx/app/webpack.dev-tutor.config.js:ro
+      restart: unless-stopped
+      depends_on:
+          - lms
+
+  course-authoring:
+      image: "docker.io/overhangio/openedx-course-authoring-dev:15.0.5"
+      ports:
+          - "2001:2001"
+      stdin_open: true
+      tty: true
+      volumes:
+          - ../plugins/mfe/apps/mfe/webpack.dev-tutor.config.js:/openedx/app/webpack.dev-tutor.config.js:ro
+      restart: unless-stopped
+      depends_on:
+          - lms
+
+  discussions:
+      image: "docker.io/overhangio/openedx-discussions-dev:15.0.5"
+      ports:
+          - "2002:2002"
+      stdin_open: true
+      tty: true
+      volumes:
+          - ../plugins/mfe/apps/mfe/webpack.dev-tutor.config.js:/openedx/app/webpack.dev-tutor.config.js:ro
+      restart: unless-stopped
+      depends_on:
+          - lms
+
+  gradebook:
+      image: "docker.io/overhangio/openedx-gradebook-dev:15.0.5"
+      ports:
+          - "1994:1994"
+      stdin_open: true
+      tty: true
+      volumes:
+          - ../plugins/mfe/apps/mfe/webpack.dev-tutor.config.js:/openedx/app/webpack.dev-tutor.config.js:ro
+      restart: unless-stopped
+      depends_on:
+          - lms
+
+  learning:
+      image: "docker.io/overhangio/openedx-learning-dev:15.0.5"
+      ports:
+          - "2000:2000"
+      stdin_open: true
+      tty: true
+      volumes:
+          - ../plugins/mfe/apps/mfe/webpack.dev-tutor.config.js:/openedx/app/webpack.dev-tutor.config.js:ro
+      restart: unless-stopped
+      depends_on:
+          - lms
