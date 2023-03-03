@@ -10,6 +10,7 @@ Then setup requirements and prime the databases (required just the first time)  
 ```
 git submodule update --init
 pip install -r requirements.txt
+tutor config save
 tutor dev do init
 ```
 
@@ -48,4 +49,4 @@ npm install
 tutor dev start --mount=. profile
 ```
 
-It's important that MFE directories start with the `frontend-app` magic words, otherwise this won't work.
+It's important that MFE directories names start with the `frontend-app` magic words, otherwise this won't work.
