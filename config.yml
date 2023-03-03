@@ -59,10 +59,15 @@ JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
   -----END RSA PRIVATE KEY-----'
 LANGUAGE_CODE: en
 LMS_HOST: community.abzt.de
+MFE_PROFILE_MFE_APP:
+  name: profile
+  port: 1995
+  repository: https://github.com/Abstract-Tech/community-theme-profile
+  version: community-theme
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
-PLATFORM_NAME: My Open edX
+PLATFORM_NAME: Community Theme
 PLUGINS:
 - mfe
 PLUGIN_INDEXES:

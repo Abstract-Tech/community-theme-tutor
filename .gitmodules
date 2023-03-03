@@ -1,0 +1,4 @@
+[submodule "mfe/frontend-app-profile"]
+	path = mfe/frontend-app-profile
+	url = git@github.com:Abstract-Tech/community-theme-profile.git
+	branch = community-theme
