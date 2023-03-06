@@ -1,9 +1,9 @@
-CMS_HOST: studio.community.abzt.de
+CMS_HOST: studio.local.overhang.io
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: support@abstract-technology.de
 DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/abstract-openedx:15.3.0
-ENABLE_HTTPS: true
-ENABLE_WEB_PROXY: true
+ENABLE_HTTPS: false
+ENABLE_WEB_PROXY: false
 ID: jxBish2U54zbLTe82GMVvnyO
 JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
 
@@ -59,12 +59,37 @@ JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
 
   -----END RSA PRIVATE KEY-----'
 LANGUAGE_CODE: en
-LMS_HOST: community.abzt.de
+LMS_HOST: local.overhang.io
+MFE_GRADEBOOK_MFE_APP:
+  name: gradebook
+  port: 1994
+  repository: https://github.com/Abstract-Tech/community-theme-gradebook
+  version: community-theme
 MFE_PROFILE_MFE_APP:
   name: profile
   port: 1995
   repository: https://github.com/Abstract-Tech/community-theme-profile
   version: community-theme
+MFE_ACCOUNT_MFE_APP:
+  name: account
+  port: 1997
+  repository: https://github.com/Abstract-Tech/community-theme-account
+  version: community-theme
+MFE_LEARNING_MFE_APP:
+  name: learning
+  port: 2000
+  repository: https://github.com/Abstract-Tech/community-theme-learning
+  version: community-theme
+# MFE_ABOUT_MFE_APP:
+#   name: about
+#   port: 3000
+#   repository: https://github.com/Abstract-Tech/community-theme-about
+#   version: community-theme
+# MFE_HOME_MFE_APP:
+#   name: home
+#   port: 3001
+#   repository: https://github.com/Abstract-Tech/community-theme-home
+#   version: community-theme
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
