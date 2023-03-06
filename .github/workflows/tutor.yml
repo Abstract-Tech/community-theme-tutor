@@ -8,6 +8,7 @@ on:
 
 env:
   DOCKER_BUILDX: "1"
+  SERVER_IP: "babilonia.abzt.de"
 
 jobs:
   build:
@@ -35,3 +36,18 @@ jobs:
 
       - name: Build tutor openedx image
         run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="overhangio/openedx:15.3.0"
+  deploy:
+    needs: build
+
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Set up SSH key
+        uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy tutor
+        run: |
+          ssh tutor@${{ env.SERVER_IP }} "cd /opt/tutor/config/ && git pull && tutor images pull openedx && tutor local restart"      
