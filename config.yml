@@ -1,6 +1,7 @@
 CMS_HOST: studio.community.abzt.de
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: support@abstract-technology.de
+DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/abstract-openedx:15.3.0
 ENABLE_HTTPS: true
 ENABLE_WEB_PROXY: true
 ID: jxBish2U54zbLTe82GMVvnyO
