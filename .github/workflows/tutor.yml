@@ -36,6 +36,9 @@ jobs:
 
       - name: Build tutor openedx image
         run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="overhangio/openedx:15.3.0"
+      
+      - name: push tutor openedx image
+        run: tutor images push openedx
   deploy:
     needs: build
 
