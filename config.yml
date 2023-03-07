@@ -98,4 +98,4 @@ PLUGINS:
 - mfe
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
-PREVIEW_LMS_HOST: preview.community.abzt.de
+PREVIEW_LMS_HOST: preview.local.overhang.io
