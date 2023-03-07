@@ -9,6 +9,8 @@ on:
 env:
   DOCKER_BUILDX: "1"
   SERVER_IP: "babilonia.abzt.de"
+  TUTOR_ROOT: ${{ github.repository }}
+  TUTOR_PLUGINS_ROOT: $TUTOR_ROOT/plugins"
 
 jobs:
   build:
@@ -30,9 +32,9 @@ jobs:
 
       - name: Install requirements
         run: pip install -r requirements.txt
-
+      
       - name: Generate tutor env
-        run: tutor config save
+        run:  tutor config save
 
       - name: Login to Docker registry
         uses: docker/login-action@v1
@@ -42,10 +44,11 @@ jobs:
           password: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
 
       - name: Build tutor openedx image
-        run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="docker.io/abstract2tech/abstract-openedx:15.3.0"
-      
-      - name: push tutor openedx image
+        run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="docker.io/abstract2tech/abstract-openedx:15.3.0" 
+        
+      - name: Psuh tutor openedx image
         run: tutor images push openedx
+  
   deploy:
     needs: build
 
