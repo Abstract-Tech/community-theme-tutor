@@ -1,0 +1,3 @@
+- src: https://github.com/Abstract-Tech/ansible-role-tutor.git
+  version: main
+  name: tutor
