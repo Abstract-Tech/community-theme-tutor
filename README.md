@@ -2,7 +2,7 @@
 
 If you are using direnv, activate the virtualenv with:
 
-    `direnv allow`
+    direnv allow
 
 Otherwise create and activate a Python virtualenv with your favourite library.
 Then setup requirements and prime the databases (required just the first time)  with:
@@ -38,13 +38,13 @@ Start the services in development mode. Be careful when using `tutor dev start` 
 In this example we'll start development of the Profile MFE. In order to render it properly it needs to be access throught the LMS with an authenticated user, thus we are starting only the `lms` and `authn` MFE services.
 
 ```
-tutor dev start lms authn mysql mongodb
+tutor dev start lms authn
 ```
 
 Then to start the MFE mounting our local fork:
 
 ```
-cd mfe/frontend-app-mfe
+cd mfe/frontend-app-profile
 npm install
 tutor dev start --mount=. profile
 ```

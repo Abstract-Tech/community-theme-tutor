@@ -2,3 +2,19 @@
 	path = mfe/frontend-app-profile
 	url = git@github.com:Abstract-Tech/community-theme-profile.git
 	branch = community-theme
+[submodule "mfe/frontend-app-learning"]
+	path = mfe/frontend-app-learning
+	url = git@github.com:Abstract-Tech/community-theme-learning.git
+	branch = community-theme
+[submodule "mfe/frontend-app-about"]
+	path = mfe/frontend-app-about
+	url = git@github.com:Abstract-Tech/community-theme-about.git
+	branch = community-theme
+[submodule "mfe/frontend-app-gradebook"]
+	path = mfe/frontend-app-gradebook
+	url = git@github.com:Abstract-Tech/community-theme-gradebook.git
+	branch = community-theme
+[submodule "mfe/frontend-app-account"]
+	path = mfe/frontend-app-account
+	url = git@github.com:Abstract-Tech/community-theme-account.git
+	branch = community-theme
