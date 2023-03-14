@@ -18,3 +18,7 @@
 	path = mfe/frontend-app-account
 	url = git@github.com:Abstract-Tech/community-theme-account.git
 	branch = community-theme
+[submodule "mfe/frontend-app-home"]
+	path = mfe/frontend-app-home
+	url = git@github.com:Abstract-Tech/community-theme-home.git
+	branch = community-theme
