@@ -79,7 +79,7 @@ MFE_HOME_MFE_APP:
   name: home
   port: 3001
   repository: https://github.com/Abstract-Tech/community-theme-home
-  version: master
+  version: community-theme
 MFE_LEARNING_MFE_APP:
   name: learning
   port: 2000
