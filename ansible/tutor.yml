@@ -1,0 +1,5 @@
+- hosts: tutor
+  roles:
+    # - geerlingguy.docker
+    - tutor
+  become: true

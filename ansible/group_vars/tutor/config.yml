@@ -1,0 +1,4 @@
+---
+tutor_prod_config:
+  ENABLE_HTTPS: true
+  ENABLE_WEB_PROXY: true

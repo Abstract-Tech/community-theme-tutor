@@ -8,9 +8,9 @@ on:
 
 env:
   DOCKER_BUILDX: "1"
-  SERVER_IP: "babilonia.abzt.de"
+  SERVER_IP: babilonia.abzt.de
   TUTOR_ROOT: ${{ github.repository }}
-  TUTOR_PLUGINS_ROOT: $TUTOR_ROOT/plugins"
+  TUTOR_PLUGINS_ROOT: $TUTOR_ROOT/plugins
 
 jobs:
   build:
@@ -37,30 +37,45 @@ jobs:
         run:  tutor config save
 
       - name: Login to Docker registry
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           registry: https://docker.io/
-          username: ${{ secrets.DOCKER_REGISTRY_USERNAME }}
+          username: abstract2tech
           password: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
 
       - name: Build tutor openedx image
-        run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="docker.io/abstract2tech/abstract-openedx:15.3.0" 
-        
-      - name: Psuh tutor openedx image
-        run: tutor images push openedx
-  
-  deploy:
-    needs: build
+        run: tutor config save --set DOCKER_IMAGE_OPENEDX=docker.io/abstract2tech/abstract-openedx:15.3.0 && tutor config save && tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="docker.io/abstract2tech/abstract-openedx:15.3.0"
+      
+      - name: Push tutor openedx image
+        run: |
+          docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
+          docker push docker.io/abstract2tech/abstract-openedx:15.3.0
 
+  deploy:
     runs-on: ubuntu-latest
     environment: production
-
+    needs: build
     steps:
-      - name: Set up SSH key
-        uses: webfactory/ssh-agent@v0.5.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - uses: actions/checkout@v3
 
-      - name: Deploy tutor
+      - name: Add SSH key to agent
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ANSIBLE_VAULT_PASSWORD: ${{ secrets.ANSIBLE_VAULT_PASSWORD }}
         run: |
-          ssh tutor@${{ env.SERVER_IP }} "cd /opt/tutor/config/ && git pull && tutor images pull openedx && tutor local restart"      
+          eval $(ssh-agent)
+          if [ ! -d ~/.ssh ]; then
+            mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          fi
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-add  ~/.ssh/id_rsa
+          ssh-keyscan babilonia.abzt.de > ~/.ssh/known_hosts
+          pip install ansible==7.2.0
+          ansible-galaxy install -r requirements.yml -p ansible/roles/
+          cd $GITHUB_WORKSPACE/ansible
+          echo "$ANSIBLE_VAULT_PASSWORD" > vault_pass
+          chmod 600 vault_pass
+          ansible-playbook --vault-password-file ./vault_pass -u tutor -i inventory.ini -l babilonia.abzt.de --tags tutor_deploy tutor.yml
+          
+      
