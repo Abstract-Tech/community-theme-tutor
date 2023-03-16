@@ -2,3 +2,5 @@ volumes
 data
 env
 .direnv
+
+*.pyc
