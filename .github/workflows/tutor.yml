@@ -9,8 +9,6 @@ on:
 env:
   DOCKER_BUILDX: "1"
   SERVER_IP: babilonia.abzt.de
-  TUTOR_ROOT: ${{ github.repository }}
-  TUTOR_PLUGINS_ROOT: $TUTOR_ROOT/plugins
 
 jobs:
   build:
@@ -18,6 +16,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Load TUTOR_ env variables from .envrc
+        run: source <(grep export $GITHUB_WORKSPACE/.envrc)
+
+      - name: Just a check
+        run: echo "${TUTOR_ROOT}"
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
