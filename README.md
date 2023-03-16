@@ -9,7 +9,7 @@ Then setup requirements and prime the databases (required just the first time)  
 
 ```
 git submodule update --init
-pip install -r requirements.txt
+pip install -U -r requirements.txt
 tutor config save
 tutor dev do init
 ```
@@ -20,6 +20,28 @@ Start/stop services with:
 tutor dev start
 tutor dev stop
 ```
+
+Example services endpoints for the development environment:
+
+* http://localhost:8000 or http://local.overhang.io:8000 (LMS)
+* http://localhost:8001 or http://local.overhang.io:8001 (CMS)
+* http://localhost:1994/gradebook/ or http://apps.local.overhang.io:1994/gradebook/ (Gradebook MFE)
+* http://localhost:1995/profile/ or http://apps.local.overhang.io:1995/profile/ (Profile MFE)
+* http://localhost:1997/account/ or http://apps.local.overhang.io:1997/account/ (Account MFE)
+* http://localhost:2000/learning/ or http://apps.local.overhang.io:2000/learning/ (Learning MFE)
+* http://localhost:3000/about/ or http://apps.local.overhang.io:3000/course_about/ (Course About MFE)
+* http://localhost:3001/home/ or http://apps.local.overhang.io:3001/home/ (Home MFE)
+
+Example services endpoints for the production like environment:
+
+* http://local.overhang.io (Home MFE)
+* http://local.overhang.io/courses (LMS)
+* http://studio.local.overhang.io (CMS)
+* http://apps.local.overhang.io/profile/u/abstract (Profile MFE)
+* http://apps.local.overhang.io/gradebook/course-v1:Test+101+01 (Gradebook MFE)
+* http://apps.local.overhang.io/account (Account MFE)
+* http://apps.local.overhang.io/learning/course/course-v1:Test+101+01 (Learning MFE)
+* http://local.overhang.io/courses/course-v1:Test+101+01/about (Course About MFE)
 
 ## Add admin user
 
@@ -61,7 +83,7 @@ In order to build dev images of custom MFE run:
 
     tutor images build mfe -d "-t=docker.io/overhangio/openedx-{{name}}-dev:15.0.5" --target {{name}}-dev
 
-## Building and runnning the Home MFE
+## Building and runnning the Home MFE in development mode
 
 Build the dev image:
 
@@ -74,3 +96,10 @@ Then you should be able to run:
     tutor dev start --mount=. home
 
 And browse the MFE at http://apps.local.overhang.io:3001/home/
+
+## Building and runnning MFEs in production mode
+
+If you want to test the MFEs in a production like environment (e.g. the platform root page will be replaced by the Home MFE application) you can do so by running:
+
+    tutor images build mfe
+    tutor local start mfe caddy
