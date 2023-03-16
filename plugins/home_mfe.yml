@@ -1,0 +1,16 @@
+name: home_mfe
+version: 0.1.0
+patches:
+  caddyfile-lms: |
+    route / {
+        reverse_proxy "mfe:8002" {
+            rewrite /home/{uri}
+            header_up X-Forwarded-Port 80
+        }
+    }
+
+    route /home/* {
+        reverse_proxy "mfe:8002" {
+            header_up X-Forwarded-Port 80
+        }
+    }

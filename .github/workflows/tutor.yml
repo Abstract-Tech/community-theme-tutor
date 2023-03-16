@@ -32,24 +32,21 @@ jobs:
 
       - name: Install requirements
         run: pip install -r requirements.txt
-      
+
       - name: Generate tutor env
         run:  tutor config save
 
-      - name: Login to Docker registry
-        uses: docker/login-action@v2
-        with:
-          registry: https://docker.io/
-          username: abstract2tech
-          password: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-
       - name: Build tutor openedx image
-        run: tutor config save --set DOCKER_IMAGE_OPENEDX=docker.io/abstract2tech/abstract-openedx:15.3.0 && tutor config save && tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="docker.io/abstract2tech/abstract-openedx:15.3.0"
-      
-      - name: Push tutor openedx image
+        run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="$(tutor config printvalue DOCKER_IMAGE_OPENEDX)"
+
+      - name: Build tutor MFE image
+        run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="$(tutor config printvalue MFE_DOCKER_IMAGE)"
+
+      - name: Push tutor images
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          docker push docker.io/abstract2tech/abstract-openedx:15.3.0
+          tutor images push openedx
+          tutor images push mfe
 
   deploy:
     runs-on: ubuntu-latest
@@ -77,5 +74,4 @@ jobs:
           echo "$ANSIBLE_VAULT_PASSWORD" > vault_pass
           chmod 600 vault_pass
           ansible-playbook --vault-password-file ./vault_pass -u tutor -i inventory.ini -l babilonia.abzt.de --tags tutor_deploy tutor.yml
-          
-      
+
