@@ -42,15 +42,11 @@ jobs:
       - name: Build tutor MFE image
         run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="$(tutor config printvalue MFE_DOCKER_IMAGE)"
 
-      - name: Push tutor openedx image
+      - name: Push tutor images
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          docker push $(tutor config printvalue DOCKER_IMAGE_OPENEDX)
-
-      - name: Push tutor MFE image
-        run: |
-          docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          docker push $(tutor config printvalue MFE_DOCKER_IMAGE)
+          tutor images push openedx
+          tutor images push mfe
 
   deploy:
     runs-on: ubuntu-latest
