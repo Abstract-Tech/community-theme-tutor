@@ -3,7 +3,7 @@ CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: support@abstract-technology.de
 DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/abstract-openedx:15.3.0
 ENABLE_HTTPS: false
-ENABLE_WEB_PROXY: false
+ENABLE_WEB_PROXY: true
 ID: jxBish2U54zbLTe82GMVvnyO
 JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
 
@@ -95,7 +95,10 @@ OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
 PLUGINS:
+- home_mfe
 - mfe
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
+- https://overhang.io/tutor/contrib
+- https://overhang.io/tutor/wizard
 PREVIEW_LMS_HOST: preview.local.overhang.io
