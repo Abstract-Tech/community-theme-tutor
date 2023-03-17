@@ -78,7 +78,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: production
-    needs: build-openedx, build-mfe
+    needs: [build-openedx, build-mfe]
     steps:
       - uses: actions/checkout@v3
 
