@@ -18,7 +18,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
+      
+      - name: Export TUTOR_ variables
+        run: |
+          echo "TUTOR_ROOT=${GITHUB_WORKSPACE}" >> ${GITHUB_ENV}
+          echo "TUTOR_PLUGINS_ROOT=${GITHUB_WORKSPACE}/plugins" >> ${GITHUB_ENV}
+          echo "TUTOR_APP=community-theme" >> ${GITHUB_ENV}
+      
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
@@ -50,6 +56,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Export TUTOR_ variables
+        run: |
+          echo "TUTOR_ROOT=${GITHUB_WORKSPACE}" >> ${GITHUB_ENV}
+          echo "TUTOR_PLUGINS_ROOT=${GITHUB_WORKSPACE}/plugins" >> ${GITHUB_ENV}
+          echo "TUTOR_APP=community-theme" >> ${GITHUB_ENV}
+          
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
@@ -78,7 +90,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: production
-    needs: build-openedx, build-mfe
+    needs: [build-openedx, build-mfe]
     steps:
       - uses: actions/checkout@v3
 
