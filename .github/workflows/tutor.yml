@@ -13,7 +13,7 @@ env:
   TUTOR_PLUGINS_ROOT: $TUTOR_ROOT/plugins
 
 jobs:
-  build:
+  build-openedx:
     runs-on: ubuntu-latest
 
     steps:
@@ -39,13 +39,40 @@ jobs:
       - name: Build tutor openedx image
         run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="$(tutor config printvalue DOCKER_IMAGE_OPENEDX)"
 
-      - name: Build tutor MFE image
-        run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="$(tutor config printvalue MFE_DOCKER_IMAGE)"
-
       - name: Push tutor images
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
           tutor images push openedx
+  
+  build-mfe: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Generate tutor env
+        run:  tutor config save
+
+      - name: Build tutor MFE image
+        run: tutor images build mfe --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="$(tutor config printvalue MFE_DOCKER_IMAGE)"
+
+      - name: Push tutor images
+        run: |
+          docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
           tutor images push mfe
 
   deploy:
@@ -75,3 +102,5 @@ jobs:
           chmod 600 vault_pass
           ansible-playbook --vault-password-file ./vault_pass -u tutor -i inventory.ini -l babilonia.abzt.de --tags tutor_deploy tutor.yml
 
+
+          tutor images push mfe

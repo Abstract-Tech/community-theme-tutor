@@ -1,7 +1,7 @@
 CMS_HOST: studio.local.overhang.io
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: support@abstract-technology.de
-DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme/openedx:15.3.0
+DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:15.3.0
 ENABLE_HTTPS: false
 ENABLE_WEB_PROXY: true
 ID: jxBish2U54zbLTe82GMVvnyO
@@ -70,7 +70,7 @@ MFE_COURSE_ABOUT_MFE_APP:
   port: 3000
   repository: https://github.com/Abstract-Tech/community-theme-course-about
   version: community-theme
-MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme/mfe:15.0.5
+MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:15.0.5
 MFE_GRADEBOOK_MFE_APP:
   name: gradebook
   port: 1994
