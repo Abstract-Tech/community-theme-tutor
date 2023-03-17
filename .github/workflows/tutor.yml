@@ -113,6 +113,3 @@ jobs:
           echo "$ANSIBLE_VAULT_PASSWORD" > vault_pass
           chmod 600 vault_pass
           ansible-playbook --vault-password-file ./vault_pass -u tutor -i inventory.ini -l babilonia.abzt.de --tags tutor_deploy tutor.yml
-
-
-          tutor images push mfe
