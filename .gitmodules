@@ -6,8 +6,8 @@
 	path = mfe/frontend-app-learning
 	url = git@github.com:Abstract-Tech/community-theme-learning.git
 	branch = community-theme
-[submodule "mfe/frontend-app-course-about"]
-	path = mfe/frontend-app-course-about
+[submodule "mfe/frontend-app-course_about"]
+	path = mfe/frontend-app-course_about
 	url = git@github.com:Abstract-Tech/community-theme-course-about.git
 	branch = community-theme
 [submodule "mfe/frontend-app-gradebook"]
