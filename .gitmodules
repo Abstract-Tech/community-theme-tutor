@@ -22,3 +22,11 @@
 	path = mfe/frontend-app-home
 	url = git@github.com:Abstract-Tech/community-theme-home.git
 	branch = community-theme
+[submodule "mfe/frontend-component-footer"]
+	path = mfe/frontend-component-footer
+	url = git@github.com:Abstract-Tech/community-theme-footer.git
+	branch = community-theme
+[submodule "mfe/frontend-component-header"]
+	path = mfe/frontend-component-header
+	url = git@github.com:Abstract-Tech/community-theme-header.git
+	branch = community-theme
