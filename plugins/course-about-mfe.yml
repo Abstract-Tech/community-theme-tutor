@@ -1,4 +1,4 @@
-name: course_about_mfe
+name: course-about-mfe
 version: 0.1.0
 patches:
   caddyfile-lms: |
