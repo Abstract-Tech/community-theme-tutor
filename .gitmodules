@@ -30,3 +30,7 @@
 	path = mfe/frontend-component-header
 	url = git@github.com:Abstract-Tech/community-theme-header.git
 	branch = community-theme
+[submodule "mfe/brand-openedx"]
+	path = mfe/brand-openedx
+	url = git@github.com:Abstract-Tech/community-theme-brand.git
+	branch = community-theme
