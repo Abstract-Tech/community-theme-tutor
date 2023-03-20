@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+set -e
+
+MFE_ROOT="${TUTOR_ROOT/mfe}"
+
+if [ $# -eq 0 ]
+  then
+    echo "Please provide a MFE name. Available MFE:"
+    echo
+    for mfe in "${MFE_ROOT}"/frontend-app-*
+    do
+        echo "${mfe/#"frontend-app-"}"
+    done
+    exit 1
+fi
+
+MFE_DIRECTORY="${MFE_ROOT}/frontend-app-$1"
+
+if [ ! -d "$MFE_DIRECTORY" ]; then
+  echo "$MFE_DIRECTORY does not exist."
+  exit 1
+fi
+
+(cd "${MFE_DIRECTORY}"; exec npm install;)
+
+exec tutor dev start \
+  --mount="${MFE_ROOT}/frontend-app-$1" \
+  --mount="$1":"${MFE_ROOT}/frontend-component-header:/openedx/frontend-component-header" \
+  --mount="$1":"${MFE_ROOT}/frontend-component-footer:/openedx/frontend-component-footer" \
+  --mount="$1":"${MFE_ROOT}/brand-openedx:/openedx/brand-openedx" \
+  --mount="$1":"${MFE_ROOT}/module.config.js:/openedx/app/module.config.js" \
+  "$1"

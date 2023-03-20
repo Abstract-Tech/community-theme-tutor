@@ -63,12 +63,10 @@ In this example we'll start development of the Profile MFE. In order to render i
 tutor dev start lms authn
 ```
 
-Then to start the MFE mounting our local fork:
+Then start the profile MFE mounting our local fork in a different shell:
 
 ```
-cd mfe/frontend-app-profile
-npm install
-tutor dev start --mount=. profile
+mfe_dev profile
 ```
 
 It's important that MFE directories names start with the `frontend-app` magic words, otherwise this won't work.
@@ -91,9 +89,7 @@ Build the dev image:
 
 Then you should be able to run:
 
-    cd mfe/frontend-app-home
-    npm install
-    tutor dev start --mount=. home
+    mfe_dev home
 
 And browse the MFE at http://apps.local.overhang.io:3001/home/
 
