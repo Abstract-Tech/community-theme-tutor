@@ -96,9 +96,10 @@ OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
 PLUGINS:
+- brand-openedx
+- course-about-mfe
+- home-mfe
 - mfe
-- home_mfe
-- course_about_mfe
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
 PREVIEW_LMS_HOST: preview.local.overhang.io

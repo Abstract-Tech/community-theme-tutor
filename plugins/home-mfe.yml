@@ -1,4 +1,4 @@
-name: home_mfe
+name: home-mfe
 version: 0.1.0
 patches:
   caddyfile-lms: |
