@@ -2,3 +2,5 @@
 tutor_prod_config:
   ENABLE_HTTPS: true
   ENABLE_WEB_PROXY: true
+
+tutor_app: community_theme
