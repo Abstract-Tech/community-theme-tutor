@@ -2,6 +2,6 @@ name: brand-openedx
 version: 0.1.0
 patches:
   mfe-dockerfile-post-npm-install: |
-    RUN npm install '@edx/brand@git+https://github.com/Abstract-Tech/community-theme-brand.git@community-theme'
-    RUN npm install '@edx/frontend-component-header@git+https://github.com/Abstract-Tech/community-theme-header.git@community-theme'
-    RUN npm install '@edx/frontend-component-footer@git+https://github.com/Abstract-Tech/community-theme-footer.git@community-theme'
+    RUN npm install '@edx/brand@git+https://github.com/Abstract-Tech/community-theme-brand.git#community-theme'
+    RUN npm install '@edx/frontend-component-header@git+https://github.com/Abstract-Tech/community-theme-header.git#community-theme'
+    RUN npm install '@edx/frontend-component-footer@git+https://github.com/Abstract-Tech/community-theme-footer.git#community-theme'
