@@ -65,6 +65,11 @@ MFE_ACCOUNT_MFE_APP:
   port: 1997
   repository: https://github.com/Abstract-Tech/community-theme-account
   version: community-theme-master
+MFE_COURSE_ABOUT_MFE_APP:
+  name: course_about
+  port: 3000
+  repository: https://github.com/Abstract-Tech/community-theme-course-about
+  version: community-theme
 MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:15.0.5
 MFE_GRADEBOOK_MFE_APP:
   name: gradebook
