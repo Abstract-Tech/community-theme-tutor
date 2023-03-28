@@ -58,7 +58,7 @@ JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
   +aJ0hXSsVIp99Jyamo1RdyJXWEVm48NvM2RLH+JxvGNMK7oT/8o=
 
   -----END RSA PRIVATE KEY-----'
-LANGUAGE_CODE: de
+LANGUAGE_CODE: de-de
 LMS_HOST: local.overhang.io
 MFE_ACCOUNT_MFE_APP:
   name: account
