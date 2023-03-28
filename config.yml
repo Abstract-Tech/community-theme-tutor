@@ -58,18 +58,13 @@ JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
   +aJ0hXSsVIp99Jyamo1RdyJXWEVm48NvM2RLH+JxvGNMK7oT/8o=
 
   -----END RSA PRIVATE KEY-----'
-LANGUAGE_CODE: de_DE
+LANGUAGE_CODE: it_IT
 LMS_HOST: local.overhang.io
 MFE_ACCOUNT_MFE_APP:
   name: account
   port: 1997
   repository: https://github.com/Abstract-Tech/community-theme-account
-  version: community-theme
-MFE_COURSE_ABOUT_MFE_APP:
-  name: course_about
-  port: 3000
-  repository: https://github.com/Abstract-Tech/community-theme-course-about
-  version: community-theme
+  version: community-theme-master
 MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:15.0.5
 MFE_GRADEBOOK_MFE_APP:
   name: gradebook
@@ -90,7 +85,7 @@ MFE_PROFILE_MFE_APP:
   name: profile
   port: 1995
   repository: https://github.com/Abstract-Tech/community-theme-profile
-  version: community-theme
+  version: community-theme-master
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
