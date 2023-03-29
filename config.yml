@@ -85,7 +85,7 @@ MFE_LEARNING_MFE_APP:
   name: learning
   port: 2000
   repository: https://github.com/Abstract-Tech/community-theme-learning
-  version: community-theme
+  version: community-theme-master
 MFE_PROFILE_MFE_APP:
   name: profile
   port: 1995
