@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
+    inputs:
+      skip_build_openedx_job:
+        required: true
+        type: boolean
+        default: true
 env:
   DOCKER_BUILDX: "1"
   SERVER_IP: babilonia.abzt.de
@@ -15,7 +20,7 @@ env:
 jobs:
   build-openedx:
     runs-on: ubuntu-latest
-
+    if : ${{ !inputs.skip_build_openedx_job }}
     steps:
       - uses: actions/checkout@v3
       
