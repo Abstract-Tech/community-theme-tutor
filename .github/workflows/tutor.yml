@@ -61,7 +61,6 @@ jobs:
   
   build-mfe: 
     runs-on: ubuntu-latest
-    if : ${{ !inputs.skip_build_mfe_job }}
     steps:
       - uses: actions/checkout@v3
 
