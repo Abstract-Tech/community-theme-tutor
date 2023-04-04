@@ -95,6 +95,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: production
+    if: ${{ always() && contains(join(needs.*.results,','),'success' || 'skipped') }}
     needs: [build-openedx, build-mfe]
     steps:
       - uses: actions/checkout@v3
