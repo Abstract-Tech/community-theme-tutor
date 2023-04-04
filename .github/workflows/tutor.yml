@@ -11,6 +11,10 @@ on:
         required: true
         type: boolean
         default: true
+      skip_build_mfe_job:
+        required: true
+        type: boolean
+        default: true
 env:
   DOCKER_BUILDX: "1"
   SERVER_IP: babilonia.abzt.de
@@ -57,7 +61,7 @@ jobs:
   
   build-mfe: 
     runs-on: ubuntu-latest
-
+    if : ${{ !inputs.skip_build_mfe_job }}
     steps:
       - uses: actions/checkout@v3
 
