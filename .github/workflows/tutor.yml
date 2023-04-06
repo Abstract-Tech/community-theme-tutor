@@ -98,7 +98,7 @@ jobs:
       - name: Build tutor MFE image
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          docker buildx build -t "${MFE_IMAGE}" --pull --cache-from "${MFE_CACHE_IMAGE}" ./env/build/openedx --cache-to "${MFE_CACHE_IMAGE}" --push
+          docker buildx build -t "${MFE_IMAGE}" --pull --cache-from "${MFE_CACHE_IMAGE}" ./env/plugins/mfe --cache-to "${MFE_CACHE_IMAGE}" --push
 
   deploy:
     runs-on: ubuntu-latest
