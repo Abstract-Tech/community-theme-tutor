@@ -20,9 +20,13 @@ env:
   SERVER_IP: babilonia.abzt.de
   TUTOR_ROOT: ${{ github.repository }}
   TUTOR_PLUGINS_ROOT: $TUTOR_ROOT/plugins
+  OPENEDX_CACHE_IMAGE: docker.io/abstract2tech/community-theme-openedx-cache
+  MFE_CACHE_IMAGE: docker.io/abstract2tech/community-theme-mfe-cache
 
 jobs:
   build-openedx:
+    env:
+      OPENEDX_IMAGE: docker.io/abstract2tech/community-theme-openedx:15.3.0
     runs-on: ubuntu-latest
     if : ${{ !inputs.skip_build_openedx_job }}
     steps:
@@ -39,6 +43,7 @@ jobs:
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
+      
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
@@ -49,18 +54,19 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate tutor env
-        run:  tutor config save
+        run: |
+          docker buildx create --use
+          tutor config save
 
       - name: Build tutor openedx image
-        run: tutor images build openedx --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="$(tutor config printvalue DOCKER_IMAGE_OPENEDX)"
-
-      - name: Push tutor images
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          tutor images push openedx
+          docker buildx build -t "${OPENEDX_IMAGE}" --pull --cache-from "${OPENEDX_CACHE_IMAGE}" ./env/build/openedx --cache-to "${OPENEDX_CACHE_IMAGE}" --push
   
   build-mfe: 
     runs-on: ubuntu-latest
+    env:
+      MFE_IMAGE: docker.io/abstract2tech/community-theme-mfe:15.0.5
     steps:
       - uses: actions/checkout@v3
 
@@ -85,15 +91,14 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate tutor env
-        run:  tutor config save
+        run: |
+          docker buildx create --use
+          tutor config save
 
       - name: Build tutor MFE image
-        run: tutor images build mfe --build-arg BUILDKIT_INLINE_CACHE=1 --docker-arg="--cache-from" --docker-arg="$(tutor config printvalue MFE_DOCKER_IMAGE)"
-
-      - name: Push tutor images
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          tutor images push mfe
+          docker buildx build -t "${MFE_IMAGE}" --pull --cache-from "${MFE_CACHE_IMAGE}" ./env/build/openedx --cache-to "${MFE_CACHE_IMAGE}" --push
 
   deploy:
     runs-on: ubuntu-latest
