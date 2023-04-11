@@ -44,7 +44,9 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       
-
+      - name: Docker buildx
+        run: docker buildx create --use
+      
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
         with:
@@ -54,9 +56,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate tutor env
-        run: |
-          docker buildx create --use
-          tutor config save
+        run: tutor config save
 
       - name: Build tutor openedx image
         run: |
@@ -89,11 +89,12 @@ jobs:
 
       - name: Install requirements
         run: pip install -r requirements.txt
-
+      
+      - name: Docker buildx
+        run: docker buildx create --use
+      
       - name: Generate tutor env
-        run: |
-          docker buildx create --use
-          tutor config save
+        run: tutor config save
 
       - name: Build tutor MFE image
         run: |
