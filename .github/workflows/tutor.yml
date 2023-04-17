@@ -98,8 +98,8 @@ jobs:
 
       - name: Build tutor MFE image
         run: |
-          docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          docker buildx build -t "${MFE_IMAGE}" ./env/plugins/mfe/build/mfe --push
+          tutor images build mfe
+          tutor images push mfe
 
   deploy:
     runs-on: ubuntu-latest
