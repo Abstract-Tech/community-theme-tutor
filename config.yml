@@ -64,33 +64,33 @@ MFE_ACCOUNT_MFE_APP:
   name: account
   port: 1997
   repository: https://github.com/Abstract-Tech/community-theme-account
-  version: custom-header-footer
+  version: community-theme
 MFE_COURSE_ABOUT_MFE_APP:
   name: course_about
   port: 3000
   repository: https://github.com/Abstract-Tech/community-theme-course-about
-  version: custom-header-footer
+  version: community-theme
 MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:15.0.5
 MFE_GRADEBOOK_MFE_APP:
   name: gradebook
   port: 1994
   repository: https://github.com/Abstract-Tech/community-theme-gradebook
-  version: custom-header-footer
+  version: community-theme
 MFE_HOME_MFE_APP:
   name: home
   port: 3001
   repository: https://github.com/Abstract-Tech/community-theme-home
-  version: custom-header-footer
+  version: community-theme
 MFE_LEARNING_MFE_APP:
   name: learning
   port: 2000
   repository: https://github.com/Abstract-Tech/community-theme-learning
-  version: custom-header-footer
+  version: community-theme
 MFE_PROFILE_MFE_APP:
   name: profile
   port: 1995
   repository: https://github.com/Abstract-Tech/community-theme-profile
-  version: custom-header-footer
+  version: community-theme
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
