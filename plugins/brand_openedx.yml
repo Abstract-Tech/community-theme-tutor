@@ -1,0 +1,5 @@
+name: brand-openedx
+version: 0.1.0
+patches:
+  mfe-dockerfile-pre-clone: |
+    COPY frontend /frontend

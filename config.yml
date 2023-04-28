@@ -60,32 +60,38 @@ JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
   -----END RSA PRIVATE KEY-----'
 LANGUAGE_CODE: de-de
 LMS_HOST: local.overhang.io
+MFE_REPOSITORY: https://github.com/Abstract-Tech/community-theme-mfe-monorepo
+MFE_REPOSITORY_VERSION: main
 MFE_ACCOUNT_MFE_APP:
   name: account
   port: 1997
-  repository: https://github.com/Abstract-Tech/community-theme-account
+  repository: /frontend/mfe/frontend-app-account
   version: community-theme-master
 MFE_COURSE_ABOUT_MFE_APP:
   name: course_about
   port: 3000
-  repository: https://github.com/Abstract-Tech/community-theme-course-about
+  repository: /frontend/mfe/frontend-app-course-about
   version: community-theme
 MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:15.0.5
-MFE_GRADEBOOK_MFE_APP: null
+MFE_GRADEBOOK_MFE_APP:
+  name: gradebook
+  port: 3000
+  repository: /frontend/mfe/frontend-app-gradebook
+  version: community-theme
 MFE_HOME_MFE_APP:
   name: home
   port: 3001
-  repository: https://github.com/Abstract-Tech/community-theme-home
+  repository: /frontend/mfe/frontend-app-home
   version: community-theme
 MFE_LEARNING_MFE_APP:
   name: learning
   port: 2000
-  repository: https://github.com/Abstract-Tech/community-theme-learning
+  repository: /frontend/mfe/frontend-app-learning
   version: community-theme-master
 MFE_PROFILE_MFE_APP:
   name: profile
   port: 1995
-  repository: https://github.com/Abstract-Tech/community-theme-profile
+  repository: /frontend/mfe/frontend-app-profile
   version: community-theme-master
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
