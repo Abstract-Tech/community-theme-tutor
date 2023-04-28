@@ -1,0 +1,68 @@
+{
+  "name": "@abstract-tech/community-theme-footer",
+  "version": "1.0.0-semantically-released",
+  "description": "Footer component for use when building Open edX frontend applications",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "make build",
+    "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
+    "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
+    "snapshot": "fedx-scripts jest --updateSnapshot",
+    "start": "fedx-scripts webpack-dev-server --progress",
+    "test": "fedx-scripts jest --coverage"
+  },
+  "files": [
+    "/dist"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abstract-Tech/community-theme-footer"
+  },
+  "author": "edX",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Abstract-Tech/community-theme-footer/issues"
+  },
+  "homepage": "https://github.com/Abstract-Tech/community-theme-footer#readme",
+  "devDependencies": {
+    "@edx/brand": "npm:@edx/brand-openedx@1.2.0",
+    "@edx/browserslist-config": "^1.1.1",
+    "@edx/frontend-build": "12.4.19",
+    "@edx/frontend-platform": "^3.0.1",
+    "@edx/paragon": "^20.19.0",
+    "@edx/reactifex": "^2.1.1",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.7",
+    "husky": "8.0.3",
+    "prop-types": "15.8.1",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-redux": "7.2.9",
+    "react-router-dom": "5.3.4",
+    "react-test-renderer": "16.14.0",
+    "redux": "4.2.1",
+    "semantic-release": "19.0.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "6.3.0",
+    "@fortawesome/free-brands-svg-icons": "6.3.0",
+    "@fortawesome/free-regular-svg-icons": "6.3.0",
+    "@fortawesome/free-solid-svg-icons": "6.3.0",
+    "@fortawesome/react-fontawesome": "0.2.0"
+  },
+  "peerDependencies": {
+    "@edx/frontend-platform": "^2.0.0 || ^3.0.0",
+    "prop-types": "^15.5.10",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
