@@ -1,0 +1,20 @@
+$primary: #25a78e;
+$darkGreen: #121212;
+$white: #fff;
+$black: #000;
+
+.theme-btn {
+  border-radius: 4px;
+  background-color: $primary;
+  color: $black;
+  border-color: $primary;
+  padding: 15px;
+  margin-top: 60px;
+  &:hover:not(.disabled),
+  &:focus:not(.disabled),
+  &:active(.disabled) {
+    background-color: $darkGreen;
+    color: $white;
+    border: 1px solid $darkGreen;
+  }
+}

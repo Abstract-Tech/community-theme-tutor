@@ -1,0 +1,123 @@
+$blue: #0075b4;
+$white: #fff;
+$dark-turquoise: #25A78E;
+$turquoise: #4EC6B0;
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  &:hover {
+    background-color: $white;
+    border-color: $blue;
+    color: $blue;
+  }
+}
+
+.btn-outline-primary:not(.dropdown-toggle) {
+    background-color: $white;
+    border-color: $blue;
+    color: $blue;
+    &:hover {
+      background-color: $blue;
+      border-color: $blue;
+      color: $white;
+    }
+}
+
+a.btn-brand {
+    background-color: $turquoise;
+    border-color: $turquoise;
+    color: black;
+}
+
+a.btn-brand:hover{
+    background-color: $dark-turquoise;
+    color: white;
+    border:none;
+}
+
+a.btn-brand:active{
+    background-color: $turquoise;
+    color: black; 
+}
+
+a.btn-brand:not(:disabled):not(.disabled):active{
+    background-color: $turquoise;
+    color: black; 
+}
+
+a.btn-brand:focus::before {
+    border-color: black !important;
+}
+
+.btn-brand {
+  background-color: $turquoise !important;
+  border-color: $turquoise !important;
+  color: black !important;
+}
+
+button.btn-brand:hover{
+  background-color: $dark-turquoise;
+  color: white;
+  border:none;
+}
+
+button.btn-brand:active{
+  background-color: $turquoise;
+  color: black; 
+}
+
+button.btn-brand:not(:disabled):not(.disabled):active{
+  background-color: $turquoise;
+  color: black; 
+}
+
+button.btn-brand:focus::before {
+  border-color: black !important;
+}
+
+div.bg-primary{
+  background-color:$dark-turquoise !important;
+}
+
+a.dropdown-item.active{
+  background-color: $dark-turquoise;
+}
+
+a.dropdown-item:active{
+  background-color: $turquoise; 
+}
+
+nav.nav-underline-tabs .nav-link.active{
+  color: $dark-turquoise;
+  border-bottom-color: $dark-turquoise;
+}
+
+.btn.active:after {
+  background: $dark-turquoise !important;
+}
+
+//Checkboxes 
+
+.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:focus+label,.xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:focus+label,.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:hover+label,.xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:hover+label {
+  border: 2px solid $dark-turquoise !important;
+}
+
+//button outline primary
+
+button.btn-outline-primary.disabled, button.btn-outline-primary:disabled {
+  color: $turquoise;
+  background-color: transparent;
+}
+
+button.btn-outline-primary:not(.dropdown-toggle) {
+  background-color: #fff;
+  border-color: $dark-turquoise;
+  color: $dark-turquoise;
+}
+
+button.btn-outline-primary:not(.dropdown-toggle):hover {
+  background-color: $dark-turquoise;
+  border-color: $dark-turquoise;
+  color: #fff;
+}

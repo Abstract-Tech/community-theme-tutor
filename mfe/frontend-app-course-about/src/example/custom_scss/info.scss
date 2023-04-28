@@ -1,0 +1,47 @@
+/* For small devices, display the table as a single block */
+@media only screen and (max-width: 600px) {
+  .info ul li {
+    display: block;
+  }
+}
+
+/* For larger devices, display the table as two parallel block lists */
+@media only screen and (min-width: 601px) {
+  .info ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .info ul li {
+    flex-basis: 50%;
+  }
+}
+
+/* Style the section title */
+.info h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/* Style the table items */
+.info li {
+  margin-bottom: 0.5em;
+}
+
+/* Style the strong tags */
+.info strong {
+  font-weight: bold;
+  display: inline-block;
+  color: black;
+}
+
+/* Style the paragraph tags */
+.info p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 20px;
+}

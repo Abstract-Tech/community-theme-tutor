@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GradebookPage component snapshot - shows BulkManagementHistoryView if activeView === views.bulkManagementHistory 1`] = `
+<WithSidebar
+  sidebar={
+    <GradebookFilters
+      updateQueryParams={[MockFunction updateQueryParams]}
+    />
+  }
+>
+  <div
+    className="px-3 gradebook-content"
+  >
+    <GradebookHeader />
+    <BulkManagementHistoryView />
+  </div>
+</WithSidebar>
+`;
+
+exports[`GradebookPage component snapshot - shows GradesView if aciveView === views.grades 1`] = `
+<WithSidebar
+  sidebar={
+    <GradebookFilters
+      updateQueryParams={[MockFunction updateQueryParams]}
+    />
+  }
+>
+  <div
+    className="px-3 gradebook-content"
+  >
+    <GradebookHeader />
+    <GradesView
+      updateQueryParams={[MockFunction updateQueryParams]}
+    />
+  </div>
+</WithSidebar>
+`;

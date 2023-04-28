@@ -1,0 +1,30 @@
+// Should be scoped better, but Modal doesn't seem to pass down classnames or ids
+.modal {
+  text-align: center;
+
+  .modal-header {
+    border-bottom: 0; // override default hr line
+    justify-content: center;
+
+    button {
+      // This lets us center the modal title at full width, without taking button width into account
+      position: absolute;
+      right: 1rem;
+    }
+  }
+
+  .modal-body {
+    font-size: 1.2rem;
+  }
+
+  .modal-footer {
+    border-top: 0; // override default hr line
+    justify-content: center;
+
+    button {
+      @extend .btn-primary;
+      font-size: 1.2rem;
+      width: 50%;
+    }
+  }
+}

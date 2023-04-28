@@ -1,0 +1,11 @@
+.course-recommendations {
+  .pgn__data-table-wrapper {
+    border: 0;
+    box-shadow: none;
+    .pgn__card-grid {
+      .row > div[class*="col-"] {
+        justify-content: center;
+      }
+    }
+  }
+}

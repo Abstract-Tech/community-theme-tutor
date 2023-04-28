@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WithSidebar Component snapshots basic snapshot 1`] = `
+<div
+  className="d-flex sidebar-container page-gradebook"
+>
+  <aside
+    className="sidebar-class-names"
+    onTransitionEnd={[MockFunction handleSlideDone]}
+  >
+    <div>
+      Some Sidebar Content
+    </div>
+  </aside>
+  <div
+    className="content-class-names"
+  >
+    <b>
+      aby in a bi
+    </b>
+  </div>
+</div>
+`;

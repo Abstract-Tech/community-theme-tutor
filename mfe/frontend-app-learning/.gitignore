@@ -1,0 +1,25 @@
+.DS_Store
+.eslintcache
+.idea
+node_modules
+npm-debug.log
+coverage
+
+dist/
+src/i18n/transifex_input.json
+temp/babel-plugin-react-intl
+logs
+
+### pyenv ###
+.python-version
+
+### Editors ###
+*~
+/temp
+/.vscode
+
+# Local package dependencies
+module.config.js
+
+# Local environment overrides
+.env.private

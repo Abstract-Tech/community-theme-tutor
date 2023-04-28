@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdjustedGradeInput Component snapshots displays input control and "out of possible grade" label 1`] = `
+<span>
+  <Control
+    max={5}
+    min="0"
+    name="adjustedGradeValue"
+    onChange={[MockFunction this.onChange]}
+    type="number"
+    value={1}
+  />
+   / 5
+</span>
+`;
