@@ -45,3 +45,4 @@
 [submodule "mfe/frontend-app-course-authoring"]
 	path = mfe/frontend-app-course-authoring
 	url = git@github.com:Abstract-Tech/community-theme-course-authoring.git
+	branch = community-theme
