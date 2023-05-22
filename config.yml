@@ -107,6 +107,8 @@ MFE_PROFILE_MFE_APP:
   repository: https://github.com/Abstract-Tech/community-theme-profile
   version: community-theme.master
 MYSQL_ROOT_PASSWORD: 43Lfuln2
+OPENEDX_EXTRA_PIP_REQUIREMENTS:
+- git+https://github.com/abconlinecourses/chatgpt-xblock.git@v0.1#egg=chatgpt-xblock
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
