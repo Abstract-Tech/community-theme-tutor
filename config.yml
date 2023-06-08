@@ -108,8 +108,9 @@ MFE_PROFILE_MFE_APP:
   version: community-theme.master
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_EXTRA_PIP_REQUIREMENTS:
-- "openedx-scorm-xblock>=15.0.0,<16.0.0"
-- "git+https://github.com/abconlinecourses/chatgpt-xblock.git@v0.1#egg=chatgpt-xblock"
+- openedx-scorm-xblock>=15.0.0,<16.0.0
+- git+https://github.com/abconlinecourses/chatgpt-xblock.git@v0.1#egg=chatgpt-xblock
+- git+https://github.com/abstract-tech/abstract-scorm-xblock.git@django4#subdirectory=abstract_scorm_xblock&egg=abstract-scorm-xblock
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
