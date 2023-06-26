@@ -74,6 +74,8 @@ It's important that MFE directories names start with the `frontend-app` magic wo
 The MFE application will be accessible at `http://apps.local.overhang.io:{{ PORT }}/{{ NAME }}/`. The `PORT` and `NAME` parameters for the specific MFE can be found in `config.yml`.
 (e.g. http://apps.local.overhang.io:1995/profile/)
 
+<details>
+  <summary>Old way of running MFE in development mode</summary>
 
 ## Building customized MFEs dev images
 
@@ -92,6 +94,29 @@ Then you should be able to run:
     mfe_dev home
 
 And browse the MFE at http://apps.local.overhang.io:3001/home/
+
+</details>
+
+## Running an MFE in development mode
+
+To run an MFE in development mode, you would need to clone it and to mount it's directory
+
+ Assuming you need to modify `frontend-app-account`.
+
+1. Clone it _if it's not already_ 
+2. `npm install` _make sure you are on the correct node version `node --version` it shall match `cat .nvmrc`_
+3. `tutor mounts add "./mfe/frontend-app-account"`. 
+
+### How do I override specific npm pks?
+
+The following is an example of overriding a header
+
+1. Clone it _if it's not already_
+2. `npm install` _make sure you are on the correct node version `node --version` it shall match `cat .nvmrc`_
+3. Mount the pkg to the container `tutor  mounts add "account:./mfe/frontend-component-header:/openedx/frontend-component-header"` scheme: `service:host_path:containter_path`
+3. mounts the `module.config.js` file, assuming it's `mfe/`, `tutor mounts add account:./mfe/module.config.js:/openedx/app/module.config.js`
+5. then run `npm install` _Note: in step 2 we run it inside header, now inside account mfe_
+6. Simliar to adding the header we can also add other pkgs, like footer, brand, paragon...etc.
 
 ## Building and runnning MFEs in production mode
 

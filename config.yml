@@ -5,7 +5,7 @@ CAIRN_SUPERSET_SECRET_KEY: WcbX8dsobUWH5zOgHDz4
 CMS_HOST: studio.local.overhang.io
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: noreply@community.abzt.de
-DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:15.3.0
+DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:16.1.0
 ENABLE_HTTPS: false
 ENABLE_WEB_PROXY: true
 ID: jxBish2U54zbLTe82GMVvnyO
@@ -68,12 +68,12 @@ MFE_ACCOUNT_MFE_APP:
   name: account
   port: 1997
   repository: https://github.com/Abstract-Tech/community-theme-account
-  version: community-theme.master
+  version: community-theme.palm
 MFE_AUTHN_MFE_APP:
   name: authn
   port: 1999
   repository: https://github.com/Abstract-Tech/community-theme-authn
-  version: community-theme.olive
+  version: community-theme.palm
 MFE_COURSE_ABOUT_MFE_APP:
   name: course_about
   port: 3000
@@ -83,18 +83,18 @@ MFE_COURSE_AUTHORING_MFE_APP:
   name: course_authoring
   port: 2001
   repository: https://github.com/Abstract-Tech/community-theme-course-authoring
-  version: community-theme
+  version: community-theme.palm
 MFE_DISCUSSIONS_MFE_APP:
   name: discussions
   port: 2002
   repository: https://github.com/Abstract-Tech/community-theme-discussions
-  version: community-theme
-MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:15.0.5
+  version: community-theme.palm
+MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:16.0.0
 MFE_GRADEBOOK_MFE_APP:
   name: gradebook
   port: 1994
   repository: https://github.com/Abstract-Tech/community-theme-gradebook.git
-  version: community-theme
+  version: community-theme.palm
 MFE_HOME_MFE_APP:
   name: home
   port: 3001
@@ -104,12 +104,12 @@ MFE_LEARNING_MFE_APP:
   name: learning
   port: 2000
   repository: https://github.com/Abstract-Tech/community-theme-learning
-  version: community-theme.master
+  version: community-theme.palm
 MFE_PROFILE_MFE_APP:
   name: profile
   port: 1995
   repository: https://github.com/Abstract-Tech/community-theme-profile
-  version: community-theme.master
+  version: community-theme.palm
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_EXTRA_PIP_REQUIREMENTS:
 - git+https://github.com/abstract-tech/abstract-scorm-xblock.git@django4#subdirectory=abstract_scorm_xblock&egg=abstract-scorm-xblock
@@ -122,8 +122,8 @@ OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
 PLUGINS:
 - aicoach
-- brand-openedx
 - course-about-mfe
+- community-mfe
 - home-mfe
 - mfe
 - session-timeout

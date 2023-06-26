@@ -24,7 +24,7 @@ env:
 jobs:
   build-openedx:
     env:
-      OPENEDX_IMAGE: docker.io/abstract2tech/community-theme-openedx:15.3.0
+      OPENEDX_IMAGE: docker.io/abstract2tech/community-theme-openedx:16.1.0
     runs-on: ubuntu-latest
     if : ${{ !inputs.skip_build_openedx_job }}
     steps:
@@ -59,12 +59,14 @@ jobs:
       - name: Build tutor openedx image
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          docker buildx build -t "${OPENEDX_IMAGE}" --pull --cache-from "${OPENEDX_CACHE_IMAGE}" ./env/build/openedx --cache-to "${OPENEDX_CACHE_IMAGE}" --push
+          tutor images pull openedx
+          tutor images build openedx
+          tutor images push openedx
 
   build-mfe:
     runs-on: ubuntu-latest
     env:
-      MFE_IMAGE: docker.io/abstract2tech/community-theme-mfe:15.0.5
+      MFE_IMAGE: docker.io/abstract2tech/community-theme-mfe:16.1.0
     steps:
       - uses: actions/checkout@v3
 
@@ -97,6 +99,7 @@ jobs:
       - name: Build tutor MFE image
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
+          tutor images pull mfe
           tutor images build mfe
           tutor images push mfe
 
