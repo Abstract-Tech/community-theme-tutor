@@ -1,1 +1,3 @@
-tutor[full]==16.0.2
+tutor[full]==15.3.8
+tutor[mfe]==16.0.1
+tutor[forum]==16.0.2

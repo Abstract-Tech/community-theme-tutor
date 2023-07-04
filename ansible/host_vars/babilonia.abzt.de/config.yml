@@ -1,0 +1,10 @@
+tutor_prod_host_config:
+  LMS_HOST: community.abzt.de
+  PREVIEW_LMS_HOST: preview.community.abzt.de
+  CMS_HOST: studio.community.abzt.de
+  MFE_HOST: apps.community.abzt.de
+
+tutor_post_hooks:
+  - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable minio"
+  - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable cairn"
+  - "{{ tutor_venv_path }}/{{ tutor_exec_name }} config save"
