@@ -1,5 +1,5 @@
 ---
-tutor_version: "16.0.2"
+tutor_version: "15.3.8"
 
 tutor_prod_config:
   ENABLE_HTTPS: true
