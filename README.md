@@ -99,3 +99,9 @@ If you want to test the MFEs in a production like environment (e.g. the platform
 
     tutor images build mfe
     tutor local start mfe caddy
+
+## Features to implement
+
+1. Register MFE images to build on dev instance to eliminate the need to build them by hand. Reference: https://github.com/overhangio/tutor-ecommerce/blob/87aedf98c9e8214c4e05958a812946ba90135de4/tutorecommerce/plugin.py#L161
+2. MFE image building cache invalidation (after Palm). Reference: https://github.com/overhangio/tutor-mfe/commit/584d1e092ee6693e20b66d450b14c83666a5a5e3
+
