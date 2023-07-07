@@ -6,5 +6,6 @@ tutor_prod_host_config:
 
 tutor_post_hooks:
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable minio"
+  - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable forum"
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable cairn"
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} config save"
