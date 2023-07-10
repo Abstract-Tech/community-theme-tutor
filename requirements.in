@@ -1,4 +1,1 @@
-tutor<16.0.0
-tutor-mfe<16.0.0
-tutor-forum<16.0.0
-tutor-cairn<16.0.0
+tutor[full]==16.0.2

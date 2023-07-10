@@ -104,7 +104,7 @@ MFE_LEARNING_MFE_APP:
   name: learning
   port: 2000
   repository: https://github.com/Abstract-Tech/community-theme-learning
-  version: community-theme.master
+  version: ghassan/community-theme.palm
 MFE_PROFILE_MFE_APP:
   name: profile
   port: 1995
@@ -123,7 +123,7 @@ PLUGINS:
 - course-about-mfe
 - home-mfe
 - mfe
-- cairn
+- mfe-forks
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
 PREVIEW_LMS_HOST: preview.local.overhang.io
