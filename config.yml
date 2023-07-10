@@ -4,7 +4,7 @@ CAIRN_SSO_CLIENT_SECRET: 7ojP8DylFPiJN83O46VL
 CAIRN_SUPERSET_SECRET_KEY: WcbX8dsobUWH5zOgHDz4
 CMS_HOST: studio.local.overhang.io
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
-CONTACT_EMAIL: support@abstract-technology.de
+CONTACT_EMAIL: noreply@community.abzt.de
 DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:15.3.0
 ENABLE_HTTPS: false
 ENABLE_WEB_PROXY: true
