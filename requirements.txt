@@ -67,11 +67,14 @@ tutor==15.3.8
     #   tutor-cairn
     #   tutor-forum
     #   tutor-mfe
+    #   tutor-minio
 tutor-cairn==15.0.6
     # via -r requirements.in
 tutor-forum==15.1.1
     # via -r requirements.in
 tutor-mfe==15.0.7
+    # via -r requirements.in
+tutor-minio==15.1.0
     # via -r requirements.in
 typing-extensions==4.7.1
     # via
