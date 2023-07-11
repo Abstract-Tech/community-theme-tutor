@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-set -e
+set -x
 
-MFE_ROOT="${TUTOR_ROOT/mfe}"
+MFE_ROOT="${TUTOR_ROOT}/mfe"
 
 if [ $# -eq 0 ]
   then
