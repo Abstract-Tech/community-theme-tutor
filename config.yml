@@ -126,6 +126,7 @@ PLUGINS:
 - home-mfe
 - mfe
 - cairn
+- aicoach
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
 PREVIEW_LMS_HOST: preview.local.overhang.io
