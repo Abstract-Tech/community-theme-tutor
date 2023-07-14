@@ -1,6 +1,23 @@
 volumes
 data
-env
+
+# XXX: I wish there would be an easies way without too many asterisks
+
+# Ignore everything in env/
+env/apps
+env/dev
+env/k8s
+env/kustomization.yml
+env/local
+env/plugins
+env/version
+
+# Except for themes
+!env/build/openedx
+env/build/openedx/*
+!env/build/openedx/themes/
+
+env/build/permissions
 .direnv
 
 *.pyc
