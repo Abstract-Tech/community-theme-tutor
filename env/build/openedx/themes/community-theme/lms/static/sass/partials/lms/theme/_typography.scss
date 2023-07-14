@@ -1,0 +1,50 @@
+@import "./fonts";
+
+body {
+    padding: 0;
+    margin: 0;
+  }
+
+  html,
+  body,
+  button,
+  div,
+  input,
+  textarea
+  {
+    font-family: "GothamBook", sans-serif;
+    font-size: 16px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "GothamBlack",sans-serif;
+  }
+
+  
+  h5 {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    color: #000;
+  }
+  p{
+    font-family: "GothamBook", sans-serif;   
+    font-size: 1rem;
+
+  }
+  a {
+    font-size: 1.125rem;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+ 

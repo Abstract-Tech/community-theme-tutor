@@ -1,0 +1,66 @@
+<%page expression_filter="h"/>
+<%inherit file="main.html" />
+<%namespace name='static' file='static_content.html'/>
+<%!
+from django.utils.translation import ugettext as _
+from django.urls import reverse
+
+from openedx.core.djangolib.markup import HTML, Text
+%>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="home">
+      <header>
+        <div class="outer-wrapper">
+<div class="centered">
+<h1>COMMUNITY E-LEARNING COURSES</h1>
+<!-- <p>An introductory course to Clean Construction in cities.</p> -->
+</div>
+<img src="/static/community-theme/images/newBanner.jpg" alt="banner_image">
+          <%include file="index_promo_video.html" />
+        </div>
+
+      </header>
+      <div class="">
+        <div class="dropdown mt-5">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Select a language
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="https://lms.community.org/" alt="English Language">English</a></li>
+            <li><a class="dropdown-item" href="https://es.lms.community.org/" alt="Spanish Language">Spanish</a></li>
+            <li><a class="dropdown-item" href="https://it.lms.community.org/" alt="Italian Language">Italian</a></li>
+            <li><a class="dropdown-item" href="https://pt.lms.community.org/" alt="Portuguese Language"></i> Portuguese</a></li>
+            <li><a class="dropdown-item" href="https://fr.lms.community.org/" alt="French Language">French</a></li>
+          </ul>
+        </div>
+      <%include file="${courses_list}" />
+      </div>
+    </section>
+</main>
+
+% if show_homepage_promo_video:
+  <section id="video-modal" class="modal home-page-video-modal video-modal">
+    <div class="inner-wrapper">
+      <iframe title="YouTube Video" width="640" height="360" src="//www.youtube.com/embed/${homepage_promo_video_youtube_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+% endif
+
+<%block name="js_extra">
+   <script type="text/javascript">
+      $(window).load(function() {
+         if(getParameterByName('next')) {
+              $('#login').trigger("click");
+         }
+      })
+   </script>
+</%block>
+
+% if show_signup_immediately is not UNDEFINED:
+  ## NOTE: This won't work in production, because anonymous views are cached, so it will
+  ## show either with or without this extra js for 3 minutes at a time.
+<script type="text/javascript">
+  $(window).load(function() {$('#signup_action').trigger("click");});
+</script>
+% endif
