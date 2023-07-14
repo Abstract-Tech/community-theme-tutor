@@ -1,0 +1,157 @@
+.account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link,
+.account-settings-sections .section .account-deletion-details .btn-outline-primary,
+div.scormxblock_block div.scorm_window button.scorm_launch {
+    @extend .btn;
+}
+
+.account-settings-sections
+    .section
+    .account-deletion-details
+    .delete-confirmation-wrapper
+    .paragon__modal-footer
+    .paragon__btn {
+    @extend .btn;
+}
+
+
+h2{
+    font-family: "GothamBlack" !important;
+    color: $primary;
+    font-size: 1.5rem !important;
+}
+
+header.global-header .nav-links .secondary .dropdown-user-menu{
+border: $border;
+}
+
+div.account-settings-sections .section .account-settings-section-body .u-field .field .field-input{
+    border: $border;
+}
+
+div.account-settings-sections .section .account-settings-section-body .u-field .field select{
+    border: $border;
+    option{
+        background-color: #fff;
+        color: $primary;
+        border: $border;
+    }
+    &:active{
+        background-color: $green;
+    }
+}
+
+.courseware-bookmarks-button .bookmarks-list-button {
+    color: #00C245;
+    border-color: #00C245;
+    width: max-content;
+}
+
+.course-index .accordion .course-navigation .chapter-content-container {
+    border-bottom: 3px solid black;
+}
+
+.course-index .accordion .course-navigation .chapter-content-container .chapter-menu {
+    border-bottom: 3px solid black;
+}
+
+.wrapper-course-modes {
+    border-bottom: 3px solid black;
+}
+
+
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+     appearance: none;
+     height: 6px;
+     width: 100%;
+  }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  progress[value]::-webkit-progress-value {
+    background-color: #00C245;
+
+  }
+
+
+.progress {
+  padding: 5px;
+
+      .progress-label {
+        color:#00C245;
+        font-size: small;
+      }
+}
+
+.course-index {
+    border-left: 3px solid black;
+    border-bottom: 4px solid black;
+    border-right: 1px solid black;
+
+    @media (max-width: 500px) {
+        width: 150px !important;
+    }
+}
+
+.search-bar .search-field-wrapper {
+    @media (max-width: 700px) {
+        margin-top: 10px;
+        width: 130px !important;
+    }
+
+    @media (min-width: 700px) and  (max-width: 1100px) {
+        margin-top: 10px;
+        width: 160px !important;
+    }
+}
+
+.courseware-bookmarks-button .bookmarks-list-button:hover {
+    background-color: #00C245;
+    color: black;
+    border: 1px solid black;
+}
+
+// .home>header .outer-wrapper {
+//     width: fit-content;
+// }
+
+.home>header .centered>h1 {
+    letter-spacing: 2px;
+}
+
+.home>header img {
+  width: 40%;
+
+  @media (min-width: 500px) and (max-width: 1400px){
+    width: 40%;
+  }
+
+  @media screen and (max-width: 500px){
+    width: 100%;
+  }
+
+}
+
+.home>header .centered {
+    width: 100%;
+    background-color: #ffd966ff;
+    align-items: center;
+}
+
+section.course-info header.course-profile .intro-inner-wrapper .heading-group {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #0abef0ff;
+}
+
+div.intro-course {
+    background-color: #0abef0ff;
+}

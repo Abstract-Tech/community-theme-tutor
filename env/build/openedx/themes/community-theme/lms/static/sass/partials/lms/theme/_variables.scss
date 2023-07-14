@@ -1,0 +1,11 @@
+// Theme colors
+$primary: #25a78e;
+$inverse: #fff;
+$secondary:#00C245;
+
+// fonts
+$font-family-sans-serif: "GothamBook" !default;
+$serif: $font-family-sans-serif !default;
+
+// Initialize the Open edX Bootstrap theme
+@import "edx-bootstrap/sass/open-edx/theme";

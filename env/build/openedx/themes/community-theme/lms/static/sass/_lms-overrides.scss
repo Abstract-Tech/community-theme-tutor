@@ -1,0 +1,130 @@
+div.wrapper-account-settings .wrapper-header .account-nav button.active {
+    border-bottom-color: $primary;
+}
+
+div.wrapper-account-settings .wrapper-header .account-nav button:hover,
+div.wrapper-account-settings .wrapper-header .account-nav button:focus {
+    border-bottom-color: $primary;
+}
+
+div.account-settings-sections .section .account-settings-section-body .u-field .field select ~ .icon-caret-down::after {
+    border-top: 7px solid $primary;
+}
+
+body.view-profile .profile-self .wrapper-profile-field-account-privacy .wrapper-profile-records button {
+    background-color: $primary;
+    color: $secondary;
+    border: 1px solid $primary;
+    border-radius: 0;
+    padding: 10px 20px;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover:not(:disabled),
+    &:focus:not(:disabled),
+    &:active:not(:disabled) {
+        background-color: $secondary !important;
+        color: $primary !important;
+        border: 1px solid $primary !important;
+        background-image: none;
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.view-profile .wrapper-profile-section-container-one .wrapper-profile-section-one {
+    border-top: 5px solid $primary;
+}
+
+header.global-header .nav-links .main .nav-tab a {
+    color: $primary;
+}
+
+div.xmodule_display.xmodule_ConditionalModule
+    div.problem
+    .xmodule_display.xmodule_ProblemBlock
+    .choicegroup
+    input:focus
+    + label,
+div.xmodule_display.xmodule_ConditionalModule
+    div.problem
+    .xmodule_display.xmodule_ProblemBlock
+    .choicetextgroup
+    input:focus
+    + label,
+div.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:focus + label,
+div.xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:focus + label,
+.xmodule_display.xmodule_ConditionalModule
+    div.problem
+    .xmodule_display.xmodule_ProblemBlock
+    .choicegroup
+    input:hover
+    + label,
+div.xmodule_display.xmodule_ConditionalModule
+    div.problem
+    .xmodule_display.xmodule_ProblemBlock
+    .choicetextgroup
+    input:hover
+    + label,
+div.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:hover + label,
+div.xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:hover + label {
+    border: 2px solid $primary;
+}
+
+.home .highlighted-courses {
+    margin-bottom: 0px;
+}
+
+.dropdown {
+    @media screen and  (max-width: 541px) {
+    padding: 20px;
+}
+}
+
+.btn-secondary {
+    @media screen and (min-width: 980px) {
+     width: 23.23176%;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 979px) {
+        width: 31.76157%;
+    }
+
+    @media screen and (min-width: 541px) and (max-width: 768px) {
+        width: 48.21067%;
+    }
+    width: 100%;
+}
+
+.dropdown-menu {
+    @media screen and (min-width: 980px) {
+        width: 23.23176%;
+       }
+   
+       @media screen and (min-width: 769px) and (max-width: 979px) {
+           width: 31.76157%;
+       }
+   
+       @media screen and (min-width: 541px) and (max-width: 768px) {
+           width: 48.21067%;
+       }
+       width: 100%;
+    border: 3px solid #000 !important;
+    border-radius: 0 !important;
+
+    li {
+        border-bottom: 3px solid #000 !important;
+    }
+
+    li:last-child {
+        border-bottom: none !important;
+    }
+}
+
+.home .courses-container .courses .courses-listing .courses-listing-item {
+    @media screen and  (max-width: 541px) {
+    padding: 20px;
+    }
+}

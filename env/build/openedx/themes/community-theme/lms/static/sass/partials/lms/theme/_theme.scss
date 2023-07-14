@@ -1,0 +1,169 @@
+div.content-wrapper .course-tabs .nav-item .nav-link {
+    color: #000;
+}
+div.learner-achievements .learner-message .message-actions .btn-brand:hover {
+    color: $primary;
+}
+
+div.wrapper-footer footer#footer-openedx .copyright {
+    color: #000;
+}
+
+div.dashboard .main-container .my-courses .course .details .wrapper-course-details .course-title a {
+    font-family: "GothamBlack";
+    &:hover {
+        color: $primary;
+        text-decoration: underline;
+    }
+}
+
+a.active-section {
+    color: $primary;
+}
+
+section.sysadmin-dashboard-content h2 a:not(.btn):hover {
+    color: $primary;
+}
+
+div.wrapper-msg.wrapper-auto-cert .auto-cert-message {
+    border-left: 3px solid $primary;
+}
+
+section.chapters {
+    a {
+        &:hover {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+}
+
+div.wiki-wrapper section.wiki .nav-tabs li.active a {
+    color: $primary;
+    border-color: $primary;
+}
+
+div.wiki-wrapper section.wiki .nav-tabs a:hover {
+    color: $primary;
+}
+
+div.dashboard .main-container .my-courses .course .details .enter-course.archived {
+    color: $primary;
+    border: 1px solid $primary;
+    &:hover:hover:not(:disabled),
+    &:focus:not(:disabled),
+    &:active:not(:disabled) {
+        background-color: $primary;
+        color: $secondary;
+        border: 1px solid $primary;
+    }
+}
+
+div.discussion-module button.discussion-show.btn.shown {
+    @extend .btn;
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $primary !important;
+        background-color: $primary !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        color: #fff !important;
+        text-decoration: none !important;
+    }
+}
+
+div.discussion-module .btn,
+.wmd-prompt-dialog .btn {
+    border: 1px solid $primary;
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $primary !important;
+        background-color: $primary !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        color: #fff !important;
+        text-decoration: none !important;
+    }
+}
+
+div.xmodule_display.xmodule_ProblemBlock div.problem .action .submit-attempt-container button.submit {
+    @extend .btn;
+}
+
+div.xmodule_display.xmodule_ProblemBlock div.problem .action button.problem-action-btn {
+    @extend .btn;
+}
+
+section.discussion.inline-discussion .inline-thread .forum-nav-bar .all-posts-btn {
+    color: $primary;
+}
+
+div.xmodule_display.xmodule_VideoBlock .video .wrapper-downloads {
+    display: flex;
+    flex-direction: column;
+    a.btn {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+div.scormxblock_block div.scorm_window button.scorm_launch {
+    background-color: $primary;
+    color: $secondary;
+    border: 1px solid $primary;
+    border-radius: 0;
+    padding: 10px 20px;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover:not(:disabled),
+    &:focus:not(:disabled),
+    &:active:not(:disabled) {
+        background-color: $secondary;
+        color: $primary;
+        border: 1px solid $primary;
+        background-image: none;
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+section.about .heading {
+    text-align: left;
+    color: $primary;
+    font-family: "GothamBlack";
+}
+
+p a:not(.btn):hover,
+p a:not(.btn):focus,
+p a:visited:not(.btn):hover,
+p a:visited:not(.btn):focus {
+    color: $primary;
+}
+
+a:hover:not(.btn),
+a:focus:not(.btn) {
+    color: $primary;
+}
+
+section.discussion.inline-discussion .new-post-article .add-post-cancel {
+    color: $secondary;
+}
+
+section.discussion .post-label.post-label-following {
+    color: $primary;
+}
+
+section.discussion .action-button.action-follow.is-checked .action-icon,
+section.discussion .action-button.action-follow:hover .action-icon,
+section.discussion .action-button.action-follow:focus .action-icon {
+    background-color: $primary; 
+}
+
+section.discussion .action-button .action-icon{
+    color: $primary;
+    }
