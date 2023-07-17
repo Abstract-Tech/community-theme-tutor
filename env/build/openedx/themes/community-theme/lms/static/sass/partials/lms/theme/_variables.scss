@@ -4,7 +4,9 @@ $inverse: #fff;
 $secondary:#25a78e;
 
 // fonts
+$font-family-sans-serif: "Open Sans", sans-serif !default;
 $serif: $font-family-sans-serif !default;
+
 
 // Initialize the Open edX Bootstrap theme
 @import "edx-bootstrap/sass/open-edx/theme";
