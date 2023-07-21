@@ -51,3 +51,8 @@ a:not(.btn), a:visited:not(.btn) {
     background: #fff;
     width: 100%;
 }
+
+.global-header .header-logo a .logo {
+    float: none;
+    height: 40px;
+}
