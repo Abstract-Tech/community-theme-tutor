@@ -61,8 +61,8 @@ a:not(.btn), a:visited:not(.btn) {
 }
 
 button.find-courses button.discovery-submit {
-    border: #25a78e;
-    background: #25a78e;
+    border: #25a78e !important;
+    background: #25a78e !important;
 }
 
 .find-courses .discovery-submit:hover, .find-courses .discovery-submit:focus {
