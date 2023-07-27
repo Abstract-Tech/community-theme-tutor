@@ -1,0 +1,44 @@
+#about-us-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-us-section {
+    margin-bottom: 20px;
+  }
+  
+  .about-us-header {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-subheader {
+    font-size: 1.5em;
+    color: #6C757D;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-section p {
+    line-height: 1.5;
+    color: #495057;
+  }
+  
+  .about-us-section ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .about-us-contact-btn {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .about-us-contact-btn:hover {
+    background-color: #0056b3;
+  }
