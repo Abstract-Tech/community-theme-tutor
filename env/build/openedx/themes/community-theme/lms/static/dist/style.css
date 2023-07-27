@@ -121,3 +121,16 @@ a:not(.btn), a:visited:not(.btn) {
     text-align: center;
     margin: 20px 0;
 }
+
+button.find-courses button.discovery-submit {
+    border: #25a78e;
+    background: #25a78e;
+}
+
+.find-courses .discovery-submit:hover, .find-courses .discovery-submit:focus {
+    background: #71a89e;
+}
+
+button.find-courses .discovery-submit:hover, .find-courses .discovery-submit:focus {
+    background: #03a384;
+}
