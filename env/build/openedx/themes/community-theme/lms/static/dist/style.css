@@ -60,7 +60,7 @@ a:not(.btn), a:visited:not(.btn) {
     height: 40px;
 }
 
-button.find-courses button.discovery-submit {
+.find-courses .discovery-submit {
     border: #25a78e !important;
     background: #25a78e !important;
 }
