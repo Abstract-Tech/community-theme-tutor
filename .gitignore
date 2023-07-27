@@ -21,3 +21,6 @@ env/build/permissions
 .direnv
 
 *.pyc
+
+#include django_plugin
+!env/build/openedx/requirements
