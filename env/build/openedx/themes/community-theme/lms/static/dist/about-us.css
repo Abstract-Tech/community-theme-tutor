@@ -1,44 +1,43 @@
-#about-us-container {
+  #about-us-container {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #F4F9F9;
+    color: #25464E;
+    font-family: 'Arial', sans-serif;
   }
-  
+
   .about-us-section {
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+
+  .about-us-section img.about-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-us-header, .about-us-subheader {
+    color: #25a78e;
     margin-bottom: 20px;
   }
-  
-  .about-us-header {
-    font-size: 2em;
-    color: #007BFF;
-    margin-bottom: 10px;
-  }
-  
-  .about-us-subheader {
-    font-size: 1.5em;
-    color: #6C757D;
-    margin-bottom: 10px;
-  }
-  
+
+
   .about-us-section p {
-    line-height: 1.5;
+    line-height: 1.6;
     color: #495057;
+    font-size: 1.1em;
   }
-  
-  .about-us-section ul {
-    margin: 10px 0;
-    padding-left: 20px;
-  }
-  
-  .about-us-contact-btn {
-    font-size: 1em;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .about-us-contact-btn:hover {
-    background-color: #0056b3;
+
+  .about-us-section ul, .about-us-section ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* You may want to keep the text left-aligned */
+    padding: 0;
+    list-style-position: inside; /* To make sure the bullets or numbers appear inside the flex container */
   }
