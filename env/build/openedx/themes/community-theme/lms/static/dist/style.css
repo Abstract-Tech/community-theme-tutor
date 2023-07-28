@@ -92,3 +92,12 @@ div.open-response-assessment-block div.ora-summary-title {
     border-color: #25a78e !important;
     color: #fff;
 }
+
+a {
+    color: #25a78e !important;
+}
+
+a:hover {
+    color: #125347;;
+    text-decoration: underline;
+}
