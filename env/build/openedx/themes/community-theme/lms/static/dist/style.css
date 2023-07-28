@@ -72,3 +72,23 @@ a:not(.btn), a:visited:not(.btn) {
 button.find-courses .discovery-submit:hover, .find-courses .discovery-submit:focus {
     background: #03a384 !important;
 }
+
+button.btn-link {
+    color: #25a78e;
+}
+
+div.open-response-assessment-block div.ora-summary-title {
+    color: #25a78e
+}
+
+.btn-outline-primary:not(.dropdown-toggle), .btn-primary:hover, .modal .modal-footer button:hover {
+    background-color: #fff;
+    border-color: #25a78e !important;
+    color: #25a78e !important;
+}
+
+.btn-outline-primary:not(.dropdown-toggle):hover {
+    background-color: #25a78e !important;
+    border-color: #25a78e !important;
+    color: #fff;
+}
