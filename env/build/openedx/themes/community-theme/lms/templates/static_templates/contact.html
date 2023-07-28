@@ -14,7 +14,7 @@
                 <p>How can we help?</p>
             </div>
             <div class="contact-form__container">
-                <form id="contact-form">
+                <form id="contact-form" onsubmit="handleFormSubmit(event)">
                     <label>First Name</label>
                     <input type="text" placeholder="Your First Name" name="firstName">
                     <label>Last Name</label>
@@ -51,3 +51,29 @@
         
     </section>
 </main>
+
+<script>
+function handleFormSubmit(event) {
+    event.preventDefault();
+
+    var form = document.getElementById('contact-form');
+    var formData = new FormData(form);
+
+    fetch('/send_contact_email', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.status === 'success') {
+            form.reset();
+            alert('Mail sent!');
+        } else {
+            alert('There was an error!');
+        }
+    })
+    .catch(error => {
+        alert('There was an error!');
+    });
+}
+</script>
