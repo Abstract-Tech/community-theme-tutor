@@ -101,3 +101,7 @@ a:hover {
     color: #125347;;
     text-decoration: underline;
 }
+
+.wrapper-footer {
+    padding: 25px 40px 30px 40px !important;
+}
