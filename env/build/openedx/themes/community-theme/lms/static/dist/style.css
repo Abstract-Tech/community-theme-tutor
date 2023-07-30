@@ -107,5 +107,5 @@ a:hover {
 }
 
 div.container-xl.py-3.d-md-flex.justify-content-end.align-items-start {
-    flex-direction: inherit
+    flex-direction: inherit !important;
 }
