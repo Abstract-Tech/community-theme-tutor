@@ -15,7 +15,7 @@ logger = logging.getLogger(__file__)
 @require_http_methods(["POST"])
 def send_contact_form_email(request):
     try:
-        payload = json.loads(request.body.decode("utf-8"))
+        payload = request.POST.dict()
         email = EmailMessage()
         email.subject = f"Request for contact from {settings.LMS_BASE}"
         email.from_email = settings.DEFAULT_FROM_EMAIL
