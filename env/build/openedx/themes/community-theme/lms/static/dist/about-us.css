@@ -1,43 +1,79 @@
-  #about-us-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #F4F9F9;
-    color: #25464E;
-    font-family: 'Arial', sans-serif;
-  }
+#about-us-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
 
-  .about-us-section {
-    margin-bottom: 40px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  }
+.about-us-section .about-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-  .about-us-section img.about-image {
-    max-width: 100%;
-    height: auto;
-  }
+.about-us-p{
+  font-size: 20px;
+}
 
-  .about-us-header, .about-us-subheader {
-    color: #25a78e;
-    margin-bottom: 20px;
-  }
+.about-us-section ul li,
+.about-us-section ol li {
+}
+
+.about-us-section ol li svg {
+  fill: #25a78e;
+}
+
+.about-us-header{
+  font-weight: bold;
+}
+
+.about-us-header2{
+  font-weight: bold;
+  color: white;
+}
 
 
-  .about-us-section p {
-    line-height: 1.6;
-    color: #495057;
-    font-size: 1.1em;
-  }
+img.about-image-icon{
+  max-width: 200px;
+}
 
-  .about-us-section ul, .about-us-section ol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left; /* You may want to keep the text left-aligned */
-    padding: 0;
-    list-style-position: inside; /* To make sure the bullets or numbers appear inside the flex container */
-  }
+.custom-container {
+  background-color: #25a78e;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.custom-container ul {
+  list-style-type: disc;
+}
+
+.custom-container .continue-button {
+  margin-left: auto;
+}
+
+.continue-button {
+  display: flex;
+  justify-content: center;
+  max-height: 85px;
+}
+
+a.contact-us{
+  background-color: white !important;
+  color: #25a78e; /* change the text color */
+  padding: 1em 2em; /* adjust the size of the button */
+  border-radius: 10px; /* make the button rounded */
+  font-size: 1.5em; /* adjust the font size */
+  text-decoration: none; /* remove underline from link */
+  transition: all 0.3s ease-in-out; /* make the hover effect smooth */
+}
+
+/* add a hover effect */
+a.contact-us:hover {
+  background-color: #25a78e;
+  color: white;
+  text-decoration: none;
+}
