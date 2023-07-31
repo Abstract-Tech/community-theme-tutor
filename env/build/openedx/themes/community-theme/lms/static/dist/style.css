@@ -105,11 +105,3 @@ a:hover {
 .wrapper-footer {
     padding: 25px 40px 30px 40px !important;
 }
-
-div.container-xl {
-    flex-direction: inherit !important;
-}
-
-a.logo {
-    padding-left: 20px;
-}
