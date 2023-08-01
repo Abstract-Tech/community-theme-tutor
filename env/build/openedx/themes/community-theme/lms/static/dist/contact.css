@@ -1,10 +1,11 @@
 .container.about {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0;
+    padding-top: 20px;
 }
 
 .contact-form {
-    background: #f5f5f5;
     padding: 20px;
     margin: 20px 0;
     border-radius: 4px;
@@ -37,26 +38,68 @@
 #contact-form select,
 #contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 30px; /* Increased from 10px to 20px to make the elements bigger */
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px; /* Increased from 4px to 15px for roundness */
+    font: normal 1em "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    transition: border 0.3s ease-in-out;
 }
 
+#contact-form input[type="text"]:focus-visible,
+#contact-form input[type="email"]:focus-visible,
+#contact-form select:focus-visible,
+#contact-form textarea:focus-visible {
+    border-color: #25a78e !important; /* Change border color when the element is focused */
+}
+
+#contact-form select:focus {
+    border-color: #25a78e !important;
+}
+
+:focus-visible {
+    outline: none !important;
+}
+
+
+#contact-form textarea {
+    width: 100%;
+    height: 150px; /* Adjust to how big you want your textarea to be */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#contact-form select {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white; /* Set the background color of the select to white */
+}
+
+
+
 #contact-form input[type="submit"] {
+    width: 200px; /* Adjust width to make button smaller */
+    height: 60px; /* Adjust height to make button smaller */
     background: #25a78e;
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 15px; /* To make button more rounded */
+    font-size: 1em;
+    margin: 0 auto; /* To center the button */
+    display: block; /* To apply the margin */
+    text-shadow: none;
 }
 
+
 #contact-form input[type="submit"]:hover {
-    background: #125347;
+    background: #1f8f7a;
 }
 
 .contact-info {
-    background-color: #f5f5f5;
     padding: 20px;
     border-radius: 4px;
     text-align: center;
