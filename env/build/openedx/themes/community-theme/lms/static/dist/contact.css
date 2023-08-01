@@ -49,7 +49,8 @@
 #contact-form input[type="email"]:focus-visible,
 #contact-form select:focus-visible,
 #contact-form textarea:focus-visible {
-    border-color: #25a78e !important; /* Change border color when the element is focused */
+    border-color: #25a78e !important;
+    box-shadow: none; /* Change border color when the element is focused */
 }
 
 #contact-form select:focus {
