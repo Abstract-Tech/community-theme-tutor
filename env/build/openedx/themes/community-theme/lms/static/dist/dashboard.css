@@ -7,7 +7,6 @@ div.cover-image::before {
 }
 
 span.course-title{
-    color: black !important;
     font-weight: bold;
 }
 
