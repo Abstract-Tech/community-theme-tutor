@@ -2,7 +2,6 @@
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
-  flex-direction: column;
 }
 
 #about-us-container h1{
@@ -91,6 +90,7 @@ img.about-image-icon{
 }
 
 a.contact-us {
+  margin-left: 300px;
   background-color: white;
   color: #25a78e;
   padding: 1em 1.5em; /* Adjusted size */
