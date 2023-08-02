@@ -5,6 +5,12 @@
   flex-direction: column;
 }
 
+#about-us-container h1{
+  text-align:left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 .about-us-section .about-image {
   width: 100%;
   height: auto;
@@ -15,12 +21,34 @@
   font-size: 20px;
 }
 
-.about-us-section ul li,
 .about-us-section ol li {
+  list-style-type: none;
 }
 
 .about-us-section ol li svg {
   fill: #25a78e;
+}
+
+.about-us-section ul {
+  list-style-type: none; /* Removes default bullets */
+  padding-left: 0;
+}
+
+.about-us-section ul li {
+  position: relative;
+  padding-left: 30px; /* Space for the custom bullet */
+}
+
+.about-us-section ul li:before {
+  content: ""; /* Creates a pseudo-element */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px; /* Bullet size */
+  height: 12px; /* Bullet size */
+  border-radius: 50%; /* Makes it a circle */
+  background-color: #25a78e; /* Green color */
 }
 
 .about-us-header{
@@ -42,13 +70,15 @@ img.about-image-icon{
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 20px;
   width: 100%;
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: space-between; /* Distributes content evenly */
 }
 
 .custom-container ul {
   list-style-type: disc;
+  flex-grow: 1; 
 }
 
 .custom-container .continue-button {
@@ -57,23 +87,42 @@ img.about-image-icon{
 
 .continue-button {
   display: flex;
-  justify-content: center;
-  max-height: 85px;
+  align-items: center;
 }
 
-a.contact-us{
-  background-color: white !important;
-  color: #25a78e; /* change the text color */
-  padding: 1em 2em; /* adjust the size of the button */
-  border-radius: 10px; /* make the button rounded */
-  font-size: 1.5em; /* adjust the font size */
-  text-decoration: none; /* remove underline from link */
-  transition: all 0.3s ease-in-out; /* make the hover effect smooth */
-}
-
-/* add a hover effect */
-a.contact-us:hover {
-  background-color: #25a78e;
-  color: white;
+a.contact-us {
+  background-color: white;
+  color: #25a78e;
+  padding: 1em 1.5em; /* Adjusted size */
+  border-radius: 5px; /* Reduced radius */
+  font-size: 1em; /* Adjusted font size */
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex; /* Makes the button adjust to its content */
+  align-items: center; /* Aligns text in the center */
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  overflow: hidden; /* Handles overflow */
+}
+
+/* Hover effect */
+a.contact-us:hover {
+  color: white;
+}
+
+.about-us-section ol {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-us-section ol li {
+  width: 30%;
+  text-align: center;
+}
+
+img.about-image-icon {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
 }
