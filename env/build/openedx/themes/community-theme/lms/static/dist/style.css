@@ -1,5 +1,6 @@
 @import 'about-us.css';
 @import 'contact.css';
+@import 'dashboard.css';
 
 .global-header{
     border-bottom: 1px solid #25a78e;
