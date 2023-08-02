@@ -7,11 +7,11 @@ div.cover-image::before {
 }
 
 span.course-title{
+    color: black !important;
     font-weight: bold;
 }
 
 .course { 
-    border-bottom: 3px solid black !important;
 }
 
 .course-date {
