@@ -11,11 +11,18 @@ span.course-title{
     font-weight: bold;
 }
 
+.course { 
+    border-bottom: 3px solid black;
+}
+
 .course-date {
     border: 2px solid black; /* Black border */
-    border-radius: 15px; /* Rounded corners */
-    padding: 10px; /* Space inside the bubble */
+    border-radius: 20px; /* Rounded corners */
+    padding: 8px !important; /* Space inside the bubble */
     width: fit-content; /* Bubble wraps around the content */
     display: inline-block; /* Helps with the fit-content for width */
     margin-left: 2em;
+    display: inline-block; /* Helps with the fit-content for width */
+    position: relative; /* Allows you to position the element */
+    top: -40px;
 }
