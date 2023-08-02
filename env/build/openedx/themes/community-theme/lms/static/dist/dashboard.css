@@ -1,8 +1,21 @@
 div.cover-image {
-    height: 190px;
+    height: 190px !important;
+}
+
+div.cover-image::before {
+    height: 190px !important;
 }
 
 span.course-title{
-    color: black;
+    color: black !important;
     font-weight: bold;
+}
+
+.course-date {
+    border: 2px solid black; /* Black border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px; /* Space inside the bubble */
+    width: fit-content; /* Bubble wraps around the content */
+    display: inline-block; /* Helps with the fit-content for width */
+    margin-left: 2em;
 }
