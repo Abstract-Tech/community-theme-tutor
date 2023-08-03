@@ -29,3 +29,8 @@ span.course-title{
 h2.course-name{
     margin-left: 10px;
 }
+
+article.course {
+    border-bottom: none;
+    border-radius: 10px;
+}
