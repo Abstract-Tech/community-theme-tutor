@@ -1,7 +1,7 @@
 [submodule "mfe/frontend-app-profile"]
 	path = mfe/frontend-app-profile
 	url = git@github.com:Abstract-Tech/community-theme-profile.git
-	branch = community-theme.master
+	branch = community-theme.palm
 [submodule "mfe/frontend-app-learning"]
 	path = mfe/frontend-app-learning
 	url = git@github.com:Abstract-Tech/community-theme-learning.git
@@ -9,15 +9,15 @@
 [submodule "mfe/frontend-app-course_about"]
 	path = mfe/frontend-app-course_about
 	url = git@github.com:Abstract-Tech/community-theme-course-about.git
-	branch = community-theme
+	branch = community-theme.palm
 [submodule "mfe/frontend-app-gradebook"]
 	path = mfe/frontend-app-gradebook
 	url = git@github.com:Abstract-Tech/community-theme-gradebook.git
-	branch = community-theme
+	branch = community-theme.palm
 [submodule "mfe/frontend-app-account"]
 	path = mfe/frontend-app-account
 	url = git@github.com:Abstract-Tech/community-theme-account.git
-	branch = community-theme.master
+	branch = community-theme.palm
 [submodule "mfe/frontend-app-home"]
 	path = mfe/frontend-app-home
 	url = git@github.com:Abstract-Tech/community-theme-home.git
@@ -25,11 +25,11 @@
 [submodule "mfe/frontend-component-footer"]
 	path = mfe/frontend-component-footer
 	url = git@github.com:Abstract-Tech/community-theme-footer.git
-	branch = community-theme
+	branch = community-theme.palm
 [submodule "mfe/frontend-component-header"]
 	path = mfe/frontend-component-header
 	url = git@github.com:Abstract-Tech/community-theme-header.git
-	branch = community-theme
+	branch = community-theme.palm
 [submodule "mfe/brand-openedx"]
 	path = mfe/brand-openedx
 	url = git@github.com:Abstract-Tech/community-theme-brand.git
@@ -37,12 +37,22 @@
 [submodule "mfe/frontend-app-discussions"]
 	path = mfe/frontend-app-discussions
 	url = git@github.com:Abstract-Tech/community-theme-discussions.git
-	branch = community-theme
+	branch = community-theme.palm
 [submodule "mfe/frontend-app-authn"]
 	path = mfe/frontend-app-authn
 	url = git@github.com:Abstract-Tech/community-theme-authn.git
-	branch = community-theme.olive
+	branch = community-theme.palm
 [submodule "mfe/frontend-app-course-authoring"]
 	path = mfe/frontend-app-course-authoring
 	url = git@github.com:Abstract-Tech/community-theme-course-authoring.git
-	branch = community-theme
+	branch = community-theme.palm
+[submodule "mfe/frontend-app-communications"]
+	path = mfe/frontend-app-communications
+	url = git@github.com:Abstract-Tech/community-theme-communications.git
+	branch = community-theme.palm
+[submodule "mfe/frontend-app-ora-grading"]
+	path = mfe/frontend-app-ora-grading
+	url = git@github.com:Abstract-Tech/community-theme-ora-grading.git
+	branch = community-theme.palm
+
+
