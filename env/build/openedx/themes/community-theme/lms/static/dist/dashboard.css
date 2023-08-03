@@ -31,14 +31,14 @@ h2.course-name{
 }
 
 article.course {
-    border-bottom: none;
-    border-radius: 10px;
+    border-bottom: none !important;
+    border-radius: 10px !important;
 }
 
 div.course-container {
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 
-a.course-target-link{
+a.course-target-link:not(.btn), a.course-target-link:visited:not(.btn) {
     color: black !important;
 }
