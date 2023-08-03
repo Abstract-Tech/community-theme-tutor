@@ -34,3 +34,11 @@ article.course {
     border-bottom: none;
     border-radius: 10px;
 }
+
+div.course-container {
+    border-radius: 10px;
+}
+
+a.course-target-link{
+    color: black !important;
+}
