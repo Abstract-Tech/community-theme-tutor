@@ -105,7 +105,7 @@ To run an MFE in development mode, you would need to clone it and to mount it's 
 
 1. Clone it _if it's not already_ 
 2. `npm install` _make sure you are on the correct node version `node --version` it shall match `cat .nvmrc`_
-3. `tutor config save --append MOUNTS="./mfe/frontend-app-account"`. 
+3. `tutor mounts add "./mfe/frontend-app-account"`. 
 
 ### How do I override specific npm pks?
 
@@ -113,7 +113,7 @@ The following is an example of overriding a header
 
 1. Clone it _if it's not already_
 2. `npm install` _make sure you are on the correct node version `node --version` it shall match `cat .nvmrc`_
-3. Mount the pkg to the container `tutor config save --append MOUNTS="account:./mfe/frontend-component-header:/openedx/frontend-component-header"`
+3. Mount the pkg to the container `tutor  mounts add "account:./mfe/frontend-component-header:/openedx/frontend-component-header"` scheme: `service:host_path:containter_path`
 3. edit the `pacakage.json` file of the MFE you want to override its dependency, for example assuming you apply your local version of header for the account MFE for previous step:
 edit the `mfe/-frontend-app-account/package.json`
 ```json
