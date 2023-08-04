@@ -71,16 +71,26 @@ def mfe_forks(mfes):
         "repository": "https://github.com/Abstract-Tech/community-theme-home",
         "version": "community-theme.palm",
         "refs": "https://api.github.com/repos/abstract-tech/community-theme-home/git/refs/heads",
-        "port": 1995,
+        "port": 3000,
         "name": "home",
     }
     mfes["course_about"] = {
         "repository": "https://github.com/Abstract-Tech/community-theme-course-about",
         "version": "community-theme.palm",
         "refs": "https://api.github.com/repos/abstract-tech/community-theme-course-about/git/refs/heads",
-        "port": 1995,
+        "port": 3000,
         "name": "course_about",
     }
+    # Note: The changes of the following might not take effect due to tutor order of loading plugins
+    # This to change it you might need to edit the upstream pplugin at:
+    # https://github.com/Abstract-Tech/openedx-tutor-plugins/blob/5556c1d5c55e1a0e95f36a9f0b89dbf21382f581/plugins/tutor-contrib-learner-dashboard-mfe/tutor_learner_dashboard_mfe/plugin.py#L20-L25
+    mfes["learner-dashboard"] = {
+        "repository": "https://github.com/Abstract-Tech/community-theme-learner-dashboard",
+        "version": "open-release/palm.1",
+        "refs": "https://api.github.com/repos/abstract-tech/community-theme-learner-dashboard/git/refs/heads",
+        "port":1996,
+    }
+
     return mfes
 
 

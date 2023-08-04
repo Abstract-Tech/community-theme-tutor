@@ -119,6 +119,7 @@ PLUGINS:
 - community-mfe
 - home-mfe
 - mfe
+- learner-dashboard-mfe
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
 PREVIEW_LMS_HOST: preview.local.overhang.io

@@ -1,1 +1,2 @@
 tutor[full]==16.0.2
+git+https://github.com/Abstract-Tech/openedx-tutor-plugins.git#subdirectory=plugins/tutor-contrib-learner-dashboard-mfe
