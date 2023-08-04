@@ -1,7 +1,7 @@
 CMS_HOST: studio.local.overhang.io
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: support@abstract-technology.de
-DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:15.3.0
+DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:16.0.0
 ENABLE_HTTPS: false
 ENABLE_WEB_PROXY: true
 ID: jxBish2U54zbLTe82GMVvnyO
@@ -85,7 +85,7 @@ MFE_DISCUSSIONS_MFE_APP:
   port: 2002
   repository: https://github.com/Abstract-Tech/community-theme-discussions
   version: community-theme.palm
-MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:15.0.5
+MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:16.0.0
 MFE_GRADEBOOK_MFE_APP:
   name: gradebook
   port: 1994
@@ -108,7 +108,7 @@ MFE_PROFILE_MFE_APP:
   version: community-theme.palm
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_EXTRA_PIP_REQUIREMENTS:
-- openedx-scorm-xblock>=15.0.0,<16.0.0
+- openedx-scorm-xblock>=16.0.0,<17.0.0
 - git+https://github.com/abconlinecourses/chatgpt-xblock.git@v0.1#egg=chatgpt-xblock
 - git+https://github.com/abstract-tech/abstract-scorm-xblock.git@django4#subdirectory=abstract_scorm_xblock&egg=abstract-scorm-xblock
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
