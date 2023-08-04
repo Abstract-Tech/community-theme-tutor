@@ -86,7 +86,7 @@ def mfe_forks(mfes):
     # https://github.com/Abstract-Tech/openedx-tutor-plugins/blob/5556c1d5c55e1a0e95f36a9f0b89dbf21382f581/plugins/tutor-contrib-learner-dashboard-mfe/tutor_learner_dashboard_mfe/plugin.py#L20-L25
     mfes["learner-dashboard"] = {
         "repository": "https://github.com/Abstract-Tech/community-theme-learner-dashboard",
-        "version": "open-release/palm.1",
+        "version": "community-theme.palm",
         "refs": "https://api.github.com/repos/abstract-tech/community-theme-learner-dashboard/git/refs/heads",
         "port":1996,
     }
