@@ -3,7 +3,9 @@ div.cover-image {
 }
 
 div.cover-image::before {
-    height: 190px !important;
+    height: 180px !important;
+    border: 2px;
+    border-radius: 10px;
 }
 
 span.course-title{
