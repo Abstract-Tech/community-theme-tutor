@@ -1,5 +1,7 @@
 div.cover-image {
     height: 190px !important;
+    border: 2px;
+    border-radius: 10px;
 }
 
 div.cover-image::before {
