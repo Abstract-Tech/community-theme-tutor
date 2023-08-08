@@ -46,3 +46,9 @@ div.course-container {
 a.course-target-link:not(.btn), a.course-target-link:visited:not(.btn) {
     color: black !important;
 }
+
+div.wrapper-course-image{
+    width: 50%;
+    max-height: 200px;
+    padding: 20px;
+}
