@@ -114,16 +114,9 @@ The following is an example of overriding a header
 1. Clone it _if it's not already_
 2. `npm install` _make sure you are on the correct node version `node --version` it shall match `cat .nvmrc`_
 3. Mount the pkg to the container `tutor  mounts add "account:./mfe/frontend-component-header:/openedx/frontend-component-header"` scheme: `service:host_path:containter_path`
-3. edit the `pacakage.json` file of the MFE you want to override its dependency, for example assuming you apply your local version of header for the account MFE for previous step:
-edit the `mfe/-frontend-app-account/package.json`
-```json
-  "dependencies": {
-    ...
-    "@edx/frontend-component-header": "../frontend-component-header", 
-    ...  
-``` 
-
+3. mounts the `module.config.js` file, assuming it's `mfe/`, `tutor mounts add account:./mfe/module.config.js:/openedx/app/module.config.js`
 5. then run `npm install` _Note: in step 2 we run it inside header, now inside account mfe_
+6. Simliar to adding the header we can also add other pkgs, like footer, brand, paragon...etc.
 
 ## Building and runnning MFEs in production mode
 
