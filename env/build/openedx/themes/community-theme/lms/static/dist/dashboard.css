@@ -57,22 +57,22 @@ div.wrapper-course-details{
 }
 
 a.enter-course:focus{
-    border: 1px solid transparent;
-    background-color: #25a78e !important;
-    color: #fff !important;
-    text-decoration: none;
-}
-
-a.enter-course:hover{
-    border: 1px solid transparent;
-    background-color: #25a78e !important;
-    color: #fff !important;
-    text-decoration: none;
-}
-
-a.enter-course{
     background-color: #fff !important;
     color: black !important;
     text-decoration: none;
     border: 1px solid #25a78e;
+}
+
+a.enter-course:hover{
+    background-color: #fff !important;
+    color: black !important;
+    text-decoration: none;
+    border: 1px solid #25a78e;
+}
+
+a.enter-course{
+    border: 1px solid transparent;
+    background-color: #25a78e !important;
+    color: #fff !important;
+    text-decoration: none;
 }
