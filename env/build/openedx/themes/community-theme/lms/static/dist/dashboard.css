@@ -53,7 +53,7 @@ div.wrapper-course-image{
 }
 
 div.wrapper-course-details{
-    padding: 20px;
+    padding: 20px !important;
 }
 
 a.enter-course:focus{
