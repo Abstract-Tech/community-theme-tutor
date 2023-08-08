@@ -49,7 +49,7 @@ a.course-target-link:not(.btn), a.course-target-link:visited:not(.btn) {
 
 div.wrapper-course-image{
     max-width: 30% !important;
-    max-height: 100% !important;
+    max-height: 250px !important;
     width: auto !important;
 }
 
