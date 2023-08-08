@@ -48,7 +48,31 @@ a.course-target-link:not(.btn), a.course-target-link:visited:not(.btn) {
 }
 
 div.wrapper-course-image{
-    width: 50%;
-    max-height: 200px;
+    width: 50% !important;
+    max-height: 200px !important;
+}
+
+div.wrapper-course-details{
     padding: 20px;
+}
+
+a.enter-course:focus{
+    border: 1px solid transparent;
+    background-color: #25a78e !important;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+a.enter-course:hover{
+    border: 1px solid transparent;
+    background-color: #25a78e !important;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+a.enter-course{
+    background-color: #fff !important;
+    color: black !important;
+    text-decoration: none;
+    border: 1px solid #25a78e;
 }
