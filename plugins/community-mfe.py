@@ -71,7 +71,7 @@ def mfe_forks(mfes):
         "repository": "https://github.com/Abstract-Tech/community-theme-home",
         "version": "community-theme.palm",
         "refs": "https://api.github.com/repos/abstract-tech/community-theme-home/git/refs/heads",
-        "port": 3000,
+        "port": 3001,
         "name": "home",
     }
     mfes["course_about"] = {
