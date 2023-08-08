@@ -48,26 +48,27 @@ a.course-target-link:not(.btn), a.course-target-link:visited:not(.btn) {
 }
 
 div.wrapper-course-image{
-    width: 50% !important;
-    max-height: 200px !important;
+    max-width: 30% !important;
+    max-height: 100% !important;
+    width: auto !important;
 }
 
 div.wrapper-course-details{
-    padding: 20px !important;
+    padding-top: 3% !important
 }
 
 a.enter-course:focus{
     background-color: #fff !important;
     color: black !important;
-    text-decoration: none;
-    border: 1px solid #25a78e;
+    text-decoration: none !important;
+    border: 1px solid #25a78e !important;
 }
 
 a.enter-course:hover{
     background-color: #fff !important;
     color: black !important;
-    text-decoration: none;
-    border: 1px solid #25a78e;
+    text-decoration: none !important;
+    border: 1px solid #25a78e !important;
 }
 
 a.enter-course{
