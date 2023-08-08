@@ -120,6 +120,36 @@ However tutor does make the process, by injectiing the overrding strings at buil
 
 ### An example override strings for MFE
 
-Todo write an example here
+The translations of an MFE strings.
 
-[official tutor guide](https://github.com/overhangio/tutor-mfe#adding-custom-translations-to-your-mfes)
+There can be up to 4 sources for a paritucalr MFE to get it's strings.
+
+- MFE source code, this can be easiily changeed following tutor-mfe [official tutor guide](https://github.com/overhangio/tutor-mfe#adding-custom-translations-to-your-mfes)
+- Paragon
+- Footer
+- Header
+ 
+
+Would it be possible to use tutor-mfe official gudide to handle all the cases? _It depends on the order the strings are imported_
+
+1. For example in learning MFE, the order of the strings are, [paragon, appMessages, then footer/header](https://github.com/openedx/frontend-app-learning/blob/d2df9241c321dbd8d73b5209aedee03d638c2644/src/i18n/index.js#L40-L44)
+```json
+export default [
+  paragonMessages,
+  appMessages,
+  footerMessages,
+  headerMessages,
+];
+```
+
+2. While for the account MFE the [appMessages are loaded last](https://github.com/openedx/frontend-app-account/blob/9b45aa3bc9415c6c9e89d7364e1772396a160135/src/i18n/index.js#L39-L44):
+```json
+export default [
+  headerMessages,
+  paragonMessages,
+  footerMessages,
+  appMessages,
+];
+``` 
+
+So for the account MFE (1), using the current version [master(9b45aa)](https://github.com/openedx/frontend-app-account/tree/9b45aa3bc9415c6c9e89d7364e1772396a160135) we would be able to change any string _using tutor-mfe tool_, bceause the appMessages is loaded last, while for the learning MFE, we would be able only to change paragon messages, and for heade/footer it wouldn't be possible to **override their strings**, **unless we forked** because our changes would be overriden by the original strings. _Unless it's not translated at all_.
