@@ -153,3 +153,5 @@ export default [
 ``` 
 
 So for the account MFE (1), using the current version [master(9b45aa)](https://github.com/openedx/frontend-app-account/tree/9b45aa3bc9415c6c9e89d7364e1772396a160135) we would be able to change any string _using tutor-mfe tool_, bceause the appMessages is loaded last, while for the learning MFE, we would be able only to change paragon messages, and for heade/footer it wouldn't be possible to **override their strings**, **unless we forked** because our changes would be overriden by the original strings. _Unless it's not translated at all_.
+
+Thus to be able to change the strings of header/footer, one way is to edit the i18n folder, which is in [heaader i18n/messages](https://github.com/openedx/frontend-component-header/tree/936c8714b7fcf8d40a25583f1f8d7bb112afb49e/src/i18n/messages) and [footer i18n/messages](https://github.com/openedx/frontend-component-footer/tree/master/src/i18n/messages).
