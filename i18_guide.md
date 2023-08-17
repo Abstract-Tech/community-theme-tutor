@@ -140,7 +140,7 @@ There can be up to 4 sources for a particular MFE to get its strings.
 Would it be possible to use tutor-mfe official gudide to handle all the cases? _It depends on the order the strings are imported_
 
 1. For example in learning MFE, the order of the strings are, [paragon, appMessages, then footer/header](https://github.com/openedx/frontend-app-learning/blob/d2df9241c321dbd8d73b5209aedee03d638c2644/src/i18n/index.js#L40-L44)
-```json
+```js
 export default [
   paragonMessages,
   appMessages,
@@ -150,7 +150,7 @@ export default [
 ```
 
 2. While for the account MFE the [appMessages are loaded last](https://github.com/openedx/frontend-app-account/blob/9b45aa3bc9415c6c9e89d7364e1772396a160135/src/i18n/index.js#L39-L44):
-```json
+```js
 export default [
   headerMessages,
   paragonMessages,
