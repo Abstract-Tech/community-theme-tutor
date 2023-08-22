@@ -89,7 +89,7 @@ MFE_DISCUSSIONS_MFE_APP:
   port: 2002
   repository: https://github.com/Abstract-Tech/community-theme-discussions
   version: community-theme.palm
-MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:16.0.0
+MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:16.1.0
 MFE_GRADEBOOK_MFE_APP:
   name: gradebook
   port: 1994
