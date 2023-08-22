@@ -21,7 +21,7 @@
 [submodule "mfe/frontend-app-home"]
 	path = mfe/frontend-app-home
 	url = git@github.com:Abstract-Tech/community-theme-home.git
-	branch = community-theme
+	branch = community-theme.palm
 [submodule "mfe/frontend-component-footer"]
 	path = mfe/frontend-component-footer
 	url = git@github.com:Abstract-Tech/community-theme-footer.git
