@@ -59,7 +59,6 @@ jobs:
       - name: Build tutor openedx image
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          tutor images pull openedx
           tutor images build openedx
           tutor images push openedx
 
@@ -99,7 +98,6 @@ jobs:
       - name: Build tutor MFE image
         run: |
           docker login -u abstract2tech -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
-          tutor images pull mfe
           tutor images build mfe
           tutor images push mfe
 
