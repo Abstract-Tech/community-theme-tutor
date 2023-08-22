@@ -1,0 +1,87 @@
+stages:
+ - build
+ - deploy
+
+workflow:
+  rules:
+    - when: always
+
+image: docker.io/abstract2tech/tutor-ci:16.1.0
+services:
+ - docker:23-dind
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_TLS_CERTDIR: ""
+  GIT_LFS_SKIP_SMUDGE: "1"
+  DOCKER_BUILDKIT: "1"
+
+.build-prepare: &build-prepare
+  - export TUTOR_ROOT="$(pwd)"
+  - export TUTOR_PLUGINS_ROOT="${TUTOR_ROOT}/plugins"
+  - pip install -r requirements.txt
+  - docker buildx create --use
+  - docker login "${REGISTRY_URL}" -u "${REGISTRY_USERNAME}" -p "${REGISTRY_PASSWORD}"
+  - yq eval 'keys | .[] | select(. == "*_MFE_APP")' config.yml | xargs -I {} yq -i ".{}.version = \"${CI_COMMIT_BRANCH}\"" config.yml
+  - tutor config save
+
+.build-execute-openedx: &build-execute-openedx
+  - tutor images build openedx --build-arg --cache-from --build-arg "${OPENEDX_IMAGE}":-cache --cache-to-registry
+
+.build-execute-mfe: &build-execute-mfe
+  - tutor images build mfe --build-arg --cache-from --build-arg "${MFE_IMAGE}":-cache --cache-to-registry
+
+.deploy-prepare: &deploy-prepare
+  - eval $(ssh-agent -s)
+  - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+  - cp "${SSH_KNOWN_HOSTS}" ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - echo "${SSH_PRIVATE_KEY}" | ssh-add -
+  - pip install ansible==7.2.0
+  - ansible-galaxy install -r ansible/requirements.yml
+  - cd "${CI_PROJECT_DIR}"/ansible
+  - cp "${ANSIBLE_VAULT_PASSWORD}" vault_pass
+  - chmod 600 vault_pass
+
+.deploy-execute: &deploy-execute
+  - cd "${CI_PROJECT_DIR}"/ansible
+  - ANSIBLE_CONFIG=. ansible-playbook -u tutor -l "${ANSIBLE_HOST}" -t tutor_config playbook.yml
+  - ANSIBLE_CONFIG=. ansible-playbook -u tutor -l "${ANSIBLE_HOST}" -t tutor_deploy playbook.yml
+
+build-openedx:
+  stage: build
+  tags:
+    - did
+  variables:
+    OPENEDX_IMAGE: docker.io/abstract2tech/community-theme-openedx:16.1.0
+  before_script:
+    - *build-prepare
+  script:
+    - *build-execute-openedx
+  only:
+    - main
+
+build-mfe:
+  stage: build
+  tags:
+    - did
+  variables:
+    MFE_IMAGE: registry.abzt.de/community-theme/mfe:staging
+  before_script:
+    - *build-prepare
+  script:
+    - *build-execute-mfe
+  only:
+    - main
+
+deploy:
+  stage: deploy
+  tags:
+    - docker
+  variables:
+    ANSIBLE_HOST: community-theme_staging
+  before_script:
+    - *deploy-prepare
+  script:
+    - *deploy-execute
+  only:
+    - main
