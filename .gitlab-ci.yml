@@ -45,7 +45,7 @@ variables:
 .deploy-execute: &deploy-execute
   - cd "${CI_PROJECT_DIR}"/ansible
   - ANSIBLE_CONFIG=. ansible-playbook -u tutor -l "${ANSIBLE_HOST}" -t tutor_config playbook.yml
-  - ANSIBLE_CONFIG=. ansible-playbook -u tutor -l "${ANSIBLE_HOST}" -t tutor_deploy playbook.yml
+  - ANSIBLE_CONFIG=. ansible-playbook -u tutor -l "${ANSIBLE_HOST}" -t tutor_service,tutor_deploy playbook.yml
 
 build-openedx:
   stage: build
