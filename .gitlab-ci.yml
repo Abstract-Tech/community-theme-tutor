@@ -20,7 +20,7 @@ variables:
   - export TUTOR_PLUGINS_ROOT="${TUTOR_ROOT}/plugins"
   - pip install -r requirements.txt
   - docker buildx create --use
-  - docker login "${REGISTRY_URL}" -u "${REGISTRY_USERNAME}" -p "${REGISTRY_PASSWORD}"
+  - docker login registry.abzt.de -u "${REGISTRY_USERNAME}" -p "${REGISTRY_PASSWORD}"
   - yq eval 'keys | .[] | select(. == "*_MFE_APP")' config.yml | xargs -I {} yq -i ".{}.version = \"${CI_COMMIT_BRANCH}\"" config.yml
   - tutor config save
 
