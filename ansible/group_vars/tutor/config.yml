@@ -1,5 +1,7 @@
 ---
-tutor_version: "16.0.1"
+tutor_version: "16.1.0"
+
+tutor_config_repo: git@github.com:Abstract-Tech/community-theme-tutor.git
 
 tutor_prod_config:
   ENABLE_HTTPS: true

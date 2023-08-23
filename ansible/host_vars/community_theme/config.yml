@@ -1,4 +1,4 @@
-tutor_config_repo: git@github.com:Abstract-Tech/community-theme-tutor.git
+tutor_config_version: "main"
 
 tutor_prod_host_config:
   LMS_HOST: community.abzt.de
