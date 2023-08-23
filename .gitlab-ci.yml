@@ -78,7 +78,7 @@ deploy:
   tags:
     - docker
   variables:
-    ANSIBLE_HOST: community-theme
+    ANSIBLE_HOST: community_theme
   before_script:
     - *deploy-prepare
   script:
