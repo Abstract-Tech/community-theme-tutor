@@ -25,10 +25,10 @@ variables:
   - tutor config save
 
 .build-execute-openedx: &build-execute-openedx
-  - tutor images build openedx --build-arg --cache-from --build-arg "${OPENEDX_IMAGE}":-cache --cache-to-registry
+  - tutor images build openedx --build-arg --cache-from --build-arg "${OPENEDX_IMAGE}"-cache --cache-to-registry
 
 .build-execute-mfe: &build-execute-mfe
-  - tutor images build mfe --build-arg --cache-from --build-arg "${MFE_IMAGE}":-cache --cache-to-registry
+  - tutor images build mfe --build-arg --cache-from --build-arg "${MFE_IMAGE}"-cache --cache-to-registry
 
 .deploy-prepare: &deploy-prepare
   - eval $(ssh-agent -s)
