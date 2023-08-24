@@ -114,3 +114,12 @@ div.empty-dashboard-message > a.btn-primary:hover{
 div.empty-dashboard-message > a.btn-primary:active{
     background-color: #125347 !important;
 }
+
+li.small > a {
+    color: #25a78e !important;
+}
+
+a.small, span.align-middle > a, ul.list-unstyled > li > a, button.btn-link {
+    color: #25a78e !important;
+}
+
