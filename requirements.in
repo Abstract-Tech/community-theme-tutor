@@ -3,3 +3,4 @@ tutor-mfe<17.0.0
 tutor-forum<17.0.0
 tutor-cairn<17.0.0
 tutor-minio<17.0.0
+git+https://github.com/openedx/openedx-tutor-plugins.git#subdirectory=plugins/tutor-contrib-learner-dashboard-mfe
