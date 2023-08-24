@@ -123,3 +123,6 @@ a.small, span.align-middle > a, ul.list-unstyled > li > a, button.btn-link {
     color: #25a78e !important;
 }
 
+h2.course-list-title {
+    color: red !important;
+}
