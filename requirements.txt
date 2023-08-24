@@ -73,7 +73,7 @@ tutor==16.1.0
     #   tutor-minio
 tutor-cairn==16.0.1
     # via -r requirements.in
-tutor-contrib-learner-dashboard-mfe @ git+https://github.com/openedx/openedx-tutor-plugins.git#subdirectory=plugins/tutor-contrib-learner-dashboard-mfe
+tutor-contrib-learner-dashboard-mfe @ git+https://github.com/abstract-tech/openedx-tutor-plugins.git#subdirectory=plugins/tutor-contrib-learner-dashboard-mfe
     # via -r requirements.in
 tutor-forum==16.0.0
     # via -r requirements.in
