@@ -106,3 +106,11 @@ a:hover {
 div.contact-info p {
     margin: 0;
 }
+
+div.empty-dashboard-message > a.btn-primary:hover{
+    color: white !important;
+}
+
+div.empty-dashboard-message > a.btn-primary:active{
+    background-color: #125347 !important;
+}
