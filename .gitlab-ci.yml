@@ -65,7 +65,7 @@ build-mfe:
   tags:
     - did
   variables:
-    MFE_IMAGE: registry.abzt.de/community-theme/mfe:staging
+    MFE_IMAGE: docker.io/abstract2tech/community-theme-mfe:16.1.0
   before_script:
     - *build-prepare
   script:
