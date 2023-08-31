@@ -122,10 +122,11 @@ OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
 PLUGINS:
 - aicoach
-- course-about-mfe
 - community-mfe
+- course-about-mfe
 - home-mfe
 - mfe
+- scorm-fix
 - session-timeout
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
