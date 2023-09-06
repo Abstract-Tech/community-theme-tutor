@@ -25,7 +25,7 @@ variables:
   - tutor config save
 
 .build-execute-openedx: &build-execute-openedx
-  - tutor images build openedx --no-cache
+  - tutor images build openedx --build-arg --cache-from --build-arg "${OPENEDX_IMAGE}":-cache --cache-to-registry
   - tutor images push openedx
 
 .build-execute-mfe: &build-execute-mfe
