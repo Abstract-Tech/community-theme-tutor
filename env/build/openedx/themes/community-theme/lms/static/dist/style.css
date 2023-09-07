@@ -72,3 +72,7 @@ button.discovery-submit {
 button.find-courses button.discovery-submit:hover, button.find-courses button.discovery-submit:focus {
     background: #31d8b7;
 }
+
+button.btn-outline-primary {
+    margin-right: 10px;
+}
