@@ -60,3 +60,15 @@ a:not(.btn), a:visited:not(.btn) {
     float: none;
     height: 40px;
 }
+
+button.discovery-submit {
+    border: 2px solid #25a78e;
+    border-radius: 2px;
+    height: 55px;
+    padding: 0 14px;
+    background: #25a78e;
+}
+
+button.find-courses button.discovery-submit:hover, button.find-courses button.discovery-submit:focus {
+    background: #31d8b7;
+}
