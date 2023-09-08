@@ -61,12 +61,12 @@ a:not(.btn), a:visited:not(.btn) {
     height: 40px;
 }
 
-button.discovery-submit {
-    border: 2px solid #25a78e;
+.discovery-submit {
+    border: 2px solid #25a78e !important;
     border-radius: 2px;
     height: 55px;
     padding: 0 14px;
-    background: #25a78e;
+    background: #25a78e !important;
 }
 
 button.find-courses button.discovery-submit:hover, button.find-courses button.discovery-submit:focus {
@@ -76,3 +76,88 @@ button.find-courses button.discovery-submit:hover, button.find-courses button.di
 button.btn-outline-primary {
     margin-right: 10px;
 }
+
+div.colophon {
+    padding-left: 20px;
+}
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .footer-upper {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-buttons a {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 20px;
+  }
+  
+  .footer-logos {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-logos i {
+    font-size: 24px;
+  }
+  
+  .footer-rights {
+    text-align: right;
+    font-size: 12px;
+  }
+  
+  .footer-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .footer-license {
+    font-size: 12px;
+  }
+  
+  .footer-text {
+    max-width: 300px;
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  .footer-divider {
+    width: 100%;
+    height: 2px; /* adjust as needed */
+    background: #ddd; /* adjust as needed */
+  }
