@@ -54,71 +54,45 @@
   </div>
 % else:
   <div class="wrapper wrapper-footer">
-    <footer id="footer-openedx" class="grid-container"
-      ## When rendering the footer through the branding API,
-      ## the direction may not be set on the parent element,
-      ## so we set it here.
-      % if bidi:
-        dir=${bidi}
-      % endif
-    >
-      <div class="colophon">
-        <nav class="nav-colophon" aria-label="${_('About')}">
-          <ol>
-            <!-- <li><a href="/about">ABOUT</a></li>
-            <li><a href="/blog">BLOG</a></li> -->
-            <li><a href="/contact">CONTACT</a></li>
-          </ol>
-        </nav>
-
-        % if context.get('include_language_selector', footer_language_selector_is_enabled()):
-            <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
-        % endif
-        <div class="wrapper-logo">
-          <p>
-            <a href="/">
-              ## The default logo is a placeholder.
-              ## You can either replace this link entirely or update
-              ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
-              ## If you customize FOOTER_ORGANIZATION_IMAGE, then the image
-              ## can be included in the footer on other sites
-              ## (e.g. a blog or marketing front-end) to provide a consistent
-              ## user experience.  See the branding app for details.
-              <img alt="${_('organization logo')}" src="/static/community-theme/images/logo.png">
-            </a>
-          </p>
+    <footer role="contentinfo" class="site-footer">
+      <div class="container-fluid">
+          <div class="footer-content">
+              <div class="footer-upper">
+                  <div class="footer-buttons">
+                      <a href="/about">What we do</a>
+                      <a href="/contact">Contact</a>
+                  </div>
+                  <div>
+                      <div class="footer-logos">
+                        <a href="https://twitter.com/abstractGmbH" target="_blank" rel="noopener noreferrer">
+                          <i class="fab fa-twitter fa-2x" style="color:black;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/abstract-technology-gmbh/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin fa-2x" style="color:black;"></i>
+                        </a>                      
+                      </div>
+                      <div class="footer-rights">
+                          © Community-theme | All rights reserved | Privacy | Terms
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-divider"></div>
+              <div class="footer-lower">
+                  <div>
+                      <a class="d-block" href="https://community.abzt.de" aria-label="aria-label">
+                          <img class="footer-logo" src="https://community.abzt.de/theming/asset/images/logo.png" alt="logo">
+                      </a>
+                      <div class="footer-license">
+                          Theme licensed under the AGPLv3 License. Copyright 2022 by OpenCraft & Abstract Technology
+                      </div>
+                  </div>
+                  <div class="footer-text">
+                      edX, Open edX and their respective logos are registered trademarks of edX Inc. Free online courses at edX.org
+                  </div>
+              </div>
           </div>
-
-        ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-          <p class="copyright">
-            © <script>
-                var CurrentYear = new Date().getFullYear()
-                document.write(CurrentYear)
-            </script> ${_("All rights reserved.")}
-          </p>
-        <nav class="nav-legal" aria-label="${_('Legal')}">
-
-          <!-- <ul>
-            <li> <a href="/privacy">Privacy Policy</a> </li>
-            <li> <a href="/tos_and_honor">Terms of Use - Honor Code</a></li>
-          </ul> -->
-        </nav>
       </div>
-
-      ## Please leave this link and use one of the logos provided
-      ## The OpenEdX link may be hidden when this view is served
-      ## through an API to partner sites (such as marketing sites or blogs),
-      ## which are not technically powered by OpenEdX.
-      % if not hide_openedx_link:
-      <div class="footer-about-openedx">
-        <p>
-          <a href="${footer['openedx_link']['url']}">
-            <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="125" />
-          </a>
-        </p>
-      </div>
-      % endif
-    </footer>
+  </footer>  
   </div>
 % endif
 % if include_dependencies:
