@@ -29,7 +29,7 @@ variables:
   - tutor images push openedx
 
 .build-execute-mfe: &build-execute-mfe
-  - tutor images build mfe --no-cache
+  - tutor images build mfe --build-arg --cache-from --build-arg "${MFE_IMAGE}":-cache --cache-to-registry
   - tutor images push mfe
 
 .deploy-prepare: &deploy-prepare
