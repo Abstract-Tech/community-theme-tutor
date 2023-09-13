@@ -15,7 +15,7 @@ jobs:
         run: |
           mkdir -p ~/.ssh && chmod 700 ~/.ssh
           eval $(ssh-agent -s)
-          echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" | ssh-add -
+          echo "${{ secrets.GITLAB_KNOWN_HOSTS }}" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+          echo "${{ secrets.COMMUNITY_THEME_SSH_PRIVATE_KEY }}" | ssh-add -
           git remote add gitlab git@gitlab.com:abstract-germany/community-theme/community-theme-tutor.git
           git push gitlab $GITHUB_REF
