@@ -49,26 +49,6 @@ Example services endpoints for the production like environment:
 tutor dev do createuser --staff --superuser admin admin@example.com
 ```
 
-## Building customized MFEs dev images
-
-In order to build dev images of custom MFE run:
-
-    tutor images build mfe -d "-t=docker.io/overhangio/openedx-{{name}}-dev:15.0.5" --target {{name}}-dev
-
-## Building and runnning the Home MFE in development mode
-
-Build the dev image:
-
-    tutor images build mfe -d "-t=docker.io/overhangio/openedx-home-dev:15.0.5" --target home-dev
-
-Then you should be able to run:
-
-    mfe_dev home
-
-And browse the MFE at http://apps.local.overhang.io:3001/home/
-
-</details>
-
 ## Running an MFE in development mode
 
 To run an MFE in development mode, you would need to clone it and to mount it's directory
