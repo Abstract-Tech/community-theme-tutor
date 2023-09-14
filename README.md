@@ -49,34 +49,6 @@ Example services endpoints for the production like environment:
 tutor dev do createuser --staff --superuser admin admin@example.com
 ```
 
-## MFE development
-
-Read the [Tutor docs](https://github.com/overhangio/tutor-mfe#mfe-development) on MFE development.
-
-TL;DR
-
-Start the services in development mode. Be careful when using `tutor dev start` as it will start all services, requiring a lot of resources (it nearly crashed my system). Specifying individual services might be needed.
-
-In this example we'll start development of the Profile MFE. In order to render it properly it needs to be access throught the LMS with an authenticated user, thus we are starting only the `lms` and `authn` MFE services.
-
-```
-tutor dev start lms authn
-```
-
-Then start the profile MFE mounting our local fork in a different shell:
-
-```
-mfe_dev profile
-```
-
-It's important that MFE directories names start with the `frontend-app` magic words, otherwise this won't work.
-
-The MFE application will be accessible at `http://apps.local.overhang.io:{{ PORT }}/{{ NAME }}/`. The `PORT` and `NAME` parameters for the specific MFE can be found in `config.yml`.
-(e.g. http://apps.local.overhang.io:1995/profile/)
-
-<details>
-  <summary>Old way of running MFE in development mode</summary>
-
 ## Building customized MFEs dev images
 
 In order to build dev images of custom MFE run:
