@@ -69,6 +69,7 @@ The following is an example of overriding a header
 3. mounts the `module.config.js` file, assuming it's `mfe/`, `tutor mounts add account:./mfe/module.config.js:/openedx/app/module.config.js`
 5. then run `npm install` _Note: in step 2 we run it inside header, now inside account mfe_
 6. Simliar to adding the header we can also add other pkgs, like footer, brand, paragon...etc.
+7. `tutor dev start -d` to apply changes
 
 ## Building and runnning MFEs in production mode
 
