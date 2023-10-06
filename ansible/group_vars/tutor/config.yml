@@ -4,8 +4,7 @@ tutor_version: "16.1.0"
 tutor_config_repo: git@github.com:Abstract-Tech/community-theme-tutor.git
 
 tutor_prod_config:
-  ENABLE_WEB_PROXY: false
+  ENABLE_WEB_PROXY: true
   ENABLE_HTTPS: true
-  CADDY_HTTP_PORT: 7001
 
 tutor_app: community_theme
