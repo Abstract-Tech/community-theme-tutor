@@ -1,0 +1,13 @@
+name: course-about-mfe-production
+version: 0.1.0
+patches:
+  caddyfile-lms: |
+    route /courses/*/about {
+        reverse_proxy "mfe:8002" {
+            rewrite /course_about/{uri}
+        }
+    }
+
+    route /course_about/* {
+        reverse_proxy "mfe:8002"
+    }

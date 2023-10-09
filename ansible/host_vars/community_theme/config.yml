@@ -11,4 +11,10 @@ tutor_post_hooks:
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable forum"
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable cairn"
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable learner-dashboard-mfe"
+  - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins disable home-mfe"
+  - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins disable course-about-mfe"
+  - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable home-mfe-production"
+  - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable course-about-mfe-production"
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} config save"
+
+

@@ -1,0 +1,13 @@
+name: home-mfe-production
+version: 0.1.0
+patches:
+  caddyfile-lms: |
+    route / {
+        reverse_proxy "mfe:8002" {
+            rewrite /home/{uri}
+        }
+    }
+
+    route /home/* {
+        reverse_proxy "mfe:8002"
+    }
