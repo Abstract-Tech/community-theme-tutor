@@ -15,8 +15,8 @@ describe("navigate to a course tabs", () => {
     });
 
     it("check if download exported course is visible", function () {
-        cy.get('.action-export').should('be.visible').click();
-        cy.get('a.action-primary span.copy').click({ force: true });
+        cy.get('.action-export').should('be.visible').click({ force: true });
+        cy.get('a.action-primary span.icon').click({ force: true });
 
         cy.wait(5000);
       cy.get('#download-exported-button').should('be.visible');
