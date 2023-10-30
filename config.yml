@@ -128,7 +128,6 @@ PLUGINS:
 - mfe
 - scorm-fix
 - session-timeout
-- caddy_proxy
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
 PREVIEW_LMS_HOST: preview.local.overhang.io
