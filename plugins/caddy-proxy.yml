@@ -2,7 +2,39 @@ name: caddy_proxy
 version: 0.1.0
 patches:
   caddyfile: |
-    wp.community.abzt.de {
+    wp.community.abzt.de, widelearn-alliance.com {
     reverse_proxy wordpress
     }
+    edx-enterprise.abzt.de {
+      reverse_proxy http://edx.devstack.lms:18000
+    }
+
+    studio.edx-enterprise.abzt.de {
+      reverse_proxy http://edx.devstack.cms:18010
+    }
+
+    discovery.edx-enterprise.abzt.de {
+      reverse_proxy http://discovery.devstack.edx:18381
+    }
+
+    http://ecommerce.edx-enterprise.abzt.de {
+      reverse_proxy http://ecommerce.devstack.edx:18130
+    }
+
+    learning.edx-enterprise.abzt.de {
+      reverse_proxy edx.devstack.frontend-app-learning:2000
+    }
+
+    catalog.edx-enterprise.abzt.de {
+      reverse_proxy enterprise.catalog.app:18160
+    }
+
+    admin.edx-enterprise.abzt.de {
+      reverse_proxy http://172.17.0.1:1991
+    }
+
+    learner.edx-enterprise.abzt.de {
+      reverse_proxy http://172.17.0.1:8734
+    }
+
 
