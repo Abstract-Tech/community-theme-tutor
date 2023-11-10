@@ -5,6 +5,7 @@ CAIRN_SUPERSET_SECRET_KEY: WcbX8dsobUWH5zOgHDz4
 CMS_HOST: studio.local.overhang.io
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: noreply@community.abzt.de
+DOCKER_IMAGE_CADDY: docker.io/library/caddy:2.7.5
 DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:16.1.0
 ENABLE_HTTPS: false
 ENABLE_WEB_PROXY: true
