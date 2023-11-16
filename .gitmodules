@@ -56,3 +56,6 @@
 	branch = community-theme.palm
 
 
+[submodule "cypress-tests"]
+	path = cypress-tests
+	url = git@gitlab.com:abstract-germany/e2e-tests.git
