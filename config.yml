@@ -8,7 +8,6 @@ CONTACT_EMAIL: noreply@community.abzt.de
 DOCKER_IMAGE_CADDY: docker.io/library/caddy:2.7.5
 DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:16.1.0
 ENABLE_HTTPS: false
-ENABLE_WEB_PROXY: true
 ID: jxBish2U54zbLTe82GMVvnyO
 JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
 
