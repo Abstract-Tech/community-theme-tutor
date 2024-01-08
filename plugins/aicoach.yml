@@ -1,6 +1,0 @@
-name: aicoach
-version: 0.1.0
-patches:
-  openedx-common-settings: |
-    OPENAI_SECRET_KEY = "XXX-XXX-XXX"
-

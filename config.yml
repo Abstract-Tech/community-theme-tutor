@@ -2,11 +2,11 @@ CAIRN_CLICKHOUSE_PASSWORD: eGUhQbWMRSKSrB6LJqPl
 CAIRN_POSTGRESQL_PASSWORD: KQY1VDAkTPKZz0bAi9J9
 CAIRN_SSO_CLIENT_SECRET: 7ojP8DylFPiJN83O46VL
 CAIRN_SUPERSET_SECRET_KEY: WcbX8dsobUWH5zOgHDz4
-CMS_HOST: studio.local.overhang.io
+CMS_HOST: studio.local.edly.io
 CMS_OAUTH2_SECRET: 2icx54cdu9SJ77KMlZgHTWcm
 CONTACT_EMAIL: noreply@community.abzt.de
 DOCKER_IMAGE_CADDY: docker.io/library/caddy:2.7.5
-DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:16.1.0
+DOCKER_IMAGE_OPENEDX: docker.io/abstract2tech/community-theme-openedx:17.0.0
 ENABLE_HTTPS: false
 ENABLE_WEB_PROXY: true
 ID: jxBish2U54zbLTe82GMVvnyO
@@ -64,71 +64,22 @@ JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
 
   -----END RSA PRIVATE KEY-----'
 LANGUAGE_CODE: en
-LMS_HOST: local.overhang.io
-MFE_ACCOUNT_MFE_APP:
-  name: account
-  port: 1997
-  repository: https://github.com/Abstract-Tech/community-theme-account
-  version: community-theme.palm
-MFE_AUTHN_MFE_APP:
-  name: authn
-  port: 1999
-  repository: https://github.com/Abstract-Tech/community-theme-authn
-  version: community-theme.palm
-MFE_COURSE_ABOUT_MFE_APP:
-  name: course_about
-  port: 3000
-  repository: https://github.com/Abstract-Tech/community-theme-course-about
-  version: community-theme
-MFE_COURSE_AUTHORING_MFE_APP:
-  name: course_authoring
-  port: 2001
-  repository: https://github.com/Abstract-Tech/community-theme-course-authoring
-  version: community-theme.palm
-MFE_DISCUSSIONS_MFE_APP:
-  name: discussions
-  port: 2002
-  repository: https://github.com/Abstract-Tech/community-theme-discussions
-  version: community-theme.palm
-MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:16.1.0
-MFE_GRADEBOOK_MFE_APP:
-  name: gradebook
-  port: 1994
-  repository: https://github.com/Abstract-Tech/community-theme-gradebook.git
-  version: community-theme.palm
-MFE_HOME_MFE_APP:
-  name: home
-  port: 3001
-  repository: https://github.com/Abstract-Tech/community-theme-home
-  version: community-theme
-MFE_LEARNING_MFE_APP:
-  name: learning
-  port: 2000
-  repository: https://github.com/Abstract-Tech/community-theme-learning
-  version: community-theme.palm
-MFE_PROFILE_MFE_APP:
-  name: profile
-  port: 1995
-  repository: https://github.com/Abstract-Tech/community-theme-profile
-  version: community-theme.palm
+LMS_HOST: local.edly.io
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_EXTRA_PIP_REQUIREMENTS:
 - git+https://github.com/abstract-tech/abstract-scorm-xblock.git@django4#subdirectory=abstract_scorm_xblock&egg=abstract-scorm-xblock
 - git+https://github.com/raccoongang/xblock-pdf.git@v1.0.3#egg=xblock-pdf
 - git+https://github.com/Stanford-Online/xblock-in-video-quiz.git#egg=invideoquiz-xblock
-- git+https://github.com/abconlinecourses/chatgpt-xblock.git@v0.1#egg=chatgpt-xblock
-- ai-coach-xblock==1.0.3
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
 PLUGINS:
-- aicoach
-- community-mfe
 - course-about-mfe
+- community-mfe
 - home-mfe
 - mfe
 - scorm-fix
 - session-timeout
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
-PREVIEW_LMS_HOST: preview.local.overhang.io
+PREVIEW_LMS_HOST: preview.local.edly.io
