@@ -1,0 +1,50 @@
+{
+    "Image_Editor.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "CS101",
+            "name": "Image_Editor.png",
+            "org": "MySchool",
+            "revision": null,
+            "run": "2023_11",
+            "tag": "c4x"
+        },
+        "displayname": "Image_Editor.png",
+        "filename": "asset-v1:MySchool+CS101+2023_11+type@asset+block@Image_Editor.png",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MySchool",
+            "CS101",
+            "thumbnail",
+            "Image_Editor-png.jpg",
+            null
+        ]
+    },
+    "quince_demo.jpeg": {
+        "contentType": "image/jpeg",
+        "content_son": {
+            "category": "asset",
+            "course": "CS101",
+            "name": "quince_demo.jpeg",
+            "org": "MySchool",
+            "revision": null,
+            "run": "2023_11",
+            "tag": "c4x"
+        },
+        "displayname": "quince_demo.jpeg",
+        "filename": "asset-v1:MySchool+CS101+2023_11+type@asset+block@quince_demo.jpeg",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MySchool",
+            "CS101",
+            "thumbnail",
+            "quince_demo-jpeg.jpg",
+            null
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+<vertical display_name="SCORM">
+  <abstract_scorm_xblock url_name="935c8730eca34d2e8be5b22e9ec9d6b3" xblock-family="xblock.v1" display_name="SCORM unit" _scorm_url="/abstract_scorm_xblock/99101cdf42b8c9617b4e29b513a30776/index_lms.html" _scorm_version="1.2" allowopeninplace="false" autoopen="false" has_score="true" height="450" popup="false" scorm_file="SCORM1.zip" scorm_index="index_lms.html" width="null">
+    <ns0:icon_class xmlns:ns0="http://code.edx.org/xblock/option" none="true"/>
+  </abstract_scorm_xblock>
+</vertical>

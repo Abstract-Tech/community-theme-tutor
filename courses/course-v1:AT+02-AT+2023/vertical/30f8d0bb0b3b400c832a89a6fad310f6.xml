@@ -1,0 +1,6 @@
+<vertical display_name="Virtual lesson 2" group_access="{&quot;974003977&quot;: [482326792, 249318987]}">
+  <html url_name="6c7795cb09934823a04cb132b91cffcf"/>
+  <lti_consumer url_name="4ba9b68551564dc6b432467a87599602" xblock-family="xblock.v1" display_name="Virtual lesson" button_text="Start your lesson" custom_parameters="[]" description="Big Blue Button" hide_launch="false" launch_target="modal" launch_url="https://teams.abstract-technology.de/lti/tool" lti_id="bbb"/>
+  <discussion url_name="f6a1902d60834070ac92ff86ddff2f5c" xblock-family="xblock.v1"/>
+  <done url_name="1e4b88c56120420fb6f36c486134d28e" xblock-family="xblock.v1"/>
+</vertical>

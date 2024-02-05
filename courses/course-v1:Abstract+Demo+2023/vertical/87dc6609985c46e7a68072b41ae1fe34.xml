@@ -1,0 +1,3 @@
+<vertical display_name="AI Coach">
+  <ai_coach url_name="7c1338b7fd0c44e1851c93e32b6b89f9" xblock-family="xblock.v1" api_key="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" context="OEB.Global is a yearly conference about education that takes place in Berlin from 22. to 24 of November." feedback_threshold="3" question="how many different conferences are in Berlin about education?"/>
+</vertical>

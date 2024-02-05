@@ -1,0 +1,15 @@
+{
+    "GRADER": [
+        {
+            "drop_count": 0,
+            "min_count": 1,
+            "short_label": "Final",
+            "type": "Final Exam",
+            "weight": 0.8
+        }
+    ],
+    "GRADE_CUTOFFS": {
+        "A": 0.61,
+        "B": 0.3
+    }
+}

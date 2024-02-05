@@ -1,0 +1,4 @@
+<vertical display_name="BigBlueButton as pop-up">
+  <html url_name="6018785795994726950614ce7d0f38c5"/>
+  <lti_consumer url_name="412a222328f847108832a6f861f53c7d" xblock-family="xblock.v1" button_text="Join the Webinar!" custom_parameters="[&#10;  &quot;record=false&quot;&#10;]" launch_target="new_window" launch_url="https://konekti.reu1.blindsidenetworks.com/lti/rooms/messages/blti" lti_id="bbb"/>
+</vertical>

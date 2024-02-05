@@ -1,0 +1,8 @@
+<video youtube="0.75:xGKlr7nT_Zw,1.00:dfqAQ1vSHvc,1.25:XGsB9bA6rGU,1.50:_HuIF16HdTA" url_name="636541acbae448d98ab484b028c9a7f6" sub="" transcripts="{&quot;en&quot;: &quot;cb46af7c-3815-4224-8638-bcda95144ea5-en.srt&quot;}" display_name="How to leverage libraries in Open edX platform" download_video="true" edx_video_id="cb46af7c-3815-4224-8638-bcda95144ea5" html5_sources="[]" youtube_id_0_75="xGKlr7nT_Zw" youtube_id_1_0="dfqAQ1vSHvc" youtube_id_1_25="XGsB9bA6rGU" youtube_id_1_5="_HuIF16HdTA" source="">
+  <video_asset client_video_id="External Video" duration="0.0" image="">
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="cb46af7c-3815-4224-8638-bcda95144ea5-en.srt"/>
+</video>

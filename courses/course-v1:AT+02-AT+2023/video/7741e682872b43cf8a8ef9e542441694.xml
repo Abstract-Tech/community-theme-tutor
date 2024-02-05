@@ -1,0 +1,8 @@
+<video youtube="1.00:KMiBiUeO-SQ" url_name="7741e682872b43cf8a8ef9e542441694" sub="" transcripts="{&quot;en&quot;: &quot;2912245b-a22a-4530-917e-0bdbd8381046-en.srt&quot;}" display_name="Course overview" edx_video_id="2912245b-a22a-4530-917e-0bdbd8381046" html5_sources="[]" youtube_id_1_0="KMiBiUeO-SQ">
+  <video_asset client_video_id="external video" duration="0.0" image="">
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="2912245b-a22a-4530-917e-0bdbd8381046-en.srt"/>
+</video>

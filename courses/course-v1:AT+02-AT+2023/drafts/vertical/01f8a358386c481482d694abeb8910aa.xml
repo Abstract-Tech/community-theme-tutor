@@ -1,0 +1,6 @@
+<vertical display_name="Unit" parent_url="block-v1:AT+02-AT+2023+type@sequential+block@130979a299ea468cbe2261208321d693" index_in_children_list="6">
+  <abstract_scorm_xblock url_name="8328f83ec8c14f3ab58278218d3d68f2" xblock-family="xblock.v1"/>
+  <videoalpha url_name="4e953b7fe3404466acc305331e3d1096"/>
+  <discussion url_name="dec0e2564c084054a95f3cf67c0af45f" xblock-family="xblock.v1"/>
+  <problem url_name="8381879b018a49a3a5d95efbebf98027"/>
+</vertical>

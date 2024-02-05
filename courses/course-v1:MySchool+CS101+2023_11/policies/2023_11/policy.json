@@ -1,0 +1,52 @@
+{
+    "course/2023_11": {
+        "cert_html_view_enabled": true,
+        "course_image": "quince_demo.jpeg",
+        "discussion_topics": {
+            "General": {
+                "id": "course"
+            }
+        },
+        "display_name": "My course",
+        "instructor_info": {
+            "instructors": []
+        },
+        "language": "en",
+        "learning_info": [],
+        "self_paced": true,
+        "start": "2023-01-01T00:30:00Z",
+        "tabs": [
+            {
+                "course_staff_only": false,
+                "name": "Course",
+                "type": "courseware"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Progress",
+                "type": "progress"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Dates",
+                "type": "dates"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Discussion",
+                "type": "discussion"
+            },
+            {
+                "course_staff_only": false,
+                "is_hidden": true,
+                "name": "Wiki",
+                "type": "wiki"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Textbooks",
+                "type": "textbooks"
+            }
+        ]
+    }
+}

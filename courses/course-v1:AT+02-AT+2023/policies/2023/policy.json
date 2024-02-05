@@ -1,0 +1,156 @@
+{
+    "course/2023": {
+        "advanced_modules": [
+            "pdf",
+            "lti_consumer",
+            "google-calendar",
+            "google-document",
+            "survey",
+            "abstract_scorm_xblock",
+            "annotatable",
+            "videoalpha",
+            "annoto",
+            "video_xblock",
+            "openassessment",
+            "done"
+        ],
+        "cert_html_view_enabled": true,
+        "certificates": {
+            "certificates": [
+                {
+                    "course_title": "Project Management Course",
+                    "description": "Description of the certificate",
+                    "id": 175460790,
+                    "is_active": true,
+                    "name": "Name of the certificate",
+                    "signatories": [
+                        {
+                            "certificate": 175460790,
+                            "id": 480195239,
+                            "name": "John Doe-Smith",
+                            "organization": "Open edX",
+                            "signature_image_path": "/asset-v1:Digicomp+01+2030+type@asset+block@sign_Demo.png",
+                            "title": "Instructor"
+                        },
+                        {
+                            "certificate": 175460790,
+                            "id": 1084694303,
+                            "name": "",
+                            "organization": "",
+                            "signature_image_path": "",
+                            "title": ""
+                        }
+                    ],
+                    "version": 1
+                }
+            ]
+        },
+        "course_image": "coursecard3-community-theme.jpg",
+        "course_visibility": "public",
+        "discussion_topics": {
+            "General": {
+                "id": "course"
+            }
+        },
+        "display_coursenumber": "2023",
+        "display_name": "Project Management Course",
+        "display_organization": "DEMOSTRATION",
+        "enable_subsection_gating": true,
+        "graceperiod": "",
+        "instructor_info": {
+            "instructors": []
+        },
+        "language": "en",
+        "learning_info": [],
+        "lti_passports": [
+            "bbb:demo:saltysalt",
+            "annoto-auth:eyJhbGciOiJIUzI1NiJ9.NDMzZjg4OWQtN2U5Yy00ODY2LWFhODktZWI5OTBjNzEyZTg0.Y4xqbY8m2OkXilV0S02eNYgdgyQFVYR07FZeWoUmeBo:2bbc4e05e9b577527570ba7ddfd18966864c787351dfb5dc2133af4b5ee6e66b"
+        ],
+        "minimum_grade_credit": 0.8,
+        "pdf_textbooks": [
+            {
+                "chapters": [
+                    {
+                        "title": "Chapter 1",
+                        "url": "/static/chapter1.pdf"
+                    },
+                    {
+                        "title": "End",
+                        "url": "/static/chapter3.pdf"
+                    }
+                ],
+                "id": "9Love_in_the_Time_of_Cholera_by_Gabriel_Garc\u00eda_M\u00e1rquez",
+                "tab_title": "Love in the Time of Cholera by Gabriel Garc\u00eda M\u00e1rquez"
+            }
+        ],
+        "self_paced": true,
+        "start": "2030-01-01T00:00:00Z",
+        "tabs": [
+            {
+                "course_staff_only": false,
+                "name": "Course",
+                "type": "courseware"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Textbooks",
+                "type": "textbooks"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Discussion",
+                "type": "discussion"
+            },
+            {
+                "course_staff_only": false,
+                "is_hidden": true,
+                "name": "Wiki",
+                "type": "wiki"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Progress",
+                "type": "progress"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Textbooks",
+                "type": "pdf_textbooks"
+            }
+        ],
+        "user_partitions": [
+            {
+                "active": true,
+                "description": "The groups in this configuration can be mapped to cohorts in the Instructor Dashboard.",
+                "groups": [
+                    {
+                        "id": 482326792,
+                        "name": "Beginner",
+                        "version": 1
+                    },
+                    {
+                        "id": 1980492340,
+                        "name": "Professional",
+                        "version": 1
+                    },
+                    {
+                        "id": 249318987,
+                        "name": "Advanced",
+                        "version": 1
+                    }
+                ],
+                "id": 974003977,
+                "name": "Content Groups",
+                "parameters": {},
+                "scheme": "cohort",
+                "version": 3
+            }
+        ],
+        "xml_attributes": {
+            "filename": [
+                "course/OPENEDX23.xml",
+                "course/OPENEDX23.xml"
+            ]
+        }
+    }
+}

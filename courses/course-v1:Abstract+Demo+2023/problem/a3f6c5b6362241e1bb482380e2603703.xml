@@ -1,0 +1,15 @@
+<problem display_name="Multiple Choice" markdown="You can use this template as a guide to the simple editor markdown and OLX markup to use for multiple choice problems. Edit this component to replace this template with your own assessment.&#10;&#10;&gt;&gt;This is the question?||You can add an optional tip or note related to the prompt like this. &lt;&lt;&#10;&#10;[ ] wind&#10;[x] earth&#10;[ ] wind&#10;[x] water&#10;[ ] wind&#10;[ ] wind&#10;">
+<choiceresponse>
+  <p>You can use this template as a guide to the simple editor markdown and OLX markup to use for multiple choice problems. Edit this component to replace this template with your own assessment.</p>
+<label>This is the question?</label>
+<description>You can add an optional tip or note related to the prompt like this. </description>
+<checkboxgroup>
+    <choice correct="false">wind</choice>
+    <choice correct="true">earth</choice>
+    <choice correct="false">wind</choice>
+    <choice correct="true">water</choice>
+    <choice correct="false">wind</choice>
+    <choice correct="false">wind</choice>
+  </checkboxgroup>
+</choiceresponse>
+</problem>

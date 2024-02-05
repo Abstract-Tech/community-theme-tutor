@@ -1,0 +1,3 @@
+<vertical display_name="Unit" visible_to_staff_only="true">
+  <lti_consumer url_name="ffa4086271a04bc4a47314e29b1dfbb1" xblock-family="xblock.v1" display_name="Annoto Dashboard" description="Annoto Test" launch_url="https://auth.annoto.net/lti/course-insights" lti_id="annoto-auth"/>
+</vertical>

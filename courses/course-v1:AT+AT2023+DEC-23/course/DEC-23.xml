@@ -1,0 +1,4 @@
+<course advanced_modules="[&quot;abstract_scorm_xblock&quot;, &quot;annotatable&quot;, &quot;videoalpha&quot;, &quot;lti_consumer&quot;, &quot;annoto&quot;, &quot;video_xblock&quot;, &quot;openassessment&quot;, &quot;google-calendar&quot;, &quot;invideoquiz&quot;, &quot;scorm&quot;, &quot;ai_coach&quot;, &quot;chatgptxblock&quot;]" cert_html_view_enabled="true" course_image="smebc-cybersecurity-essentials-protect-business.png" display_name="Test course Abstract Technology" instructor_info="{&quot;instructors&quot;: []}" language="en" learning_info="[]" self_paced="true" start="2023-12-04T00:00:00+00:00">
+  <chapter url_name="4cd72f7c98424699a2754c93d00789c6"/>
+  <wiki slug="AT.AT2023.DEC-23"/>
+</course>

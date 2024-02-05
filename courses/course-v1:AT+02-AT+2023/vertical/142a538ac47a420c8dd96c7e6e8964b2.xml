@@ -1,0 +1,5 @@
+<vertical display_name="Scorm-compliant content">
+  <abstract_scorm_xblock url_name="2922e7eca18e4ebe84d4b7aff7cbedd5" xblock-family="xblock.v1" display_name="This is an example for a SCORM-compliant content" _scorm_url="/abstract_scorm_xblock/ca4d148053e5ee63e9f097d338164d24/index_lms.html" _scorm_version="1.2" allowopeninplace="false" autoopen="false" has_score="true" height="650" popup="false" scorm_file="Datenschutz.zip" scorm_index="index_lms.html" width="800">
+    <ns0:icon_class xmlns:ns0="http://code.edx.org/xblock/option" none="true"/>
+  </abstract_scorm_xblock>
+</vertical>

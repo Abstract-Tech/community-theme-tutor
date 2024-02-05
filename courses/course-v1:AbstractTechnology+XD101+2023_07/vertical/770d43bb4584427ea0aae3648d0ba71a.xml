@@ -1,0 +1,9 @@
+<vertical display_name="video kaltura">
+  <video url_name="a0a79d1d62b6421da1d7c604d88694a9"/>
+  <video_xblock url_name="e86340f317734e86bd0e4c5d768c335e" xblock-family="xblock.v1" display_name="Video  using video_xblock" transcripts="" threeplaymedia_apikey="" threeplaymedia_file_id="" threeplaymedia_streaming="false" download_transcript_allowed="false" download_video_allowed="false" end_time="&quot;00:00:00&quot;" handout="" href="https://cfvod.kaltura.com/pd/p/2065951/sp/206595100/serveFlavor/entryId/1_53061sih/v/1/flavorId/1_jksrk2sg/fileName/silent-logo_(Basic_Small_-_WEB_MBL_(H264_400)).mp4/name/a.mp4" player_name="html5-player" start_time="&quot;00:00:00&quot;"/>
+  <video url_name="607b5c4e8a2f42eba1a5ba2e88834220"/>
+  <video url_name="96b30e7c0ffd4e72a980b8818140a6de"/>
+  <video_xblock url_name="13e95a374cf54392aee41751d446b416" xblock-family="xblock.v1" display_name="Video" transcripts="" threeplaymedia_apikey="" threeplaymedia_file_id="" threeplaymedia_streaming="false" href="https://vimeo.com/773500743" player_name="vimeo-player"/>
+  <video_xblock url_name="d268d0d5955f421f97eccea98e6b334b" xblock-family="xblock.v1" display_name="Video" transcripts="" threeplaymedia_apikey="" threeplaymedia_file_id="" threeplaymedia_streaming="false" href="https://www.youtube.com/watch?v=3_yD_cEKoCk" player_name="youtube-player"/>
+  <video url_name="8cb9fae1cc2d406aa6b3390c1a5903b0"/>
+</vertical>

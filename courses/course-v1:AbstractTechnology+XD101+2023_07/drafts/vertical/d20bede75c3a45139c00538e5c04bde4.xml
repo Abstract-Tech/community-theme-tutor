@@ -1,0 +1,3 @@
+<vertical display_name="video LTI" parent_url="block-v1:AbstractTechnology+XD101+2023_07+type@sequential+block@c103e6cf79004c58a2b08a9049eb3b2e" index_in_children_list="3">
+  <lti_consumer url_name="01fba5b96d6d4c45a2bdc6255170dcef" xblock-family="xblock.v1" button_text="start" description="Kaltura test" launch_url="https://2065951-6.kaf.kaltura.com/hosted/index/course-gallery" lti_id="kaltura:2065951:adminsecret"/>
+</vertical>

@@ -1,0 +1,4 @@
+<course advanced_modules="[&quot;pdf&quot;, &quot;lti_consumer&quot;, &quot;google-calendar&quot;, &quot;google-document&quot;, &quot;survey&quot;, &quot;abstract_scorm_xblock&quot;, &quot;annotatable&quot;, &quot;videoalpha&quot;, &quot;annoto&quot;, &quot;video_xblock&quot;, &quot;openassessment&quot;, &quot;done&quot;, &quot;ai_coach&quot;, &quot;chatgptxblock&quot;, &quot;edx_sga&quot;, &quot;video_xblock&quot;]" cert_html_view_enabled="true" course_image="work-station-straight-on-view.jpg" display_name="Xblocks demo" instructor_info="{&quot;instructors&quot;: []}" language="en" learning_info="[]" self_paced="true" start="2030-01-01T00:00:00+00:00">
+  <chapter url_name="43a5910133ce4bdcb8bbe24871917ea9"/>
+  <wiki slug="AbstractTechnology.XD101.2023_07"/>
+</course>

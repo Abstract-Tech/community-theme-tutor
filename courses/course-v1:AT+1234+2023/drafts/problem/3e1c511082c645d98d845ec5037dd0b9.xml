@@ -1,0 +1,11 @@
+<problem display_name="Checkboxes" markdown="You can use this template as a guide to the simple editor markdown and OLX markup to use for checkboxes problems. Edit this component to replace this template with your own assessment.&#10;&#10;&gt;&gt;Welches alter gehört GenerationX? 1945-1964 oder 1965-1999 oder 2000-2010. &lt;&lt;&#10;&#10;[x] 2000-2010&#10;[ ] 1965-1999&#10;[ ] 1945-1964&#10;">
+<choiceresponse>
+  <p>You can use this template as a guide to the simple editor markdown and OLX markup to use for checkboxes problems. Edit this component to replace this template with your own assessment.</p>
+<label>Welches alter gehört GenerationX? 1945-1964 oder 1965-1999 oder 2000-2010. </label>
+<checkboxgroup>
+    <choice correct="true">2000-2010</choice>
+    <choice correct="false">1965-1999</choice>
+    <choice correct="false">1945-1964</choice>
+  </checkboxgroup>
+</choiceresponse>
+</problem>

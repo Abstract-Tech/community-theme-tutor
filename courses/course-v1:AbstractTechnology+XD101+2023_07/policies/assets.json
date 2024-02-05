@@ -1,0 +1,26 @@
+{
+    "work-station-straight-on-view.jpg": {
+        "contentType": "image/jpeg",
+        "content_son": {
+            "category": "asset",
+            "course": "XD101",
+            "name": "work-station-straight-on-view.jpg",
+            "org": "AbstractTechnology",
+            "revision": null,
+            "run": "2023_07",
+            "tag": "c4x"
+        },
+        "displayname": "work-station-straight-on-view.jpg",
+        "filename": "asset-v1:AbstractTechnology+XD101+2023_07+type@asset+block@work-station-straight-on-view.jpg",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AbstractTechnology",
+            "XD101",
+            "thumbnail",
+            "work-station-straight-on-view.jpg",
+            null
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+<problem display_name="Multiple Choice" markdown="null">
+<multiplechoiceresponse>
+  <p>You can use this template as a guide to the simple editor markdown and OLX markup to use for multiple choice problems. Edit this component to replace this template with your own assessment.</p>
+<label>Add the question text, or prompt, here. This text is required.</label>
+<description>You can add an optional tip or note related to the prompt like this. </description>
+<choicegroup type="MultipleChoice">
+  <choice correct="false"><img src="/static/graphic2.png" width="10%"/></choice>
+    <choice correct="true"><img src="/static/graphic2.png" width="10%"/></choice>
+    <choice correct="false"><img src="/static/graphic2.png" width="10%"/></choice>
+  </choicegroup>
+</multiplechoiceresponse>
+</problem>

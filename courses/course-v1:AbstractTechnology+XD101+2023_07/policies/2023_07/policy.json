@@ -1,0 +1,70 @@
+{
+    "course/2023_07": {
+        "advanced_modules": [
+            "pdf",
+            "lti_consumer",
+            "google-calendar",
+            "google-document",
+            "survey",
+            "abstract_scorm_xblock",
+            "annotatable",
+            "videoalpha",
+            "annoto",
+            "video_xblock",
+            "openassessment",
+            "done",
+            "ai_coach",
+            "chatgptxblock",
+            "edx_sga",
+            "video_xblock"
+        ],
+        "cert_html_view_enabled": true,
+        "course_image": "work-station-straight-on-view.jpg",
+        "discussion_topics": {
+            "Allgemein": {
+                "id": "course"
+            }
+        },
+        "display_name": "Xblocks demo",
+        "instructor_info": {
+            "instructors": []
+        },
+        "language": "en",
+        "learning_info": [],
+        "self_paced": true,
+        "start": "2030-01-01T00:00:00Z",
+        "tabs": [
+            {
+                "course_staff_only": false,
+                "name": "Course",
+                "type": "courseware"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Progress",
+                "type": "progress"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Dates",
+                "type": "dates"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Discussion",
+                "type": "discussion"
+            },
+            {
+                "course_staff_only": false,
+                "is_hidden": true,
+                "name": "Wiki",
+                "type": "wiki"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Textbooks",
+                "type": "textbooks"
+            }
+        ]
+    }
+}

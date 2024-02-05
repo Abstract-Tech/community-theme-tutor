@@ -1,0 +1,13 @@
+<problem display_name="Thinking about project's budget" markdown="&gt;&gt;What do you think, a project budget is covering which costs?||A project budget is the total sum of money allocated for the particular purpose of the project for a specific period of time. &lt;&lt;&#10;&#10;[x] The project budget must cover the salaries of the employees involved.&#10;[ ] The project budget must only cover the salaries of the employees involved.&#10;[ ] No profit margin needs to be included in the budget it is enough to cover only the necessary expenses.&#10;[x] The project budget must cover the expenses for material and labor costs.&#10;[ ] No buffers need to be included in the budget.">
+  <choiceresponse>
+    <label>What do you think, a project budget is covering which costs?</label>
+    <description>A project budget is the total sum of money allocated for the particular purpose of the project for a specific period of time. </description>
+    <checkboxgroup>
+      <choice correct="true">The project budget must cover the salaries of the employees involved.</choice>
+      <choice correct="false">The project budget must only cover the salaries of the employees involved.</choice>
+      <choice correct="false">No profit margin needs to be included in the budget it is enough to cover only the necessary expenses.</choice>
+      <choice correct="true">The project budget must cover the expenses for material and labor costs.</choice>
+      <choice correct="false">No buffers need to be included in the budget.</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

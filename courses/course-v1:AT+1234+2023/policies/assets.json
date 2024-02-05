@@ -1,0 +1,26 @@
+{
+    "priscilla-du-preez-XkKCui44iM0-unsplash.jpg": {
+        "contentType": "image/jpeg",
+        "content_son": {
+            "category": "asset",
+            "course": "1234",
+            "name": "priscilla-du-preez-XkKCui44iM0-unsplash.jpg",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "priscilla-du-preez-XkKCui44iM0-unsplash.jpg",
+        "filename": "asset-v1:AT+1234+2023+type@asset+block@priscilla-du-preez-XkKCui44iM0-unsplash.jpg",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "1234",
+            "thumbnail",
+            "priscilla-du-preez-XkKCui44iM0-unsplash.jpg",
+            null
+        ]
+    }
+}

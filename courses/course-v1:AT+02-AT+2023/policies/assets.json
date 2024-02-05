@@ -1,0 +1,580 @@
+{
+    "2912245b-a22a-4530-917e-0bdbd8381046-en.srt": {
+        "contentType": "application/octet-stream",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "2912245b-a22a-4530-917e-0bdbd8381046-en.srt",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "2912245b-a22a-4530-917e-0bdbd8381046-en.srt",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@2912245b-a22a-4530-917e-0bdbd8381046-en.srt",
+        "import_path": "2912245b-a22a-4530-917e-0bdbd8381046-en.srt",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "8e38134b-4698-420e-8a97-78889c0f266d-en.srt": {
+        "contentType": "application/octet-stream",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "8e38134b-4698-420e-8a97-78889c0f266d-en.srt",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "8e38134b-4698-420e-8a97-78889c0f266d-en.srt",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@8e38134b-4698-420e-8a97-78889c0f266d-en.srt",
+        "import_path": "8e38134b-4698-420e-8a97-78889c0f266d-en.srt",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Agile-Project-Management-Best-Practices-and-Methodologies-Whitepaper.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Agile-Project-Management-Best-Practices-and-Methodologies-Whitepaper.pdf",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Agile-Project-Management-Best-Practices-and-Methodologies-Whitepaper.pdf",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Agile-Project-Management-Best-Practices-and-Methodologies-Whitepaper.pdf",
+        "import_path": "Agile-Project-Management-Best-Practices-and-Methodologies-Whitepaper.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Bildschirmfoto_2022-11-28_um_16.06.44.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Bildschirmfoto_2022-11-28_um_16.06.44.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Bildschirmfoto 2022-11-28 um 16.06.44.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Bildschirmfoto_2022-11-28_um_16.06.44.png",
+        "import_path": "Bildschirmfoto 2022-11-28 um 16.06.44.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Bildschirmfoto_2022-11-28_um_16.06.44-png.jpg",
+            null
+        ]
+    },
+    "Bildschirmfoto_2023-07-20_um_12.50.04.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Bildschirmfoto_2023-07-20_um_12.50.04.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Bildschirmfoto 2023-07-20 um 12.50.04.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Bildschirmfoto_2023-07-20_um_12.50.04.png",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Bildschirmfoto_2023-07-20_um_12.50.04-png.jpg",
+            null
+        ]
+    },
+    "Bildschirmfoto_2023-07-26_um_11.59.17.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Bildschirmfoto_2023-07-26_um_11.59.17.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Bildschirmfoto 2023-07-26 um 11.59.17.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Bildschirmfoto_2023-07-26_um_11.59.17.png",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Bildschirmfoto_2023-07-26_um_11.59.17-png.jpg",
+            null
+        ]
+    },
+    "Communicator.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Communicator.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Communicator.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Communicator.png",
+        "import_path": "Communicator.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Communicator-png.jpg",
+            null
+        ]
+    },
+    "Datenschutz.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Datenschutz.zip",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Datenschutz.zip",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Datenschutz.zip",
+        "import_path": "Datenschutz.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Decision_maker.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Decision_maker.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Decision maker.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Decision_maker.png",
+        "import_path": "Decision maker.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Decision_maker-png.jpg",
+            null
+        ]
+    },
+    "Facilitator.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Facilitator.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Facilitator.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Facilitator.png",
+        "import_path": "Facilitator.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Facilitator-png.jpg",
+            null
+        ]
+    },
+    "Multitasking.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Multitasking.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Multitasking.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Multitasking.png",
+        "import_path": "Multitasking.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Multitasking-png.jpg",
+            null
+        ]
+    },
+    "PM_introduction.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "PM_introduction.pdf",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "PM_introduction.pdf",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@PM_introduction.pdf",
+        "import_path": "PM_introduction.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Public_speaker.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Public_speaker.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Public speaker.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Public_speaker.png",
+        "import_path": "Public speaker.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Public_speaker-png.jpg",
+            null
+        ]
+    },
+    "SWOT_course_exam.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "SWOT_course_exam.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "SWOT_course exam.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@SWOT_course_exam.png",
+        "import_path": "SWOT_course exam.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "SWOT_course_exam-png.jpg",
+            null
+        ]
+    },
+    "Team_player.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Team_player.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Team player.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Team_player.png",
+        "import_path": "Team player.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Team_player-png.jpg",
+            null
+        ]
+    },
+    "Welcome_to_the_Project_Management_course.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "Welcome_to_the_Project_Management_course.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "Welcome to the Project Management course.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@Welcome_to_the_Project_Management_course.png",
+        "import_path": "Welcome to the Project Management course.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "Welcome_to_the_Project_Management_course-png.jpg",
+            null
+        ]
+    },
+    "chapter1.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "chapter1.pdf",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "chapter1.pdf",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@chapter1.pdf",
+        "import_path": "chapter1.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "chapter3.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "chapter3.pdf",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "chapter3.pdf",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@chapter3.pdf",
+        "import_path": "chapter3.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "coursecard1.jpg": {
+        "contentType": "image/jpeg",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "coursecard1.jpg",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "coursecard1.jpg",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@coursecard1.jpg",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "coursecard1.jpg",
+            null
+        ]
+    },
+    "coursecard3-community-theme.jpg": {
+        "contentType": "image/jpeg",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "coursecard3-community-theme.jpg",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "coursecard3-community-theme.jpg",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@coursecard3-community-theme.jpg",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "coursecard3-community-theme.jpg",
+            null
+        ]
+    },
+    "coursecard6.jpg": {
+        "contentType": "image/jpeg",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "coursecard6.jpg",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "coursecard6.jpg",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@coursecard6.jpg",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "coursecard6.jpg",
+            null
+        ]
+    },
+    "courseimage_.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "courseimage_.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "courseimage .png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@courseimage_.png",
+        "import_path": "courseimage .png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "courseimage_-png.jpg",
+            null
+        ]
+    },
+    "logo-ecdc.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "logo-ecdc.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "logo-ecdc.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@logo-ecdc.png",
+        "import_path": "logo-ecdc.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "logo-ecdc-png.jpg",
+            null
+        ]
+    },
+    "sign_Demo.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "sign_Demo.png",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "sign_Demo.png",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@sign_Demo.png",
+        "import_path": "sign_Demo.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "02-AT",
+            "thumbnail",
+            "sign_Demo-png.jpg",
+            null
+        ]
+    },
+    "subs_-ubAahVLtUM.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "subs_-ubAahVLtUM.srt.sjson",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "subs_-ubAahVLtUM.srt.sjson",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@subs_-ubAahVLtUM.srt.sjson",
+        "import_path": "subs_-ubAahVLtUM.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_KMiBiUeO-SQ.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "subs_KMiBiUeO-SQ.srt.sjson",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "subs_KMiBiUeO-SQ.srt.sjson",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@subs_KMiBiUeO-SQ.srt.sjson",
+        "import_path": "subs_KMiBiUeO-SQ.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_q8QJB5KVKbw.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "02-AT",
+            "name": "subs_q8QJB5KVKbw.srt.sjson",
+            "org": "AT",
+            "revision": null,
+            "run": "2023",
+            "tag": "c4x"
+        },
+        "displayname": "subs_q8QJB5KVKbw.srt.sjson",
+        "filename": "asset-v1:AT+02-AT+2023+type@asset+block@subs_q8QJB5KVKbw.srt.sjson",
+        "import_path": "subs_q8QJB5KVKbw.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    }
+}

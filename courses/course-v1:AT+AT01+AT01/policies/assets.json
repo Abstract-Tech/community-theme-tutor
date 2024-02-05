@@ -1,0 +1,211 @@
+{
+    "Bildschirmfoto_2022-11-28_um_16.12.44.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "AT01",
+            "name": "Bildschirmfoto_2022-11-28_um_16.12.44.png",
+            "org": "AT",
+            "revision": null,
+            "run": "AT01",
+            "tag": "c4x"
+        },
+        "displayname": "Bildschirmfoto 2022-11-28 um 16.12.44.png",
+        "filename": "asset-v1:AT+AT01+AT01+type@asset+block@Bildschirmfoto_2022-11-28_um_16.12.44.png",
+        "import_path": "Bildschirmfoto 2022-11-28 um 16.12.44.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "AT01",
+            "thumbnail",
+            "Bildschirmfoto_2022-11-28_um_16.12.44-png.jpg",
+            null
+        ]
+    },
+    "Bildschirmfoto_2023-07-26_um_11.50.24.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "AT01",
+            "name": "Bildschirmfoto_2023-07-26_um_11.50.24.png",
+            "org": "AT",
+            "revision": null,
+            "run": "AT01",
+            "tag": "c4x"
+        },
+        "displayname": "Bildschirmfoto 2023-07-26 um 11.50.24.png",
+        "filename": "asset-v1:AT+AT01+AT01+type@asset+block@Bildschirmfoto_2023-07-26_um_11.50.24.png",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "AT01",
+            "thumbnail",
+            "Bildschirmfoto_2023-07-26_um_11.50.24-png.jpg",
+            null
+        ]
+    },
+    "SWOT_course_exam.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "AT01",
+            "name": "SWOT_course_exam.png",
+            "org": "AT",
+            "revision": null,
+            "run": "AT01",
+            "tag": "c4x"
+        },
+        "displayname": "SWOT_course exam.png",
+        "filename": "asset-v1:AT+AT01+AT01+type@asset+block@SWOT_course_exam.png",
+        "import_path": "SWOT_course exam.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "AT01",
+            "thumbnail",
+            "SWOT_course_exam-png.jpg",
+            null
+        ]
+    },
+    "Welcome_to_the_Agile_course.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "AT01",
+            "name": "Welcome_to_the_Agile_course.png",
+            "org": "AT",
+            "revision": null,
+            "run": "AT01",
+            "tag": "c4x"
+        },
+        "displayname": "Welcome to the Agile course.png",
+        "filename": "asset-v1:AT+AT01+AT01+type@asset+block@Welcome_to_the_Agile_course.png",
+        "import_path": "Welcome to the Agile course.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "AT01",
+            "thumbnail",
+            "Welcome_to_the_Agile_course-png.jpg",
+            null
+        ]
+    },
+    "agile-certified-presentation.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "AT01",
+            "name": "agile-certified-presentation.pdf",
+            "org": "AT",
+            "revision": null,
+            "run": "AT01",
+            "tag": "c4x"
+        },
+        "displayname": "agile-certified-presentation.pdf",
+        "filename": "asset-v1:AT+AT01+AT01+type@asset+block@agile-certified-presentation.pdf",
+        "import_path": "agile-certified-presentation.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "coursecard2-community-theme.jpg": {
+        "contentType": "image/jpeg",
+        "content_son": {
+            "category": "asset",
+            "course": "AT01",
+            "name": "coursecard2-community-theme.jpg",
+            "org": "AT",
+            "revision": null,
+            "run": "AT01",
+            "tag": "c4x"
+        },
+        "displayname": "coursecard2-community-theme.jpg",
+        "filename": "asset-v1:AT+AT01+AT01+type@asset+block@coursecard2-community-theme.jpg",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "AT01",
+            "thumbnail",
+            "coursecard2-community-theme.jpg",
+            null
+        ]
+    },
+    "courseimage2.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "AT01",
+            "name": "courseimage2.png",
+            "org": "AT",
+            "revision": null,
+            "run": "AT01",
+            "tag": "c4x"
+        },
+        "displayname": "courseimage2.png",
+        "filename": "asset-v1:AT+AT01+AT01+type@asset+block@courseimage2.png",
+        "import_path": "courseimage2.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "AT01",
+            "thumbnail",
+            "courseimage2-png.jpg",
+            null
+        ]
+    },
+    "digicomp-logo.svg": {
+        "contentType": "image/svg+xml",
+        "content_son": {
+            "category": "asset",
+            "course": "AT01",
+            "name": "digicomp-logo.svg",
+            "org": "AT",
+            "revision": null,
+            "run": "AT01",
+            "tag": "c4x"
+        },
+        "displayname": "digicomp-logo.svg",
+        "filename": "asset-v1:AT+AT01+AT01+type@asset+block@digicomp-logo.svg",
+        "import_path": "digicomp-logo.svg",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "AT01",
+            "thumbnail",
+            "digicomp-logo.svg",
+            null
+        ]
+    },
+    "muster-sign.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "AT01",
+            "name": "muster-sign.png",
+            "org": "AT",
+            "revision": null,
+            "run": "AT01",
+            "tag": "c4x"
+        },
+        "displayname": "muster-sign.png",
+        "filename": "asset-v1:AT+AT01+AT01+type@asset+block@muster-sign.png",
+        "import_path": "muster-sign.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "AT",
+            "AT01",
+            "thumbnail",
+            "muster-sign-png.jpg",
+            null
+        ]
+    }
+}

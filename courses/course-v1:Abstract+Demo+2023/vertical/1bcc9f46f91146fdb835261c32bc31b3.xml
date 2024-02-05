@@ -1,0 +1,4 @@
+<vertical display_name="Unit">
+  <html url_name="1ece72bef6ce47839f03e4ac57215b2c"/>
+  <lti_consumer url_name="468962d2602d47a7a34dddc5b9373c65" xblock-family="xblock.v1" display_name="Virtual Classroom Session" button_text="Join the Webinar!" description="BigBlueButton" launch_url="https://konekti.reu1.blindsidenetworks.com/lti/rooms/messages/blti" lti_id="bbb"/>
+</vertical>

@@ -1,0 +1,91 @@
+{
+    "course/AT01": {
+        "advanced_modules": [
+            "pdf"
+        ],
+        "cert_html_view_enabled": true,
+        "certificates": {
+            "certificates": [
+                {
+                    "course_title": "Agile Project Management",
+                    "description": "Description of the certificate",
+                    "id": 1539537677,
+                    "is_active": true,
+                    "name": "Name of the certificate",
+                    "signatories": [
+                        {
+                            "certificate": 1539537677,
+                            "id": 288918434,
+                            "name": "MAX Mustermann",
+                            "organization": "Digicomp",
+                            "signature_image_path": "/asset-v1:Digicomp+02+2030+type@asset+block@muster-sign.png",
+                            "title": "CEO"
+                        },
+                        {
+                            "certificate": 1539537677,
+                            "id": 1226571049,
+                            "name": "",
+                            "organization": "",
+                            "signature_image_path": "",
+                            "title": ""
+                        }
+                    ],
+                    "version": 1
+                }
+            ]
+        },
+        "certificates_display_behavior": "enter early_with_info",
+        "course_image": "coursecard2-community-theme.jpg",
+        "discussion_topics": {
+            "General": {
+                "id": "course"
+            }
+        },
+        "display_name": "Agile Project Management",
+        "graceperiod": "",
+        "instructor_info": {
+            "instructors": []
+        },
+        "language": "en",
+        "learning_info": [],
+        "minimum_grade_credit": 0.8,
+        "pre_requisite_courses": [
+            "course-v1:Digicomp+01+2030"
+        ],
+        "start": "2030-01-01T00:00:00Z",
+        "tabs": [
+            {
+                "course_staff_only": false,
+                "name": "Course",
+                "type": "courseware"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Textbooks",
+                "type": "textbooks"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Discussion",
+                "type": "discussion"
+            },
+            {
+                "course_staff_only": false,
+                "is_hidden": true,
+                "name": "Wiki",
+                "type": "wiki"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Progress",
+                "type": "progress"
+            }
+        ],
+        "xml_attributes": {
+            "filename": [
+                "course/2030.xml",
+                "course/2030.xml"
+            ]
+        }
+    }
+}

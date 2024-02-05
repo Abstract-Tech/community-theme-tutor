@@ -1,0 +1,5 @@
+<course advanced_modules="[&quot;pdf&quot;, &quot;lti_consumer&quot;, &quot;google-calendar&quot;, &quot;google-document&quot;, &quot;survey&quot;, &quot;abstract_scorm_xblock&quot;, &quot;annotatable&quot;, &quot;videoalpha&quot;, &quot;annoto&quot;, &quot;video_xblock&quot;, &quot;openassessment&quot;, &quot;done&quot;, &quot;ai_coach&quot;, &quot;chatgptxblock&quot;]" cert_html_view_enabled="true" course_image="priscilla-du-preez-XkKCui44iM0-unsplash.jpg" display_name="TEST All Xblocks" instructor_info="{&quot;instructors&quot;: []}" language="en" learning_info="[]" start="2030-01-01T00:00:00+00:00">
+  <chapter url_name="56b0462aa5bc49d4b3ac4223ce3c1b73"/>
+  <chapter url_name="7451494f499344cbb96f322fab94af73"/>
+  <wiki slug="AT.1234.2023"/>
+</course>

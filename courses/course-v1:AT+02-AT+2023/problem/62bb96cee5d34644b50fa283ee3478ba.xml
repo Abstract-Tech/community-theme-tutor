@@ -1,0 +1,16 @@
+<problem display_name="Do you know what a project is?" markdown="Do you remember? In the first section of this course, you were told what a project is and at what point a project is classified as such.&#10;&#10;&gt;&gt;Can you still remember the four cornerstones that make a project a project?||Tick the four correct answers from the given options below &lt;&lt;&#10;&#10;[x] A fixed start and end date.&#10;[ ] No limits.&#10;[ ] A project is the same as a process.&#10;[x] A project is a one-time activity.&#10;[x] Every project is in some way unique.&#10;[ ] A project has no limits related to among others quality and functionality.&#10;[x] A project has limits related to among others time and money.&#10;">
+  <choiceresponse>
+    <p>Do you remember? In the first section of this course, you were told what a project is and at what point a project is classified as such.</p>
+    <label>Can you still remember the four cornerstones that make a project a project?</label>
+    <description>Tick the four correct answers from the given options below </description>
+    <checkboxgroup>
+      <choice correct="true">A fixed start and end date.</choice>
+      <choice correct="false">No limits.</choice>
+      <choice correct="false">A project is the same as a process.</choice>
+      <choice correct="true">A project is a one-time activity.</choice>
+      <choice correct="true">Every project is in some way unique.</choice>
+      <choice correct="false">A project has no limits related to among others quality and functionality.</choice>
+      <choice correct="true">A project has limits related to among others time and money.</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

@@ -1,0 +1,4 @@
+<vertical display_name="BigBlueButton integrated">
+  <html url_name="e186434a4adc4a8dba4b53adceb6abea"/>
+  <lti_consumer url_name="c367b148747f4540a4823a2f0b9c914b" xblock-family="xblock.v1" button_text="Start your lesson" description="Big Blue Button" launch_url="https://konekti.reu1.blindsidenetworks.com/lti/rooms/messages/blti" lti_id="bbb"/>
+</vertical>
