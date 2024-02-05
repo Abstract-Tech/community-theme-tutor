@@ -68,14 +68,14 @@ def mfe_forks(mfes):
         "name": "profile",
     }
     mfes["home"] = {
-        "repository": "https://github.com/Abstract-Tech/community-theme-home",
+        "repository": "https://github.com/Abstract-Tech/community-theme-home.git",
         "version": "community-theme.quince",
         "refs": "https://api.github.com/repos/abstract-tech/community-theme-home/git/refs/heads",
         "port": 3001,
         "name": "home",
     }
     mfes["course_about"] = {
-        "repository": "https://github.com/Abstract-Tech/community-theme-course-about",
+        "repository": "https://github.com/Abstract-Tech/community-theme-course-about.git",
         "version": "community-theme.quince",
         "refs": "https://api.github.com/repos/abstract-tech/community-theme-course-about/git/refs/heads",
         "port": 3000,
