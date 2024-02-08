@@ -44,7 +44,7 @@ wordpress2:
     (
         "caddyfile",
         """
-wp.community.abzt.de {
+wp2.community.abzt.de {
   reverse_proxy wordpress2
 }
 """
