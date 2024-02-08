@@ -1,0 +1,49 @@
+name: wordpress
+version: 0.1.0
+patches:
+  openedx-development-settings: |
+    CORS_ORIGIN_WHITELIST.append("http://localhost:8080")
+
+  local-docker-compose-prod-services: |
+    wordpress:
+      image: wordpress
+      ports:
+        - 8080:80
+      environment:
+        WORDPRESS_DB_HOST: mysql
+        WORDPRESS_DB_USER: root
+        WORDPRESS_DB_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        WORDPRESS_DB_NAME: wordpress
+      volumes:
+        - ../../data/wordpress:/var/www/html
+        - ../../wordpress/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+
+    phpmyadmin:
+      image: phpmyadmin
+      restart: always
+      ports:
+        - 8081:80
+      environment:
+        - PMA_ARBITRARY=1
+
+  local-docker-compose-services: |
+    wordpress:
+      image: wordpress
+      ports:
+        - 8080:80
+      environment:
+        WORDPRESS_DB_HOST: mysql
+        WORDPRESS_DB_USER: root
+        WORDPRESS_DB_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        WORDPRESS_DB_NAME: wordpress
+      volumes:
+        - ../../data/wordpress:/var/www/html
+        - ../../wordpress/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+
+    phpmyadmin:
+      image: phpmyadmin
+      restart: always
+      ports:
+        - 8081:80
+      environment:
+        - PMA_ARBITRARY=1
