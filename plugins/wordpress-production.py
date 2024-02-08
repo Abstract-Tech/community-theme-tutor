@@ -13,7 +13,7 @@ echo "++++++ done!"
     )
 )
 
-hooks.Filters.ENV_PATCHES.add_items(
+hooks.Filters.ENV_PATCHES.add_items([
     (
         "openedx-development-settings",
         """
@@ -49,4 +49,4 @@ wp.community.abzt.de {
 }
 """
     ),
-)
+])
