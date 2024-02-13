@@ -166,3 +166,76 @@ section.discussion .action-button.action-follow:focus .action-icon {
 section.discussion .action-button .action-icon{
     color: $primary;
     }
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .footer-upper {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-buttons a {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 20px;
+  }
+  
+  .footer-logos {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-logos i {
+    font-size: 24px;
+  }
+  
+  .footer-rights {
+    text-align: right;
+    font-size: 12px;
+  }
+  
+  .footer-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .footer-license {
+    font-size: 12px;
+  }
+  
+  .footer-text {
+    max-width: 300px;
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  .footer-divider {
+    width: 100%;
+    height: 2px; /* adjust as needed */
+    background: #ddd; /* adjust as needed */
+  }
