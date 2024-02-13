@@ -155,3 +155,12 @@ section.course-info header.course-profile .intro-inner-wrapper .heading-group {
 div.intro-course {
     background-color: #0abef0ff;
 }
+
+.discussion-module .btn, .wmd-prompt-dialog .btn {
+    background-color: #fff;
+    color: $primary;
+}
+
+.btn-link {
+color: $primary;
+}
