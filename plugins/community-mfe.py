@@ -32,13 +32,13 @@ def mfe_forks(mfes):
         "port": 2001,
         "name": "course_authoring",
     }
-    mfes["discussions"] = {
-        "repository": "https://github.com/Abstract-Tech/community-theme-discussions.git",
-        "version": "community-theme.quince",
-        "refs": "https://api.github.com/repos/abstract-tech/community-theme-discussions/git/refs/heads",
-        "port": 2002,
-        "name": "discussions",
-    }
+    # mfes["discussions"] = {
+    #     "repository": "https://github.com/Abstract-Tech/community-theme-discussions.git",
+    #     "version": "community-theme.quince",
+    #     "refs": "https://api.github.com/repos/abstract-tech/community-theme-discussions/git/refs/heads",
+    #     "port": 2002,
+    #     "name": "discussions",
+    # }
     mfes["gradebook"] = {
         "repository": "https://github.com/Abstract-Tech/community-theme-gradebook.git",
         "version": "community-theme.quince",
