@@ -277,6 +277,7 @@ div.discussion-module button.discussion-show.btn.shown {
 div.discussion-module .btn,
 .wmd-prompt-dialog .btn {
   border: 1px solid $primary;
+  color: $primary;
   &:hover,
   &:focus,
   &:active {
@@ -288,6 +289,8 @@ div.discussion-module .btn,
     text-decoration: none !important;
   }
 }
+
+
 
 div.xmodule_display.xmodule_ProblemBlock
   div.problem
