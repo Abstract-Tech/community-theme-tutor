@@ -65,6 +65,7 @@ JWT_RSA_PRIVATE_KEY: '-----BEGIN RSA PRIVATE KEY-----
   -----END RSA PRIVATE KEY-----'
 LANGUAGE_CODE: en
 LMS_HOST: local.edly.io
+MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:17.0.0
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_EXTRA_PIP_REQUIREMENTS:
 - git+https://github.com/abstract-tech/community-plugin.git
