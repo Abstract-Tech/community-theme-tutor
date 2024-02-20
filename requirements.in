@@ -2,4 +2,4 @@ tutor<18.0.0
 tutor-mfe<18.0.0
 tutor-forum<18.0.0
 tutor-cairn<18.0.0
-tutor-minio==17.0.0
+tutor-minio<18.0.0
