@@ -6,7 +6,7 @@ hooks.Filters.ENV_PATCHES.add_items(
         (
             "caddyfile",
             """
-microsite.local.edly.io{$default_site_port} preview.microsite.local.edly.io{$default_site_port} {
+microsite.{{ MFE_HOST }}{$default_site_port} preview.microsite.{{ MFE_HOST }}{$default_site_port} {
     @favicon_matcher {
         path_regexp ^/favicon.ico$
     }
@@ -46,7 +46,7 @@ microsite.local.edly.io{$default_site_port} preview.microsite.local.edly.io{$def
         }
     }
     header * {
-      Content-Security-Policy "frame-ancestors microsite.local.edly.io *.microsite.local.edly.io;"
+      Content-Security-Policy "frame-ancestors microsite.{{ MFE_HOST }} *.microsite.{{ MFE_HOST }};"
     }
 
     handle_path /* {
@@ -56,7 +56,7 @@ microsite.local.edly.io{$default_site_port} preview.microsite.local.edly.io{$def
     }
 }
 
-apps.microsite.local.edly.io{$default_site_port} {
+apps.microsite.{{ MFE_HOST }}{$default_site_port} {
     respond / 204
     request_body {
         max_size 2MB
@@ -68,16 +68,15 @@ apps.microsite.local.edly.io{$default_site_port} {
         (
             "openedx-lms-production-settings",
             """
-LOGIN_REDIRECT_WHITELIST.append("apps.microsite.local.edly.io")
-CORS_ORIGIN_WHITELIST.append("http://apps.microsite.local.edly.io")
-CSRF_TRUSTED_ORIGINS.append("apps.microsite.local.edly.io")
+LOGIN_REDIRECT_WHITELIST.append("apps.microsite.{{ LMS_HOST }}")
+CORS_ORIGIN_WHITELIST.append("http://apps.microsite.{{ LMS_HOST }}")
+CSRF_TRUSTED_ORIGINS.append("apps.microsite.{{ LMS_HOST }}")
 
-LOGIN_REDIRECT_WHITELIST.append("microsite.local.edly.io")
-CORS_ORIGIN_WHITELIST.append("http://microsite.local.edly.io")
-CSRF_TRUSTED_ORIGINS.append("microsite.local.edly.io")
+LOGIN_REDIRECT_WHITELIST.append("microsite.{{ LMS_HOST }}")
+CORS_ORIGIN_WHITELIST.append("http://microsite.{{ LMS_HOST }}")
+CSRF_TRUSTED_ORIGINS.append("microsite.{{ LMS_HOST }}")
 
-SESSION_COOKIE_DOMAIN = "edly.io"
-ALLOWED_HOSTS.append("microsite.local.edly.io")
+ALLOWED_HOSTS.append("microsite.{{ LMS_HOST }}")
             """,
         ),
         (
@@ -90,7 +89,7 @@ RUN npm install '@edx/brand@git+https://git@github.com/abstract-tech/community-t
         (
             "local-docker-compose-caddy-aliases",
             """
-- microsite.local.edly.io
+- microsite.{{ LMS_HOST }}
             """,
         ),
     ]
