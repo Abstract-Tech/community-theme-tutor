@@ -78,8 +78,9 @@ OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
 PLUGINS:
-- course-about-mfe
+- codejail
 - community-mfe
+- course-about-mfe
 - home-mfe
 - mfe
 - scorm-fix
