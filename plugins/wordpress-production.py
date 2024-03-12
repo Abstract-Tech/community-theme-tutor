@@ -34,7 +34,7 @@ wordpress2:
   environment:
     WORDPRESS_DB_HOST: mysql
     WORDPRESS_DB_USER: root
-    WORDPRESS_DB_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    WORDPRESS_DB_PASSWORD: {{ MYSQL_ROOT_PASSWORD }}
     WORDPRESS_DB_NAME: wordpress
   volumes:
     - ../../data/wordpress:/var/www/html

@@ -1,4 +1,4 @@
-name: wordpress
+name: wordpress-dev
 version: 0.1.0
 patches:
   openedx-development-settings: |
@@ -12,7 +12,7 @@ patches:
       environment:
         WORDPRESS_DB_HOST: mysql
         WORDPRESS_DB_USER: root
-        WORDPRESS_DB_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        WORDPRESS_DB_PASSWORD: {{ MYSQL_ROOT_PASSWORD }}
         WORDPRESS_DB_NAME: wordpress
       volumes:
         - ../../data/wordpress:/var/www/html
@@ -34,7 +34,7 @@ patches:
       environment:
         WORDPRESS_DB_HOST: mysql
         WORDPRESS_DB_USER: root
-        WORDPRESS_DB_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        WORDPRESS_DB_PASSWORD: {{ MYSQL_ROOT_PASSWORD }}
         WORDPRESS_DB_NAME: wordpress
       volumes:
         - ../../data/wordpress:/var/www/html
