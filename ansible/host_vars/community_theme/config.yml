@@ -16,6 +16,7 @@ tutor_post_hooks:
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable course-about-mfe-production"
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable caddy_proxy"
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable codejail"
+  - "{{ tutor_venv_path }}/{{ tutor_exec_name }} plugins enable wordpress-production"
   - "{{ tutor_venv_path }}/{{ tutor_exec_name }} config save"
 
 
