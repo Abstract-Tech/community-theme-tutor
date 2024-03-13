@@ -69,11 +69,12 @@ MFE_DOCKER_IMAGE: docker.io/abstract2tech/community-theme-mfe:17.0.0
 MYSQL_ROOT_PASSWORD: 43Lfuln2
 OPENEDX_EXTRA_PIP_REQUIREMENTS:
 - git+https://github.com/abstract-tech/community-plugin.git
-- git+https://github.com/abstract-tech/abstract-scorm-xblock.git@django4#subdirectory=abstract_scorm_xblock&egg=abstract-scorm-xblock
+- openedx-scorm-xblock
 - git+https://github.com/raccoongang/xblock-pdf.git@v1.0.3#egg=xblock-pdf
 - git+https://github.com/Stanford-Online/xblock-in-video-quiz.git#egg=invideoquiz-xblock
 - git+https://github.com/Annoto/xblock-in-video-collaboration.git
 - git+https://github.com/abconlinecourses/chatgpt-xblock.git@v0.1#egg=chatgpt-xblock
+- git+https://github.com/raccoongang/xblock-video.git@master#egg=video_xblock
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
@@ -84,6 +85,7 @@ PLUGINS:
 - mfe
 - scorm-fix
 - session-timeout
+- wordpress-dev
 PLUGIN_INDEXES:
 - https://overhang.io/tutor/main
 PREVIEW_LMS_HOST: preview.local.edly.io
