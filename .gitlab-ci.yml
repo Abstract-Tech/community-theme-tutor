@@ -6,7 +6,7 @@ workflow:
   rules:
     - when: always
 
-image: docker.io/abstract2tech/tutor-ci:17.0.2
+image: docker.io/abstract2tech/tutor-ci:17.0.4
 services:
  - docker:23-dind
 variables:
