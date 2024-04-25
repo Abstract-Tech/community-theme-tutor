@@ -82,6 +82,7 @@ PLATFORM_NAME: Community Theme
 PLUGINS:
 - community-mfe
 - course-about-mfe
+- ecommerce
 - home-mfe
 - mfe
 - scorm-fix
