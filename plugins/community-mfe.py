@@ -82,7 +82,7 @@ def mfe_forks(mfes):
         "name": "course_about",
     }
     # Note: The changes of the following might not take effect due to tutor order of loading plugins
-    # This to change it you might need to edit the upstream pplugin at:
+    # This to change it you might need to edit the upstream plugin at:
     # https://github.com/Abstract-Tech/openedx-tutor-plugins/blob/5556c1d5c55e1a0e95f36a9f0b89dbf21382f581/plugins/tutor-contrib-learner-dashboard-mfe/tutor_learner_dashboard_mfe/plugin.py#L20-L25
     mfes["learner-dashboard"] = {
         "repository": "https://github.com/Abstract-Tech/community-theme-learner-dashboard.git",
@@ -90,7 +90,13 @@ def mfe_forks(mfes):
         "refs": "https://api.github.com/repos/abstract-tech/community-theme-learner-dashboard/git/refs/heads",
         "port":1996,
     }
-
+    mfes["learning-themed"] = {
+        "repository": "https://github.com/Abstract-Tech/community-theme-learning-themed",
+        "version": "community-theme.quince",
+        "refs": "https://api.github.com/repos/abstract-tech/community-theme-learning-themed/git/refs/heads",
+        "port": 2003,
+        "name": "learning-themed",
+    }
     return mfes
 
 
