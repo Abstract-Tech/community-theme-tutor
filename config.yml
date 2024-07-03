@@ -76,6 +76,7 @@ OPENEDX_EXTRA_PIP_REQUIREMENTS:
 - git+https://github.com/abconlinecourses/chatgpt-xblock.git@v0.1#egg=chatgpt-xblock
 - git+https://github.com/raccoongang/xblock-video.git@master#egg=video_xblock
 - xblock-free-text-response
+- git+https://github.com/edly-io/ai-coach-xblock.git@main#egg=ai-coach-xblock
 OPENEDX_MYSQL_PASSWORD: 2waV0m9w
 OPENEDX_SECRET_KEY: eHqeglW5j7T68yYtr3yL6XPz
 PLATFORM_NAME: Community Theme
