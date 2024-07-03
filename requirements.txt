@@ -96,5 +96,3 @@ websocket-client==1.7.0
     # via kubernetes
 zipp==3.18.1
     # via importlib-metadata
-
-git+https://github.com/edly-io/ai-coach-xblock.git@main#egg=ai-coach-xblock
