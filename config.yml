@@ -71,7 +71,7 @@ OPENEDX_EXTRA_PIP_REQUIREMENTS:
 - git+https://github.com/abstract-tech/community-plugin.git
 - openedx-scorm-xblock
 - git+https://github.com/raccoongang/xblock-pdf.git@v1.0.3#egg=xblock-pdf
-- git+https://github.com/Stanford-Online/xblock-in-video-quiz.git#egg=invideoquiz-xblock
+- git+https://github.com/openedx/xblock-in-video-quiz.git
 - git+https://github.com/Annoto/xblock-in-video-collaboration.git
 - git+https://github.com/abconlinecourses/chatgpt-xblock.git@v0.1#egg=chatgpt-xblock
 - git+https://github.com/raccoongang/xblock-video.git@master#egg=video_xblock
